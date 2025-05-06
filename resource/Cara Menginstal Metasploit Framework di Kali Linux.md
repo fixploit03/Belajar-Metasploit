@@ -22,6 +22,12 @@ apt-get update && apt-get upgrade
 apt-get install metasploit-framework
 ```
 
+## Instal PostgreSQL
+
+```
+apt-get install postgresql
+```
+
 ## Inisialisasi Database untuk Metasploit Framework 
 
 ```
