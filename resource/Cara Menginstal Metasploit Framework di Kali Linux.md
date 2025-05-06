@@ -58,4 +58,4 @@ Itu tandanya kamu sudah berhasil menginstal Metasploit Framework lengkap bareng 
 
 Itu dia cara menginstal Metasploit Framework di Kali Linux.
 
-<p align="right"><b>Selanjutnya</b>: <a href="#">Next</a></p>
+<p align="right"><b>Selanjutnya</b>: <a href="Struktur Folder dan File Penting di Metasploit Framework.md">Struktur Folder dan File Penting di Metasploit Framework</a></p>
