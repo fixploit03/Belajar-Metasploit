@@ -1,16 +1,25 @@
 #include <windows.h>
 #include <stdio.h>
 
-// x86_64-w64-mingw32-gcc trigger_memory_bsod.c -o trigger_memory_bsod.exe
+void CauseMemoryAccessViolationWithGuard() {
+    // Mengalokasikan halaman memori dengan guard
+    SYSTEM_INFO si;
+    GetSystemInfo(&si);
+    size_t pageSize = si.dwPageSize;
 
-void CauseMemoryAccessViolation() {
-    // Menggunakan pointer yang tidak valid untuk memicu kesalahan akses memori
-    int *ptr = NULL;
-    *ptr = 42;  // Dereference NULL pointer untuk menyebabkan crash
+    void* mem = VirtualAlloc(NULL, pageSize, MEM_COMMIT, PAGE_GUARD);
+
+    if (mem == NULL) {
+        printf("VirtualAlloc failed\n");
+        return;
+    }
+
+    // Coba akses memori yang dilindungi oleh guard, yang akan menyebabkan BSOD
+    *((char *)mem) = 'A'; // Ini akan menyebabkan BSOD karena halaman ini dilindungi
 }
 
 int main() {
-    // Memicu BSOD dengan kesalahan akses memori
-    CauseMemoryAccessViolation();
+    // Memicu BSOD dengan memori terproteksi
+    CauseMemoryAccessViolationWithGuard();
     return 0;
 }
