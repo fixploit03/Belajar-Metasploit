@@ -8,6 +8,6 @@ Seperti produk komersial sejenis seperti [Canvas](https://www.e-spincorp.com/can
 
 Posisi Metasploit yang semakin berkembang sebagai framework pengembangan exploit standar de facto menyebabkan banyaknya rilis advisori kerentanan perangkat lunak yang sering kali disertai modul exploit Metasploit dari pihak ketiga. Modul ini menyoroti potensi eksploitasi, risiko, dan solusi dari bug tertentu tersebut. Metasploit 3.0 mulai menyertakan alat [fuzzing](https://en.m.wikipedia.org/wiki/Fuzzing) yang digunakan untuk menemukan kerentanan perangkat lunak, bukan hanya mengeksploitasi bug yang sudah diketahui. Pendekatan ini terlihat dengan integrasi toolset wireless [lorcon (802.11)](https://en.m.wikipedia.org/wiki/Lorcon) ke dalam Metasploit 3.0 pada bulan November 2006.
 
-Itu dia Sejarah Metasploit Framework.
+Itu dia sejarah Metasploit Framework.
 
 <p align="right"><b>Selanjutnya</b>: <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Cara%20Menginstal%20Metasploit%20Framework%20di%20Kali%20Linux.md">Cara Menginstal Metasploit Framework di Kali Linux</a></p>
