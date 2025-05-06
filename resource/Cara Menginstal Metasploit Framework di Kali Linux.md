@@ -1,4 +1,4 @@
-<p align="left"><b>Sebelumnya</b>: <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Apa%20Itu%20Metasploit%20Framework.md">Apa itu Metasploit Framework ?</a></p>
+<p align="left"><b>Sebelumnya</b>: <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Sejarah%20Metasploit%20Framework.md">Sejarah Metasploit Framework</a></p>
 
 ## Cara Menginstal Metasploit Framework di Kali Linux
 
