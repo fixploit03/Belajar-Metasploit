@@ -4,7 +4,10 @@
 
 <p align="center">[ Buat Pemula ]</p>
 
-## Daftar Isi
+> **Disclaimer**:
+> Materi ini disediakan hanya untuk tujuan edukasi dan pembelajaran. Dilarang keras menggunakan informasi di dalamnya untuk aktivitas yang melanggar hukum. Segala penyalahgunaan materi sepenuhnya menjadi tanggung jawab individu masing-masing. Penulis tidak bertanggung jawab atas konsekuensi yang timbul, baik di dunia maupun di akhirat.
+
+## Daftar Isi 
 
 - [Apa Itu Metasploit Framework?](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Apa%20Itu%20Metasploit%20Framework%3F.md)
 - [Sejarah Metasploit Framework](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Sejarah%20Metasploit%20Framework.md)
