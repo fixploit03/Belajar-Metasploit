@@ -2,7 +2,7 @@
 
 ![](https://github.com/fixploit03/Belajar-Metasploit/blob/main/img/msf.png)
 
-<p align="center">[ Buat Pemula ]</p>
+<p align="center">[ Buat Pemula (GRATIS) ]</p>
 
 ## Daftar Isi
 
