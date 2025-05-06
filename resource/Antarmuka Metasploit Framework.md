@@ -10,10 +10,12 @@ msfconsole
 Setelah beberapa saat, kamu akan melihat tampilan banner seperti ini:
 
 ```
-       =[ metasploit v6.x.x-dev ]
-+ -- --=[ 2300 exploits - 1200 auxiliary - 350 post ]
-+ -- --=[ 600 payloads - 45 encoders - 10 nops ]
-+ -- --=[ Ready to hack like a pro! ]
+       =[ metasploit v6.4.56-dev                          ]
++ -- --=[ 2505 exploits - 1291 auxiliary - 431 post       ]
++ -- --=[ 1610 payloads - 49 encoders - 13 nops           ]
++ -- --=[ 9 evasion                                       ]
+
+Metasploit Documentation: https://docs.metasploit.com/
 ```
 
 dan prompt seperti ini:
