@@ -2,6 +2,8 @@
 
 ![](https://github.com/fixploit03/Belajar-Metasploit/blob/main/img/msf.png)
 
+<p align="center">[ Buat Pemula ]</p>
+
 ## Daftar Isi
 
 - [Apa Itu Metasploit Framework ?](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Apa%20Itu%20Metasploit%20Framework%20%3F.md)
