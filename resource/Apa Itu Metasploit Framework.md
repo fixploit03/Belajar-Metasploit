@@ -1,4 +1,4 @@
-<p align="left">[ <a href="https://github.com/fixploit03/Belajar-Metasploit">Kembali ke Halaman Utama</a> ]</p>
+<p align="left"><b>Sebelumnya</b>: <a href="https://github.com/fixploit03/Belajar-Metasploit">Halaman Utama </p>
 
 ## Apa itu Metasploit Framework ?
 
