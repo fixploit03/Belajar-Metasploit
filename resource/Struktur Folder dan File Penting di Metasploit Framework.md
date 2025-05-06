@@ -18,10 +18,10 @@ Isi folder utama Metasploit Framework:
 |:--:|:--:|:--:|
 | Folder | app | Berisi kode aplikasi utama (MVC) untuk Metasploit. |
 | Folder | config | Konfigurasi internal Metasploit, termasuk setting database. |
-| Folder | data | data	File data pendukung seperti wordlists, payload templates, dan lain-lain. |
+| Folder | data |	File data pendukung seperti wordlists, payload templates, dan lain-lain. |
 | Folder | db | Struktur database dan migrasi untuk framework. |
 | Folder | docs | Dokumentasi teknis dan panduan penggunaan. |
-| Folder | documentation | documentation	Dokumentasi tambahan (mirip docs, bisa berbeda tergantung versi). |
+| Folder | documentation | Dokumentasi tambahan (mirip docs, bisa berbeda tergantung versi). |
 | File | Gemfile | Daftar dependencies Ruby yang dibutuhkan. |
 | File | Gemfile.lock | Versi terkunci dari dependencies untuk menjaga konsistensi. | 
 | Folder | lib | Pustaka utama Ruby yang menjadi “otak” dari Metasploit. |
