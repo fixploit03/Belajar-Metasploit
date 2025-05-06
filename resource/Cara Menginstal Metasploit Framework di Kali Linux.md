@@ -2,6 +2,8 @@
 
 ## Cara Menginstal Metasploit Framework di Kali Linux
 
+![](https://github.com/fixploit03/Belajar-Metasploit/blob/main/img/Cara%20Instal%20Metasploit%20Framework%20di%20Kali%20Linux.jpg)
+
 ### Masuk ke Mode root
 
 ```
