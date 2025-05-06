@@ -28,4 +28,4 @@ msf6 >
 
 Itu dia antarmuka Metasploit Framework.
 
-<p align="right"><b>Selanjutnya</b>: <a href="">Next</a></p>
+<p align="right"><b>Selanjutnya</b>: <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Perintah%20Dasar%20MSFconsole.md">Perintah Dasar MSFconsole</a></p>
