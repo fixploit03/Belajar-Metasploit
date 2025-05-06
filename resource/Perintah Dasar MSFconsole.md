@@ -1,3 +1,5 @@
+<p align="left"><b>Sebelumnya</b>: <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Antarmuka%20Metasploit%20Framework.md">Antarmuka Metasploit Framework</a></p>
+
 ## Perintah Dasar MSFconsole
 
 ### Perintah Navigasi dan Bantuan
@@ -101,3 +103,5 @@ exploit
 | `vulns` | Menampilkan kerentanan yang terdeteksi |
 
 Itu dia perintah dasar MSFconsole.
+
+<p align="right"><b>Selanjutnya</b>: <a href="">Next</a></p>
