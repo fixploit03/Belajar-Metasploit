@@ -74,4 +74,4 @@ Isi folder konfigurasi user:
 
 Itu dia struktur folder dan file penting yang ada di Metasploit Framework.
 
-<p align="right"><b>Sebelumnya</b>: <a href="#">Next</a></p>
+<p align="right"><b>Sebelumnya</b>: <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Antarmuka%20Metasploit%20Framework.md">Antarmuka Metasploit Framework</a></p>
