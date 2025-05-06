@@ -1,25 +1,25 @@
 #include <windows.h>
 #include <stdio.h>
+#include <ntstatus.h>
 
-void CauseMemoryAccessViolationWithGuard() {
-    // Mengalokasikan halaman memori dengan guard
-    SYSTEM_INFO si;
-    GetSystemInfo(&si);
-    size_t pageSize = si.dwPageSize;
+typedef NTSTATUS (NTAPI *pNtRaiseHardError)(NTSTATUS Status, ULONG NumberOfParameters, ULONG UnicodeStringParameterMask, PULONG_PTR Parameters, ULONG ResponseOption, PULONG Response);
 
-    void* mem = VirtualAlloc(NULL, pageSize, MEM_COMMIT, PAGE_GUARD);
+void CauseBSOD() {
+    // Menginisialisasi fungsi NtRaiseHardError dari kernel
+    pNtRaiseHardError NtRaiseHardErrorFunc = (pNtRaiseHardError)GetProcAddress(GetModuleHandle(L"ntdll.dll"), "NtRaiseHardError");
 
-    if (mem == NULL) {
-        printf("VirtualAlloc failed\n");
-        return;
+    if (NtRaiseHardErrorFunc != NULL) {
+        ULONG_PTR error_params[3] = { 0 };
+        // Memicu BSOD dengan memanggil NtRaiseHardError dengan status error tertentu
+        NtRaiseHardErrorFunc(0xC00002B4, 3, 0, error_params, OptionShutdownSystem, NULL);
     }
-
-    // Coba akses memori yang dilindungi oleh guard, yang akan menyebabkan BSOD
-    *((char *)mem) = 'A'; // Ini akan menyebabkan BSOD karena halaman ini dilindungi
 }
 
 int main() {
-    // Memicu BSOD dengan memori terproteksi
-    CauseMemoryAccessViolationWithGuard();
+    printf("Memicu BSOD dengan Kernel\n");
+    
+    // Memicu BSOD
+    CauseBSOD();
+    
     return 0;
 }
