@@ -1,3 +1,5 @@
+<p align="left"><b>Sebelumnya</b>: <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Cara%20Menginstal%20Metasploit%20Framework%20di%20Kali%20Linux.md">Cara Menginstal Metasploit Framework di Kali Linux</a></p>
+
 ## Struktur Folder dan File Penting di Metasploit Framework
 
 Setelah berhasil menginstal Metasploit Framework, penting untuk memahami struktur folder dan file yang ada di Metasploit Framework. Ini akan sangat membantu saat ingin membuat modul sendiri, memahami cara kerja exploit, atau saat troubleshooting.
@@ -71,3 +73,5 @@ Isi folder konfigurasi user:
 |Folder | store	| Tempat penyimpanan setting/pengaturan sementara. |
 
 Itu dia struktur folder dan file penting yang ada di Metasploit Framework.
+
+<p align="right"><b>Sebelumnya</b>: <a href="#">Next</a></p>
