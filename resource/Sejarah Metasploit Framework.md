@@ -2,6 +2,8 @@
 
 ## Sejarah Metasploit Framework 
 
+![](https://github.com/fixploit03/Belajar-Metasploit/blob/main/img/Sejarah%20Metasploit%20Framework.jpg)
+
 **Metasploit dibuat oleh [H. D. Moore](https://en.m.wikipedia.org/wiki/H._D._Moore) pada tahun 2003 sebagai alat jaringan portabel yang ditulis menggunakan bahasa [Perl](https://en.m.wikipedia.org/wiki/Perl). Pada tahun 2007, Metasploit Framework telah sepenuhnya ditulis ulang menggunakan bahasa [Ruby](https://en.m.wikipedia.org/wiki/Ruby_(programming_language)).** Pada tanggal 21 Oktober 2009, Proyek Metasploit mengumumkan bahwa mereka telah diakuisisi oleh [Rapid7](https://www.rapid7.com/), sebuah perusahaan keamanan yang menyediakan solusi manajemen kerentanan secara terpadu.
 
 Seperti produk komersial sejenis seperti [Canvas](https://www.e-spincorp.com/canvas-product-overview/#:~:text=Launching%20client%20side%20exploits%20is,process%20that%20has%20been%20exploited.&text=On%20top%20of%20standard%20per,as%20early%20phase%20as%20possible.) milik [Immunity](https://www.e-spincorp.com/immunity/) atau [Core Impact](https://www.coresecurity.com/products/core-impact) milik [Core Security Technologies](https://www.coresecurity.com/), Metasploit dapat digunakan untuk menguji kerentanan sistem komputer atau untuk membobol sistem jarak jauh. Seperti banyak alat keamanan informasi lainnya, Metasploit dapat digunakan untuk aktivitas yang sah maupun yang tidak sah. Sejak akuisisi terhadap Metasploit Framework, Rapid7 telah menambahkan edisi proprietary open core bernama Metasploit Pro.
