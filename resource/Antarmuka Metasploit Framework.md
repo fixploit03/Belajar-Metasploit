@@ -27,4 +27,4 @@ msf6 >
 ```
 
 
-<p align="right"><b>Sebelumnya</b>: <a href="">Next</a></p>
+<p align="right"><b>Selanjutnya</b>: <a href="">Next</a></p>
