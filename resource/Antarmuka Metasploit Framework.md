@@ -26,5 +26,6 @@ dan prompt seperti ini:
 msf6 >
 ```
 
+Itu dia antarmuka Metasploit Framework.
 
 <p align="right"><b>Selanjutnya</b>: <a href="">Next</a></p>
