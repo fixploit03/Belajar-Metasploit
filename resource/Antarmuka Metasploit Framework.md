@@ -1,6 +1,6 @@
 <p align="left"><b>Sebelumnya</b>: <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Struktur%20Folder%20dan%20File%20Penting%20di%20Metasploit%20Framework.md">Struktur Folder dan File Penting di Metasploit Framework</a></p>
 
-## Antarmuka Metasploit Framework
+# Antarmuka Metasploit Framework
 
 Metasploit Framework memiliki antarmuka berbasis Command Line Interface (CLI).
 ## Menjalankan Metasploit Framework 
