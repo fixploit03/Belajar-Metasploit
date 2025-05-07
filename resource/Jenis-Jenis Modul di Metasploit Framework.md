@@ -1,4 +1,4 @@
-<p align="left"><b>Sebelumnya</b>: <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Perintah%20Dasar%20MSFconsole.md">Perintah Dasar MSFconsolek</a></p>
+<p align="left"><b>Sebelumnya</b>: <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Perintah%20Dasar%20MSFconsole.md">Perintah Dasar MSFconsole</a></p>
 
 
 
