@@ -16,3 +16,4 @@
 - [Antarmuka Metasploit Framework](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Antarmuka%20Metasploit%20Framework.md)
 - [Perintah Dasar MSFconsole](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Perintah%20Dasar%20MSFconsole.md)
 - [Jenis-Jenis Modul di Metasploit Framework](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Jenis-Jenis%20Modul%20di%20Metasploit%20Framework.md)
+- [Menjalankan Eksploitasi dengan Metasploit Framework](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Menjalankan%20Exploitasi%20dengan%20Metasploit.md)
