@@ -1,3 +1,7 @@
+<p align="left"><b>Sebelumnya</b>: <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Perintah%20Dasar%20MSFconsole.md">Perintah Dasar MSFconsolek</a></p>
+
+
+
 # Jenis-Jenis Modul di Metasploit Framework
 
 Metasploit Framework memiliki berbagai jenis modul yang memiliki fungsi dan peran masing-masing dalam proses eksploitasi dan pengujian keamanan.
@@ -35,8 +39,6 @@ Modul Post digunakan setelah berhasil eksploitasi, biasanya setelah kita mendapa
 ## 4. Modul Payload
 
 Modul Payload merupakan Bagian kode yang akan dijalankan setelah exploit berhasil. Payload bisa berupa shell, meterpreter, dan lainnya.
-
-<p align="right"><b>Selanjutnya</b>: <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Menjalankan%20Eksploitasi%20dengan%20Metasploit%20Framework.md">Menjalankan Eksploitasi dengan Metasploit Framework</a></p>
 
 **Jenis-jenis Payload**:
 
@@ -130,3 +132,5 @@ Modul Evasion merupakan modul baru di Metasploit (sejak 2019), digunakan untuk m
 - `evasion/windows/syscall_inject`
 
 Itu dia jenis-jenis modul yang ada di Metasploit Framework.
+
+<p align="right"><b>Selanjutnya</b>: <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Menjalankan%20Eksploitasi%20dengan%20Metasploit%20Framework.md">Menjalankan Eksploitasi dengan Metasploit Framework</a></p>
