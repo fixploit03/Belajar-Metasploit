@@ -36,6 +36,8 @@ Modul Post digunakan setelah berhasil eksploitasi, biasanya setelah kita mendapa
 
 Modul Payload merupakan Bagian kode yang akan dijalankan setelah exploit berhasil. Payload bisa berupa shell, meterpreter, dan lainnya.
 
+<p align="right"><b>Selanjutnya</b>: <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Menjalankan%20Eksploitasi%20dengan%20Metasploit%20Framework.md">Menjalankan Eksploitasi dengan Metasploit Framework</a></p>
+
 **Jenis-jenis Payload**:
 
 - **Singles**: Payload mandiri, tidak butuh komponen lain
