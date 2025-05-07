@@ -36,7 +36,7 @@ Modul Post digunakan setelah berhasil eksploitasi, biasanya setelah kita mendapa
 
 Modul Payload merupakan Bagian kode yang akan dijalankan setelah exploit berhasil. Payload bisa berupa shell, meterpreter, dan lainnya.
 
-**Jenis Payload**:
+**Jenis-jenis Payload**:
 
 - **Singles**: Payload mandiri, tidak butuh komponen lain
 - **Stagers**: Mengatur komunikasi untuk menerima stager lainnya
