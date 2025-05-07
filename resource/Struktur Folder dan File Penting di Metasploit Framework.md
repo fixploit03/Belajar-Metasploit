@@ -72,6 +72,4 @@ Isi folder konfigurasi user:
 | Folder | `plugins` | Plugin tambahan yang bisa dimuat pengguna. |
 |Folder | `store` | Tempat penyimpanan setting/pengaturan sementara. |
 
-Itu dia struktur folder dan file penting yang ada di Metasploit Framework.
-
 <p align="right"><b>Selanjutnya</b>: <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Antarmuka%20Metasploit%20Framework.md">Antarmuka Metasploit Framework</a></p>
