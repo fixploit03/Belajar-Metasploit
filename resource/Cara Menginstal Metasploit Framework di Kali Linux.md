@@ -54,6 +54,4 @@ Kalo output-nya seperti ini:
 [*] Connected to msf. Connection type: postgresql.
 ```
 
-Itu tandanya kamu sudah berhasil menginstal Metasploit Framework lengkap bareng database PostgreSQL-nya.
-
 <p align="right"><b>Selanjutnya</b>: <a href="Struktur Folder dan File Penting di Metasploit Framework.md">Struktur Folder dan File Penting di Metasploit Framework</a></p>
