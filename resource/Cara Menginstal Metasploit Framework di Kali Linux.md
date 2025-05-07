@@ -1,8 +1,8 @@
 <p align="left"><b>Sebelumnya</b>: <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Sejarah%20Metasploit%20Framework.md">Sejarah Metasploit Framework</a></p>
 
-## Cara Menginstal Metasploit Framework di Kali Linux
+# Cara Menginstal Metasploit Framework di Kali Linux
 
-### Masuk ke Mode root
+## Masuk ke Mode root
 
 ```
 sudo -i
@@ -10,13 +10,13 @@ sudo -i
 
 Masukkan password-nya.
 
-### Update Sistem
+## Update Sistem
 
 ```
 apt-get update && apt-get upgrade
 ```
 
-### Instal Metasploit Framework
+## Instal Metasploit Framework
 
 ```
 apt-get install metasploit-framework
