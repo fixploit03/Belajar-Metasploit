@@ -104,4 +104,4 @@ exploit
 
 Itu dia perintah dasar MSFconsole.
 
-<p align="right"><b>Selanjutnya</b>: <a href="">Next</a></p>
+<p align="right"><b>Selanjutnya</b>: <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Jenis-Jenis%20Modul%20di%20Metasploit%20Framework.md">Jenis-Jenis Modul di Metasploit Framework</a></p>
