@@ -56,6 +56,6 @@ Kalo output-nya seperti ini:
 
 Itu tandanya kamu sudah berhasil menginstal Metasploit Framework lengkap bareng database PostgreSQL-nya.
 
-Itu dia cara menginstal Metasploit Framework di Kali Linux.
+Itu dia bagaimana caranya menginstal Metasploit Framework di Kali Linux.
 
 <p align="right"><b>Selanjutnya</b>: <a href="Struktur Folder dan File Penting di Metasploit Framework.md">Struktur Folder dan File Penting di Metasploit Framework</a></p>
