@@ -44,7 +44,7 @@ Modul Payload merupakan Bagian kode yang akan dijalankan setelah exploit berhasi
 
 ### A. Payload Singles
 
-Payload Singles adalah payload mandiri (standalone) yang tidak membutuhkan bagian lain untuk dijalankan. Artinya, seluruh kode yang dibutuhkan untuk dieksekusi sudah ada di dalam payload itu sendiri.
+Payload Singles adalah jenis payload yang bekerja secara langsung dan tanpa membutuhkan tahap tambahan. Payload jenis ini sudah selesai dalam satu langkah dan tidak memerlukan stager atau proses tambahan lainnya untuk berfungsi. Pada dasarnya, payload ini sudah menjadi sebuah eksploitasi yang lengkap dan siap dijalankan setelah eksploitasi berhasil.
 
 ### Karakteristik Payload Singles
 
@@ -63,7 +63,7 @@ Payload Singles adalah payload mandiri (standalone) yang tidak membutuhkan bagia
 
 ### B. Payload Stagers
 
-Payload Stagers adalah payload kecil yang bertugas untuk membuka koneksi awal dan kemudian mengunduh payload utama (stage) dari attacker ke target. Ini membuat payload utama bisa lebih besar dan kompleks karena tidak dikirim langsung dari awal.
+Payload Stagers adalah payload yang bertanggung jawab untuk membuat koneksi awal ke mesin target dan mengunduh payload tahap kedua (stage). Biasanya, payload stager berfungsi sebagai jembatan untuk mengunduh payload yang lebih besar dan lebih kompleks ke target. Payload Stagers digunakan untuk memastikan payload yang lebih besar bisa masuk tanpa terlalu terdeteksi oleh mekanisme pertahanan.
 
 ### Karakteristik Payload Stagers
 
@@ -82,7 +82,7 @@ Payload Stagers adalah payload kecil yang bertugas untuk membuka koneksi awal da
 
 ### C. Payload Stages
 
-Payload Stages adalah bagian utama dari payload yang dikirim setelah stager berhasil membuka koneksi. Stage berisi fungsionalitas lanjutan seperti Meterpreter, command shell lanjutan, atau fitur post-exploitation lainnya.
+Payload Stages adalah bagian kedua dari payload yang diunduh setelah stager berhasil menjalankan tugasnya. Stages adalah payload yang lebih besar dan lebih kompleks dibandingkan dengan stager. Biasanya, payload Stages membawa fitur-fitur lanjutan yang jauh lebih canggih, seperti Meterpreter, yang memungkinkan penyerang melakukan berbagai aksi di sistem target.
 
 | Fitur	| Penjelasan |
 |:--:|:--:|
