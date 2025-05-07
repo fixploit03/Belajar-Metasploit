@@ -2,7 +2,8 @@
 
 # Antarmuka Metasploit Framework
 
-Metasploit Framework memiliki antarmuka berbasis Command Line Interface (CLI).
+`msfconsole` adalah antarmuka utama untuk Metasploit Framework. Metasploit Framework memiliki antarmuka berbasis Command Line Interface (CLI).
+
 ## Menjalankan Metasploit Framework 
 
 ```
