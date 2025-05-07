@@ -169,6 +169,4 @@ set targets 1
 exploit
 ```
 
-Itu dia perintah-perintah dasar yang ada di MSFconsole.
-
 <p align="right"><b>Selanjutnya</b>: <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Jenis-Jenis%20Modul%20di%20Metasploit%20Framework.md">Jenis-Jenis Modul di Metasploit Framework</a></p>
