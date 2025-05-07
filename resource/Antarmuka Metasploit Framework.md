@@ -27,6 +27,6 @@ dan prompt seperti ini:
 msf6 >
 ```
 
-Itu dia antarmuka Metasploit Framework.
+Itu dia sedikit penjelasan mengenai antarmuka yang ada di Metasploit Framework.
 
 <p align="right"><b>Selanjutnya</b>: <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Perintah%20Dasar%20MSFconsole.md">Perintah Dasar MSFconsole</a></p>
