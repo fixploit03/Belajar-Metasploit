@@ -131,6 +131,4 @@ Modul Evasion merupakan modul baru di Metasploit (sejak 2019), digunakan untuk m
 - `evasion/windows/applocker_evasion_msbuild`
 - `evasion/windows/syscall_inject`
 
-Itu dia jenis-jenis modul yang ada di Metasploit Framework.
-
 <p align="right"><b>Selanjutnya</b>: <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Menjalankan%20Eksploitasi%20dengan%20Metasploit%20Framework.md">Menjalankan Eksploitasi dengan Metasploit Framework</a></p>
