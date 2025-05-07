@@ -119,7 +119,7 @@ Modul NOP Digunakan untuk membuat "NOP sled" agar exploit lebih stabil. NOP adal
 
 ## 7. Modul Evasion
 
-Modul baru di Metasploit (sejak 2019), digunakan untuk membuat payload yang bisa menghindari deteksi antivirus. Biasanya digabung dengan encoding dan teknik obfuscation lain.
+Modul Evasion merupakan modul baru di Metasploit (sejak 2019), digunakan untuk membuat payload yang bisa menghindari deteksi antivirus. Biasanya digabung dengan encoding dan teknik obfuscation lain.
 
 **Contoh:**
 
