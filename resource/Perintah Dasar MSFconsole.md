@@ -2,37 +2,126 @@
 
 # Perintah Dasar MSFconsole
 
-## Perintah Navigasi dan Bantuan
+`msfconsole` adalah antarmuka utama untuk Metasploit Framework.
+
+## Perintah Inti
 
 | Perintah | Deskripsi |
 |:--:|:--:|
-| `help` | Menampilkan daftar perintah yang tersedia |
-| `help [perintah]` | Menampilkan bantuan untuk perintah tertentu |
-| `back` | Kembali dari konteks modul ke prompt utama |
-| `exit` | Keluar dari MSFconsole |
-| `version` | Menampilkan versi Metasploit Framework |
+| `?` | Menampilkan menu bantuan |
+| `banner` | Menampilkan banner Metasploit yang keren |
+| `cd` | Mengubah direktori kerja saat ini |
+| `color` | Mengaktifkan atau menonaktifkan warna |
+| `connect` | Berkomunikasi dengan sebuah host |    
+| `debug` | Menampilkan informasi yang berguna untuk debugging |
+| `exit` | Keluar dari konsol |
+| `features` | Menampilkan daftar fitur yang belum dirilis namun bisa diaktifkan |
+| `get` | Mengambil nilai dari variabel konteks-spesifik |
+| `getg` | Mengambil nilai dari variabel global |
+| `grep` | Menyaring output dari perintah lain menggunakan grep |
+| `help` | Menampilkan menu bantuan | 
+| `history` | Menampilkan riwayat perintah |
+| `load` | Memuat plugin framework |
+| `quit` | Keluar dari konsol |
+| `repeat` | Mengulang daftar perintah |
+| `route` | Merutekan lalu lintas melalui sebuah sesi |
+| `save` | Menyimpan data aktif (datastore) |
+| `sessions` | Menampilkan daftar sesi dan informasi tentang sesi |
+| `set` | Mengatur variabel konteks-spesifik ke nilai tertentu |
+| `setg` | Mengatur variabel global ke nilai tertentu |   
+| `sleep` | Berdiam selama beberapa detik yang ditentukan |  
+| `spool` | Menulis output konsol ke dalam file dan layar secara bersamaan |
+| `threads` | Melihat dan mengelola thread latar belakang |
+| `tips` | Menampilkan daftar tips produktivitas yang berguna |
+| `unload` | Menghapus plugin framework yang dimuat |
+| `unset` | Menghapus satu atau lebih variabel konteks-spesifik |
+| `unsetg` | Menghapus satu atau lebih variabel global |
+| `version` | Menampilkan versi framework dan pustaka konsol |
 
-## Perintah Pencarian dan Informasi
+## Perintah Modul
 
 | Perintah | Deskripsi |
 |:--:|:--:|
-| `search [kata kunci]` | Mencari modul berdasarkan kata kunci |
-| `info [modul]` | Menampilkan informasi tentang modul tertentu |
-| `show exploits` | Menampilkan semua modul exploit yang tersedia |
-| `show auxiliary` | Menampilkan semua modul auxiliary yang tersedia |
-| `show payloads` | Menampilkan semua payload yang tersedia |
-| `show options` | Menampilkan opsi yang tersedia untuk modul yang dipilih |
+| `advanced` | Menampilkan opsi lanjutan untuk satu atau lebih modul |
+| `back` | Kembali ke konteks sebelumnya dari modul saat ini |
+| `clearm` | Menghapus tumpukan modul |
+| `favorite` | Menambahkan modul ke daftar modul favorit |
+| `favorites` | Menampilkan daftar modul favorit (alias dari `show favorites`) |
+| `info` | Menampilkan informasi tentang satu atau lebih modul |
+| `listm` | Menampilkan daftar tumpukan modul |
+| `loadpath` | Mencari dan memuat modul dari sebuah path |
+| `options` | Menampilkan opsi global atau opsi untuk satu atau lebih modul |
+| `popm` | Mengeluarkan modul terakhir dari tumpukan dan mengaktifkannya |
+| `previous` | Mengatur modul yang terakhir dimuat sebagai modul aktif |
+| `pushm` | Menambahkan modul aktif (atau daftar modul) ke dalam tumpukan modul |
+| `reload_all` | Memuat ulang semua modul dari semua path modul yang telah didefinisikan |
+| `search` | Mencari berdasarkan nama dan deskripsi modul |
+| `show` | Menampilkan modul berdasarkan tipe tertentu atau semua modul |
+| `use` | Berinteraksi dengan modul berdasarkan nama atau hasil pencarian/indeks |
 
-## Penggunaan Modul
+## Perintah Job
 
 | Perintah | Deskripsi |
 |:--:|:--:|
-| `use [path modul]` | Memilih modul untuk digunakan |
-| `set [opsi] [nilai]` | Mengatur nilai untuk opsi tertentu |
-| `setg [opsi] [nilai]` | Mengatur nilai global untuk opsi tertentu |
-| `uset [opsi]` | Menghapus nilai opsi |
-| `check` | Memeriksa apakah target rentan (tidak semua modul mendukung) |
-| `run` atau `exploit` | Menjalankan modul yang dipilih |
+| `handler` | Menjalankan handler payload sebagai sebuah job |
+| `jobs` | Menampilkan dan mengelola daftar job yang berjalan |
+| `kill` | Menghentikan (membunuh) sebuah job |
+| `rename_job` | Mengganti nama sebuah job |
+
+## Perintah Resource Script
+
+| Perintah  | Deskripsi |
+|:--:|:--:|
+| `makerc` | Menyimpan semua perintah yang telah dijalankan ke dalam sebuah file |
+| `resource` | Menjalankan perintah-perintah yang disimpan dalam sebuah file |
+
+## Perintah Backend Database
+
+| Perintah | Deskripsi |
+|:--:|:--:|
+| `analyze` | Menganalisis informasi database tentang alamat atau rentang alamat tertentu |
+| `db_connect` | Terhubung ke layanan data yang sudah ada |
+| `db_disconnect` | Memutuskan koneksi dari layanan data saat ini |
+| `db_export` | Mengekspor isi database ke dalam sebuah file |
+| `db_import` | Mengimpor file hasil pemindaian (jenis file akan terdeteksi otomatis) |
+| `db_nmap` | Menjalankan nmap dan merekam output-nya secara otomatis |
+| `db_rebuild_cache` | Membangun ulang cache modul yang disimpan di database (tidak disarankan) |
+| `db_remove` | Menghapus entri layanan data yang tersimpan |
+| `db_save` | Menyimpan koneksi layanan data saat ini sebagai default saat startup |
+| `db_stats` | Menampilkan statistik database |
+| `db_status` | Menampilkan status layanan data saat ini |
+| `hosts` | Menampilkan semua host dalam database |
+| `klist` | Menampilkan daftar tiket Kerberos di database |
+| `loot` | Menampilkan semua loot dalam database |
+| `notes` | Menampilkan semua catatan (notes) dalam database |
+| `services` | Menampilkan semua layanan dalam database |
+| `vulns` | Menampilkan semua kerentanan (vulnerabilities) dalam database |
+| `workspace` | Berpindah antar workspace database |
+
+## Perintah Backend Kredensial
+
+| Perintah | Deskripsi |
+|:--:|:--:|
+| `creds`  | Menampilkan semua kredensial yang ada di database |
+
+## Perintah Pengembang (Developer)
+
+| Perintah | Deskripsi |
+|:--:|:--:|
+| `edit` | Mengedit modul saat ini atau file dengan editor pilihan |
+| `irb` | Membuka shell interaktif Ruby dalam konteks saat ini |
+| `log` | Menampilkan `framework.log` dan menggulir ke akhir jika memungkinkan |
+| `pry` | Membuka debugger Pry pada modul saat ini atau pada kerangka Metasploit |
+| `reload_lib` | Memuat ulang file pustaka Ruby dari path yang ditentukan |
+| `time` | Menghitung berapa lama waktu yang dibutuhkan untuk menjalankan perintah tertentu |
+
+## Perintah DNS
+
+| Perintah | Deskripsi |
+|----------|------------------------------------------------------------|
+| `dns` | Mengelola perilaku resolving DNS di dalam Metasploit |
+
+Untuk informasi lebih lanjut tentang perintah tertentu, gunakan `<perintah> -h` atau `help <perintah>`.
 
 ## Contoh Penggunaan Dasar
 
@@ -81,26 +170,6 @@ set targets 1
 # Menjalankan eksploitasi
 exploit
 ```
-
-## Fitur Tambahan MSFconsole
-
-### Mengelola Sesi 
-
-| Perintah | Deskripsi |
-|:--:|:--:|
-| `sessions -l` | Menampilkan semua sesi yang aktif |
-| `sessions -i [id]` | Berinteraksi dengan sesi tertentu |
-| `sessions -k [id]` | Menghentikan sesi tertentu |
-
-### Manajemen Database
-
-| Perintah | Deskripsi |
-|:--:|:--:|
-| `db_status` | Memeriksa status koneksi database |
-| `workspace` | Menampilkan dan mengelola workspace | 
-| `hosts` | Menampilkan host yang tersimpan di database |
-| `services` | Menampilkan layanan yang tersimpan di database |
-| `vulns` | Menampilkan kerentanan yang terdeteksi |
 
 Itu dia perintah dasar MSFconsole.
 
