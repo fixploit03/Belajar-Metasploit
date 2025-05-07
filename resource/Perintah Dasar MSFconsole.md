@@ -2,8 +2,6 @@
 
 # Perintah Dasar MSFconsole
 
-`msfconsole` adalah antarmuka utama untuk Metasploit Framework.
-
 ## Perintah Inti
 
 | Perintah | Deskripsi |
