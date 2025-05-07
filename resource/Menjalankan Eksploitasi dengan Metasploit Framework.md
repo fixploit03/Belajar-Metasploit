@@ -125,5 +125,3 @@ Eksploitasi di Metasploit Framework memerlukan:
 3. Kesabaran dan analisa ketika exploit gagal
 
 Dengan latihan dan memahami pola kerja eksploitasi, kamu bisa mengeksekusi serangan yang lebih kompleks dan efisien.
-
-Itu dia bagaimana caranya menjalankan eksploitasi dengan Metasploit Framework.
