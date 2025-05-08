@@ -118,6 +118,6 @@ sessions -i 1
 
 | Masalah | Penyebab Umum | Solusi |
 |:--:|:--:|:--:|
-| Tidak ada koneksi masuk | IP/Port salah | Pastikan LHOST/LPORT sesuai|
-| Payload terdeteksi AV | Payload tidak diencode | Gunakan -e encoder di msfvenom |
+| Tidak ada koneksi masuk | `IP/Port` salah | Pastikan `LHOST/LPORT` sesuai|
+| Payload terdeteksi AV | Payload tidak diencode | Gunakan `-e` encoder di `msfvenom` |
 | Listener tidak merespons | Port diblokir | Ganti port atau periksa firewall |
