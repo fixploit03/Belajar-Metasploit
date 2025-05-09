@@ -4,7 +4,16 @@
 4 | OK
 5 | OK
 6 | OK
+7 | OK
+8 | OK
+9 | OK
+10 | OK
+11 | 
+12 | OK *
 16 | OK
 17 | OK
 18 | OK
 19 | OK
+
+Titik di bagian list.
+Uji coba command secara real.
