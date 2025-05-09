@@ -1,8 +1,8 @@
-1 | OK
-2 | OK
-3 | OK
-4 | OK
-5 | OK
+1 | OK GAS
+2 | OK GAS
+3 | OK GAS
+4 | OK GAS
+5 | OK GAS
 6 | OK
 7 | OK
 8 | OK
