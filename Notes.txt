@@ -3,7 +3,7 @@
 3 | OK GAS
 4 | OK GAS
 5 | OK GAS
-6 | OK
+6 | OK GAS
 7 | OK
 8 | OK
 9 | OK
