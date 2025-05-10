@@ -8,15 +8,16 @@
 8 | ***
 9 | ***
 10 | ***
-11 | OK GAS
-12 | OK GAS
-13 | OK *
-14 | OK GAS
+11 | ***
+12 | ***
+13 | ***
+14 | ***
 
-16 | OK GASS
-17 | OK GASS
+16 | ***
+17 | ***
 18 | OK
 19 | OK GASS
+20 | ***
 
 Titik di bagian list.
 Uji coba command secara real.
