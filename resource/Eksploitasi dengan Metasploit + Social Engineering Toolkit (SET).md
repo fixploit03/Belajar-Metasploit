@@ -160,7 +160,7 @@ Contoh skenario:
    set:webattack> IP address for the POST back in Harvester/Tabnabbing [192.168.1.42]:
    ```
 
-6. Pada tahap ini, kita diminta untuk memasukkan alamat IP yang akan digunakan sebagai tujuan `POST back`. Anda bisa langsung menekan `Enter` untuk menggunakan alamat IP default (yang terdeteksi otomatis):
+6. Pada tahap ini, kita diminta untuk memasukkan alamat IP yang akan digunakan sebagai tujuan `POST back`. Kamu bisa langsung menekan `Enter` untuk menggunakan alamat IP default (yang terdeteksi otomatis):
 
    ```
    [-] SET supports both HTTP and HTTPS
@@ -193,7 +193,7 @@ Contoh skenario:
    [*] WHEN YOU'RE FINISHED, HIT CONTROL-C TO GENERATE A REPORT.
    ```
 
-   Boom...! Selamat Anda sudah mendapatkan `username/email` dan `password` yang benar. Sekarang Anda bisa login ke website SIMAK UI dengan kredensial tersebut:
+   Boom...! Selamat kamu sudah mendapatkan `username/email` dan `password` yang benar. Sekarang kamu bisa login ke website SIMAK UI dengan kredensial tersebut:
 
    ```
    username=adminui@ui.ac.id
@@ -356,7 +356,7 @@ Contoh skenario:
    session -i 1
    ```
 
-   Tara...! Selamat Anda sudah masuk ke sesi Meterpreter-nya. Di sini Anda bisa melakukan banyak hal.
+   Tara...! Selamat kamu sudah masuk ke sesi Meterpreter-nya. Di sini kamu bisa melakukan banyak hal.
     
 ## F. Etika & Hukum
 
