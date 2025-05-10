@@ -13,21 +13,21 @@ Contoh serangan social engineering:
 
 ## B. Instalasi dan Setup
 
-### 1. Install SET (Social Engineering Toolkit):
+1. Install SET (Social Engineering Toolkit):
 
    ```
    sudo apt update
    sudo apt install set
    ```
 
-### 2. Setup dan jalankan Metasploit:
+2. Setup dan jalankan Metasploit:
 
-  ```
-  sudo msfdb init
-  sudo msfconsole
-  ```
-
-  > Kalau belum diinstal Metasploit-nya, instal dengan: `sudo apt-get install metasploit-framework`
+   ```
+   sudo msfdb init
+   sudo msfconsole
+   ```
+   
+   > Kalau belum diinstal Metasploit-nya, instal dengan: `sudo apt-get install metasploit-framework`
 
 ## C. Skema Serangan Umum
 
