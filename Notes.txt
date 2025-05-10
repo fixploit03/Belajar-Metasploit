@@ -8,12 +8,12 @@
 8 | OK GAS
 9 | OK GAS
 10 | OK GAS
-11 | 
-12 | OK *
+11 | OK GAS
+12 | OK GAS
 13 | OK *
-14 | OK *
+14 | OK GAS
 
-16 | OK *
+16 | OK GASS
 17 | OK **
 18 | OK
 19 | OK
