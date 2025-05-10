@@ -1,22 +1,22 @@
-1 | OK GAS
-2 | OK GAS
-3 | OK GAS
-4 | OK GAS
-5 | OK GAS
-6 | OK GAS
-7 | OK GAS
-8 | OK GAS
-9 | OK GAS
-10 | OK GAS
+1 | ***
+2 | ***
+3 | ***
+4 | ***
+5 | ***
+6 | ***
+7 | ***
+8 | ***
+9 | ***
+10 | ***
 11 | OK GAS
 12 | OK GAS
 13 | OK *
 14 | OK GAS
 
 16 | OK GASS
-17 | OK **
+17 | OK GASS
 18 | OK
-19 | OK
+19 | OK GASS
 
 Titik di bagian list.
 Uji coba command secara real.
