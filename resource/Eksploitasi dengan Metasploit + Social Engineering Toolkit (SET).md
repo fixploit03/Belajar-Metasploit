@@ -193,7 +193,7 @@ Contoh skenario:
    [*] WHEN YOU'RE FINISHED, HIT CONTROL-C TO GENERATE A REPORT.
    ```
 
-Boom...! Selamat Anda sudah mendapatkan `username/email` dan `password` yang benar. Sekarang Anda bisa login ke website SIMAK UI dengan kredensial tersebut:
+   Boom...! Selamat Anda sudah mendapatkan `username/email` dan `password` yang benar. Sekarang Anda bisa login ke website SIMAK UI dengan kredensial tersebut:
 
    ```
    username=adminui@ui.ac.id
