@@ -30,7 +30,7 @@ Metasploit memungkinkan kita untuk:
 | `NOPs` | Padding agar payload berjalan stabil |
 | `Auxiliary` | Modul tambahan seperti `scanner`, `DoS`, `dll` |
 | `Post` | Modul pasca-eksploitasi seperti dump password |
-| `Listener (multi/handler)` | Menunggu koneksi dari target | 
+| `Listener` | Menunggu koneksi dari target | 
 | `msfconsole` | Antarmuka utama berbasis command line |
 | `msfvenom` | Tool untuk membuat custom payload |
 | `Meterpreter` | Shell interaktif yang powerful setelah target berhasil dieksploitasi |
