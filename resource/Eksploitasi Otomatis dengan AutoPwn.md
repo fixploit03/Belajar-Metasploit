@@ -20,7 +20,7 @@ Prasyarat:
 
 ### 1. Setup AutoPwn
 
-1. Jalankan Metasploit
+1. Jalankan Metasploit:
 
    ```
    msfconsole
@@ -64,7 +64,6 @@ Prasyarat:
 ### 2. Teknik Penyebaran
 
    Kirim URL ke korban: http://192.168.1.100/
-
    - Jika browser rentan (`IE6`, `Firefox 10`, `dll`), exploit akan dikirim.
    - Otomatis membuka sesi meterpreter.
 
@@ -76,11 +75,12 @@ Prasyarat:
    sessions -l
    ```
 
-   Interaksi:
+Interaksi:
 
    ```
    sessions -i 1
    ```
+
 ### 4. Alternatif: Auto Exploitation dengan Exploit Suggestion
 
    Langkah:
@@ -100,7 +100,7 @@ Prasyarat:
    ```
 
 ## Catatan Etis dan Legal
-   - AutoPwn hanya boleh digunakan dalam lab atau lingkungan izin.
-   - Jangan digunakan terhadap sistem publik atau tanpa persetujuan.
-   - Risiko legal dan etika sangat tinggi jika digunakan sembarangan.
+- AutoPwn hanya boleh digunakan dalam lab atau lingkungan izin.
+- Jangan digunakan terhadap sistem publik atau tanpa persetujuan.
+- Risiko legal dan etika sangat tinggi jika digunakan sembarangan.
 
