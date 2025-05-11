@@ -8,12 +8,12 @@ Mengintegrasikan `Nmap` dan `Nikto` ke dalam workflow Metasploit akan mempercepa
 
 ## A. Integrasi Metasploit dengan Nmap
 
-**Tujuan:**
+Tujuan:
 - Mendapatkan port terbuka dan service target.
 - Memasukkan hasil Nmap ke dalam database Metasploit.
 - Langsung menggunakan hasil untuk eksploitasi.
 
-**Langkah-Langkah:**
+Langkah-Langkah:
 
 1. Menjalankan Nmap dari Luar Metasploit (dengan output XML):
 
@@ -49,7 +49,7 @@ Mengintegrasikan `Nmap` dan `Nikto` ke dalam workflow Metasploit akan mempercepa
      msf6 > search type:exploit name:apache
      ```
 
-5. Alternatif: Jalankan Nmap langsung dari dalam Metasploit:
+4. Alternatif: Jalankan Nmap langsung dari dalam Metasploit:
 
    ```
    msf6 > nmap -sS -sV 192.168.1.10
@@ -59,12 +59,12 @@ Mengintegrasikan `Nmap` dan `Nikto` ke dalam workflow Metasploit akan mempercepa
 
 ## B. Integrasi Metasploit dengan Nikto
 
-**Tujuan:**
+Tujuan:
 - Scan celah keamanan umum di aplikasi web (misalnya `XSS`, `LFI`, `directory listing`)
 - Mengetahui struktur direktori web
 - Menemukan file dan path sensitif sebelum eksploitasi
 
-**Langkah-Langkah:**
+Langkah-Langkah:
 
 1. Jalankan Nikto dan Sinpan Output:
 
