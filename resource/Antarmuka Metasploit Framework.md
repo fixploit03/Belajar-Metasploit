@@ -2,7 +2,7 @@
 
 `Metasploit Framework` memiliki beberapa antarmuka yang bisa digunakan oleh user, mulai dari CLI (Command Line Interface) hingga GUI (Graphical User Interface). Namun, yang paling sering digunakan dan paling powerful adalah CLI melalui `msfconsole`.
 
-**Jenis-jenis Antarmuka Metasploit:**
+Jenis-jenis Antarmuka Metasploit:
 
 | Antarmuka | Deskripsi |
 |:--:|:--:|
