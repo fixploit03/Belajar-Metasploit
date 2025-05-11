@@ -1,4 +1,4 @@
-# Bruteforce Login Modul di Metasploit
+# ModulBruteforce Login di Metasploit
 
 Metasploit Framework memiliki banyak modul auxiliary yang mendukung bruteforce login terhadap berbagai layanan seperti `SSH`, `FTP`, `HTTP`, `SMB`, `dll`. Modul ini berguna untuk menguji kekuatan kredensial yang digunakan oleh target dan sering dipakai dalam fase credential access saat penetration testing.
 
@@ -14,21 +14,21 @@ Metasploit Framework memiliki banyak modul auxiliary yang mendukung bruteforce l
 
 ## B. Bruteforce SSH dengan `ssh_login`
 
-Langkah-langkah:
+**Langkah-langkah:**
 
-### 1. Gunakan Modul:
+1. Gunakan Modul:
 
    ```
    use auxiliary/scanner/ssh/ssh_login
    ```
 
-### 2. Lihat Opsi Konfigurasi:
+2. Lihat Opsi Konfigurasi:
 
    ```
    show options
    ```
 
-### 3. Setting Target dan Payload:
+3. Setting Target dan Payload:
 
    ```
    set RHOSTS <IP TARGET>
