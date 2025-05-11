@@ -1,7 +1,6 @@
 # Integrasi Metasploit dengan Nmap dan Nikto
 
 Metasploit Framework bukan hanya alat eksploitasi, ia juga mendukung integrasi dengan berbagai tool eksternal untuk memperkuat proses enumerasi dan analisis target. Dua tool penting yang sering digunakan bersama Metasploit adalah:
-
 - [Nmap](https://nmap.org/): Untuk port scanning dan service detection.
 - [Nikto](https://www.cirt.net/Nikto2): Untuk web vulnerability scanning.
 
@@ -16,47 +15,47 @@ Mengintegrasikan `Nmap` dan `Nikto` ke dalam workflow Metasploit akan mempercepa
 
 **Langkah-Langkah:**
 
-### 1. Menjalankan Nmap dari Luar Metasploit (dengan output XML):
+1. Menjalankan Nmap dari Luar Metasploit (dengan output XML):
 
-```
-nmap -sS -sV -O -oX scan.xml 192.168.1.10
-```
+   ```
+   nmap -sS -sV -O -oX scan.xml 192.168.1.10
+   ```
 
-**Keterangan:**
-- `-sS`: SYN scan (stealth)
-- `-sV`: Deteksi versi
-- `-O`: Deteksi OS
-- `-oX`: Output XML (penting untuk diimpor ke Metasploit)
+   Keterangan:
+   - `-sS`: SYN scan (stealth)
+   - `-sV`: Deteksi versi
+   - `-O`: Deteksi OS
+   - `-oX`: Output XML (penting untuk diimpor ke Metasploit)
 
-### 3. Import ke Metasploit:
+2. Import ke Metasploit:
 
-```
-msf6 > db_import scan.xml
-```
+   ```
+   msf6 > db_import scan.xml
+   ```
 
-### 4. Lihat Hasil:
+3. Lihat Hasil:
 
-```
-msf6 > hosts
-msf6 > services
-```
+   ```
+   msf6 > hosts
+   msf6 > services
+   ```
 
-**Tips:**
-- Jalankan `db_status` untuk memastikan database aktif.
-- Gunakan `search` berdasarkan service hasil Nmap:
+   Tips:
+   - Jalankan `db_status` untuk memastikan database aktif.
+   - Gunakan `search` berdasarkan service hasil Nmap:
   
-  ```
-  msf6 > services -p 80
-  msf6 > search type:exploit name:apache
-  ```
+     ```
+     msf6 > services -p 80
+     msf6 > search type:exploit name:apache
+     ```
 
-### 5. Alternatif: Jalankan Nmap langsung dari dalam Metasploit:
+5. Alternatif: Jalankan Nmap langsung dari dalam Metasploit:
 
-```
-msf6 > nmap -sS -sV 192.168.1.10
-```
+   ```
+   msf6 > nmap -sS -sV 192.168.1.10
+   ```
 
-Namun ini tidak menyimpan hasil ke database secara otomatis, tetap disarankan gunakan `-oX` dan `db_import`.
+   Namun ini tidak menyimpan hasil ke database secara otomatis, tetap disarankan gunakan `-oX` dan `db_import`.
 
 ## B. Integrasi Metasploit dengan Nikto
 
@@ -67,29 +66,29 @@ Namun ini tidak menyimpan hasil ke database secara otomatis, tetap disarankan gu
 
 **Langkah-Langkah:**
 
-### 1. Jalankan Nikto dan Sinpan Output:
+1. Jalankan Nikto dan Sinpan Output:
 
-```
-nikto -h http://192.168.1.10 -o nikto_result.txt
-```
+   ```
+   nikto -h http://192.168.1.10 -o nikto_result.txt
+   ```
 
-**Output Penting:**
-- Versi software (`Apache`, `PHP`, `dll`)
-- Directory listing
-- File yang bisa diakses langsung (misalnya `/phpinfo.php`, `/admin`)
-- Celah `XSS`, `LFI`, `dll`
+   Output Penting:
+   - Versi software (`Apache`, `PHP`, `dll`)
+   - Directory listing
+   - File yang bisa diakses langsung (misalnya `/phpinfo.php`, `/admin`)
+   - Celah `XSS`, `LFI`, `dll`
 
-### 2. Buka Hasilnya dan Cocokkan Dengan Eksploit di Metasploit:
+2. Buka Hasilnya dan Cocokkan Dengan Eksploit di Metasploit:
 
-```
-msf6 > search type:exploit name:phpmyadmin
-```
+   ```
+   msf6 > search type:exploit name:phpmyadmin
+   ```
 
-### 3. Gunakan Modul `auxiliary` atau `exploit` yang Cocok:
+3. Gunakan Modul `auxiliary` atau `exploit` yang Cocok:
 
-```
-use exploit/multi/http/phpmyadmin_unauth_rce
-```
+   ```
+   use exploit/multi/http/phpmyadmin_unauth_rce
+   ```
 
 ## C. Alur Integrasi Workflow
 
