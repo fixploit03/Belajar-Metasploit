@@ -30,7 +30,7 @@ Jenis-jenis Antarmuka Metasploit:
    Metasploit Documentation: https://docs.metasploit.com/
    ```
 
-   2. Struktur Dasar Perintah di MSFconsole
+2. Struktur Dasar Perintah di MSFconsole
 
    | Perintah | Fungsi |
    |:--:|:--:|
@@ -41,7 +41,7 @@ Jenis-jenis Antarmuka Metasploit:
    | `set <PARAMETER> <NILAI>` | Mengatur nilai parameter modul. |
    | `exploit` atau `run` | Menjalankan exploit atau modul. |
 
-   3. Contoh Penggunaan MSFconsole:
+3. Contoh Penggunaan MSFconsole:
 
    ```
    search windows/smb
