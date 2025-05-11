@@ -44,7 +44,7 @@ Modul ini tidak mengeksploitasi, tapi hanya mendengarkan dan menangani koneksi m
    - **LHOST**: IP Attacker (listener)
    - **LPORT**: Port tempat menerima koneksi
 
-6. Jalankan Listener:
+5. Jalankan Listener:
 
    ```
    run
