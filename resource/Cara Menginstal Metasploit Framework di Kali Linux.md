@@ -1,6 +1,6 @@
 # Cara Menginstal Metasploit Framework di Kali Linux
 
-## 1. Masuk ke Mode root:
+1. Masuk ke Mode root:
 
    ```
    sudo -i
@@ -8,7 +8,7 @@
 
    Masukkan password-nya.
 
-## 2. Update Sistem:
+2. Update Sistem:
 
    ```
    apt-get update && apt-get upgrade
@@ -16,25 +16,25 @@
 
    Tungguin proses `update` dan `upgradenya`, kalo update dan upgrade emang rada-rada lama prosesnya jadi mohon bersabar.
    
-## 3. Instal Metasploit Framework:
+3. Instal Metasploit Framework:
 
    ```
    apt-get install metasploit-framework
    ```
 
-## 4. Instal PostgreSQL:
+4. Instal PostgreSQL:
 
    ```
    apt-get install postgresql
    ```
 
-## 5. Inisialisasi Database untuk Metasploit Framework: 
+5. Inisialisasi Database untuk Metasploit Framework: 
 
    ```
    msfdb init
    ```
 
-## 6. Jalankan Metasploit Framework:
+6. Jalankan Metasploit Framework:
 
    ```
    msfconsole
@@ -42,7 +42,7 @@
 
    Tunggu sampai konsol dari Metasploit Framework terbuka.
 
-## 7. Cek Status Database:
+7. Cek Status Database:
 
    ```
    db_status
