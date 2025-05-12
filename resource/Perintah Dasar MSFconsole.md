@@ -57,7 +57,6 @@ Jika exploit berhasil, biasanya akan membuka session:
 | `sessions -k <ID>` | Menghentikan session tertentu |
 
 ## Tips Tambahan
-
 - Gunakan `tab` untuk auto-complete.
 - Gunakan `Ctrl + C` untuk menghentikan exploit yang sedang berjalan.
 - Gunakan `jobs` dan `kill <ID>` untuk melihat dan menghentikan job background.
