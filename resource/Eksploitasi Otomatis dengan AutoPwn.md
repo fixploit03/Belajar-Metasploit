@@ -23,7 +23,7 @@ Prasyarat:
 1. Jalankan Metasploit:
 
    ```
-   msfconsole
+   sudo msfconsole
    ```
 
 2. Gunakan modul AutoPwn:
