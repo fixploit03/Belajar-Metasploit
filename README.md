@@ -18,7 +18,7 @@
 - [Jenis-Jenis Modul di Metasploit Framework](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Jenis-Jenis%20Modul%20di%20Metasploit%20Framework.md)
 - [Menjalankan Eksploitasi dengan Metasploit Framework](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Menjalankan%20Eksploitasi%20dengan%20Metasploit%20Framework.md)
 - [Memahami Payload, Encoder, dan NOPs](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Memahami%20Payload%2C%20Encoder%2C%20dan%20NOPs.md)
-- [Membuat Payload dengan msfvenom](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Membuat%20Payload%20dengan%20MSFvenom.md)
+- [Membuat Payload dengan MSFvenom](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Membuat%20Payload%20dengan%20MSFvenom.md)
 - [Membuat Listener](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Membuat%20Listener.md)
 - [Bypass Antivirus (AV) dengan Metasploit](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Bypass%20Antivirus%20(AV)%20dengan%20Metasploit%20Framework.md)
 - [Exploit Real Target: Windows 7 SP1 dengan EternalBlue](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Exploit%20Real%20Target%3A%20Windows%207%20SP1%20dengan%20EternalBlue%20(MS17-010).md)
