@@ -1,3 +1,7 @@
+<p align="left">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Antarmuka%20Metasploit%20Framework.md">Antarmuka Metasploit Framework</a>
+</p>
+
 # Perintah Dasar MSFconsole
 
 ## A. Apa Itu MSFconsole?
@@ -62,3 +66,8 @@ Jika exploit berhasil, biasanya akan membuka session:
 - Gunakan `jobs` dan `kill <ID>` untuk melihat dan menghentikan job background.
 
 > Gunakan hanya untuk pembelajaran dan pada sistem yang kamu punya izin untuk uji coba.
+
+
+<p align="right">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework/blob/main/resource/Perintah%20Dasar%20MSFconsole.md">Perintah Dasar MSFconsole</a>
+</p>
