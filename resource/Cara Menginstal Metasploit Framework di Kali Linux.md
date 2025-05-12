@@ -1,3 +1,7 @@
+<p align="left">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework/blob/main/resource/Sejarah%20Metasploit%20Framework.md">Sejarah Metasploit Framework</a>
+</p>
+
 # Cara Menginstal Metasploit Framework di Kali Linux
 
 1. Masuk ke Mode root:
@@ -61,3 +65,7 @@
 - Gunakan `msfdb init` untuk secara otomatis membuat dan menghubungkan database PostgreSQL ke Metasploit.
 - Cek koneksi database dengan `db_status`.
 - Jangan lupa update exploit dan modul dengan `msfupdate` setelah instalasi selesai.
+
+<p align="right">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework/blob/main/resource/Struktur%20Folder%20dan%20File%20Penting%20di%20Metasploit%20Framework.md">Struktur Folder dan File Penting di Metasploit Framework</a>
+</p>
