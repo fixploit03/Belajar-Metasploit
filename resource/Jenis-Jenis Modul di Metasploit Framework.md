@@ -118,7 +118,6 @@ Contoh:
 - `evasion/windows/syscall_inject`
 
 ## Tips Tambahan
-
 - Sebelum menggunakan modul, pastikan kamu tahu tujuan utamanya:
   - Gunakan `exploit` untuk mendapatkan akses.
   - Gunakan `auxiliary` untuk scanning atau brute-force.
