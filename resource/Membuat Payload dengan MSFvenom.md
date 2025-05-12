@@ -120,7 +120,6 @@ run
 ```
 
 ## Tips Tambahan
-
 - Selalu uji payload di lab virtual.
 - Gunakan encoding bila antivirus mendeteksi payload.
 - Tambahkan `NOP sled` jika payload tidak stabil.
