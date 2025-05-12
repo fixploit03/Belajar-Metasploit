@@ -1,3 +1,7 @@
+<p align="left">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework/blob/main/resource/Apa%20itu%20Metasploit%20Framework%3F.md">Apa itu Metasploit Framework?</a>
+</p>
+
 # Sejarah Metasploit Framework
 
 ## A. Awal Mula Metasploit
@@ -60,3 +64,8 @@ Digunakan dalam:
 Metasploit Framework telah berkembang dari proyek sederhana menjadi alat terpenting di dunia cybersecurity ofensif. Kombinasi fleksibilitas, kekuatan eksploitasi, dan komunitas aktif menjadikannya salah satu framework paling berpengaruh di dunia ethical hacking.
 
 > Catatan: Memahami sejarah Metasploit membantu kita menghargai evolusinya serta bagaimana tool ini menjadi andalan dalam uji keamanan jaringan.
+
+
+<p align="right">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework/blob/main/resource/Cara%20Menginstal%20Metasploit%20Framework%20di%20Kali%20Linux.md">Cara Menginstal Metasploit Framework di Kali Linux</a>
+</p>
