@@ -23,8 +23,8 @@ Contoh serangan social engineering:
 2. Setup dan jalankan Metasploit:
 
    ```
-   sudo msfdb init
-   sudo msfconsole
+   msfdb init
+   msfconsole
    ```
    
    > Kalau belum diinstal Metasploit-nya, instal dengan: `sudo apt-get install metasploit-framework`
