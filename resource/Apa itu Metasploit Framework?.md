@@ -1,3 +1,7 @@
+<p align="left">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework">Halaman Utama</a>
+</p>
+
 # Apa itu Metasploit Framework?
 
 ## A. Pengertian Metasploit Framework
@@ -86,3 +90,7 @@ Digunakan oleh:
 Metasploit adalah alat wajib dalam dunia ethical hacking dan penetrasi sistem karena kekuatan, fleksibilitas, dan dukungan komunitasnya.
 
 > Ingat: Penggunaan Metasploit hanya untuk tujuan edukasi dan etis. Uji hanya pada sistem yang kamu miliki izin.
+
+<p align="right">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework/blob/main/resource/Sejarah%20Metasploit%20Framework.md">Sejarah Metasploit Framework</a>
+</p>
