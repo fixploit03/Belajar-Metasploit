@@ -1,3 +1,7 @@
+<p align="left">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework/blob/main/resource/Cara%20Menginstal%20Metasploit%20Framework%20di%20Kali%20Linux.md">Cara Menginstal Metasploit Framework di Kali Linux</a>
+</p>
+
 # Struktur Folder dan File Penting di Metasploit Framework
 
 Setelah berhasil menginstal Metasploit Framework, penting untuk memahami struktur folder dan file yang ada di Metasploit Framework. Ini akan sangat membantu saat ingin `membuat modul sendiri`, `memahami cara kerja exploit`, atau `saat troubleshooting`.
@@ -76,3 +80,8 @@ Isi folder konfigurasi user:
 - Semua konfigurasi dan riwayat user tersimpan di `~/.msf4/`, jadi penting untuk backup saat perlu.
 - Gunakan `msfupdate` untuk memastikan Metasploit dan semua exploit-nya selalu up to date.
 - Folder `tools/` menyimpan banyak utilitas penting seperti `pattern_create.rb` dan `pattern_offset.rb`.
+
+
+<p align="right">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework/blob/main/resource/Antarmuka%20Metasploit%20Framework.md">Antarmuka Metasploit Framework</a>
+</p>
