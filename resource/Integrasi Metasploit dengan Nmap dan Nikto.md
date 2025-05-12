@@ -18,7 +18,7 @@ Langkah-Langkah:
 1. Menjalankan Nmap dari Luar Metasploit (dengan output XML):
 
    ```
-   nmap -sS -sV -O -oX scan.xml 192.168.1.10
+   sudo nmap -sS -sV -O -oX scan.xml 192.168.1.10
    ```
 
    Keterangan:
@@ -69,7 +69,7 @@ Langkah-Langkah:
 1. Jalankan Nikto dan Sinpan Output:
 
    ```
-   nikto -h http://192.168.1.10 -o nikto_result.txt
+   sudo nikto -h http://192.168.1.10 -o nikto_result.txt
    ```
 
    Output Penting:
