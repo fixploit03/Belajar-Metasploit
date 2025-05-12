@@ -1,3 +1,7 @@
+<p align="left">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework/blob/main/resource/Struktur%20Folder%20dan%20File%20Penting%20di%20Metasploit%20Framework.md">Struktur Folder dan File Penting di Metasploit Framework</a>
+</p>
+
 # Antarmuka Metasploit Framework
 
 `Metasploit Framework` memiliki beberapa antarmuka yang bisa digunakan oleh user, mulai dari CLI (Command Line Interface) hingga GUI (Graphical User Interface). Namun, yang paling sering digunakan dan paling powerful adalah CLI melalui `msfconsole`.
@@ -80,3 +84,7 @@ Id  Name  Type                   Information               Connection
 `msfconsole` adalah pusat kendali utama dalam Metasploit. Dengan memahami perintah-perintah dasar dan navigasi antarmukanya, kamu bisa mengelola modul eksploitasi, payload, dan sesi secara efisien.
 
 > Tips: Latih penggunaan msfconsole di lab lokal atau VM agar terbiasa sebelum digunakan dalam skenario nyata.
+
+<p align="right">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework/blob/main/resource/Perintah%20Dasar%20MSFconsole.md">Perintah Dasar MSFconsole</a>
+</p>
