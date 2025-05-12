@@ -2,7 +2,7 @@
 
 ## A. Apa Itu Eksploitasi?
 
-Eksploitasi adalah proses menyerang dan memanfaatkan kerentanan pada sistem target untuk mendapatkan akses tidak sah, baik melalui `shell`, `akses file`, atau `kontrol penuh`.
+[Eksploitasi](https://en.wikipedia.org/wiki/Exploit_(computer_security)) adalah proses menyerang dan memanfaatkan kerentanan pada sistem target untuk mendapatkan akses tidak sah, baik melalui `shell`, `akses file`, atau `kontrol penuh`.
 
 Dalam Metasploit Framework, eksploitasi dijalankan melalui modul `exploit` + `payload`, misalnya:
 - **Exploit**: `exploit/windows/smb/ms17_010_eternalblue`
