@@ -23,7 +23,7 @@
 - [Bypass Antivirus (AV) dengan Metasploit](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Bypass%20Antivirus%20(AV)%20dengan%20Metasploit%20Framework.md)
 - [Exploit Real Target: Windows 7 SP1 dengan EternalBlue](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Exploit%20Real%20Target%3A%20Windows%207%20SP1%20dengan%20EternalBlue%20(MS17-010).md)
 - [Menggunakan Exploit dari Exploit-DB di Metasploit](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Menggunakan%20Exploit%20dari%20Exploit-DB%20di%20Metasploit.md)
-- [Post-Exploitation di Metasploit (Dump Hash, Webcam, Keylogger, dll)](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Post-Exploitation%20di%20Metasploit.md)
+- [Post-Exploitation di Metasploit](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Post-Exploitation%20di%20Metasploit.md)
 - [Pivoting dan Route Command di Metasploit](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Pivoting%20dan%20Route%20Command%20di%20Metasploit.md)
 - [Integrasi Metasploit dengan Nmap dan Nikto](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Integrasi%20Metasploit%20dengan%20Nmap%20dan%20Nikto.md)
 - [Modul Bruteforce Login di Metasploit](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Modul%20Bruteforce%20Login%20di%20Metasploit.md)
