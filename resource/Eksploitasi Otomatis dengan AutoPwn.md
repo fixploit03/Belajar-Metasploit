@@ -2,7 +2,7 @@
 
 ## A. Apa itu AutoPwn?
 
-AutoPwn adalah fitur dari Metasploit yang secara otomatis memuat berbagai eksploit dan menyerang target berdasarkan kerentanannya, terutama melalui browser (client-side attack).
+[AutoPwn](https://github.com/beefproject/beef/wiki/Metasploit#browser-autopwn) adalah fitur dari Metasploit yang secara otomatis memuat berbagai eksploit dan menyerang target berdasarkan kerentanannya, terutama melalui browser (client-side attack).
 
 Modul terkait:
 
