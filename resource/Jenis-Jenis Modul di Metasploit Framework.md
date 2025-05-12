@@ -1,3 +1,7 @@
+<p align="left">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework/blob/main/resource/Perintah%20Dasar%20MSFconsole.md">Perintah Dasar MSFconsole</a>
+</p>
+
 # Jenis-Jenis Modul di Metasploit Framework
 
 Metasploit Framework memiliki berbagai jenis modul yang memiliki fungsi dan peran masing-masing dalam proses eksploitasi dan pengujian keamanan.
@@ -126,3 +130,7 @@ Contoh:
   - Gunakan `encoder` saat ingin menghindari antivirus.
   - Gunakan `evasion` untuk payload stealth (tersembunyi).
   - Gunakan `NOP` untuk menstabilkan exploit tertentu.
+
+<p align="right">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Menjalankan%20Eksploitasi%20dengan%20Metasploit%20Framework.md">Menjalankan Eksploitasi dengan Metasploit Framework</a>
+</p>
