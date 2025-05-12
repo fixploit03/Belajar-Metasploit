@@ -185,7 +185,7 @@ Ada dua jenis pivoting:
    Scan host-host tersebut menggunakan `Nmap`:
 
    ```
-   nmap -sS -sV -T4 -O --script vuln -iL host.txt
+   sudo nmap -sS -sV -T4 -O --script vuln -iL host.txt
    ```
 
    Keterangan:
@@ -199,7 +199,7 @@ Ada dua jenis pivoting:
    Hasil output-nya seperti ini:
 
    ```
-   msf6 auxiliary(scanner/discovery/arp_sweep) > nmap -sS -sV -T4 -O --script vuln -iL host.txt
+   msf6 auxiliary(scanner/discovery/arp_sweep) > sudo nmap -sS -sV -T4 -O --script vuln -iL host.txt
    [*] exec: nmap -sS -sV -T4 -O --script vuln -iL host.txt
 
    Starting Nmap 7.95 ( https://nmap.org ) at 2025-05-10 06:14 WIB
