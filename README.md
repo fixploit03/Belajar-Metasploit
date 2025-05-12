@@ -2,6 +2,15 @@
 
 ![](https://github.com/fixploit03/Belajar-Metasploit/blob/main/img/msf.png)
 
+<p align="center">
+  <img src="https://img.shields.io/github/repo-size/fixploit03/Belajar-Metasploit-Framework?label=Ukuran%20Repo" alt="Ukuran Repo">
+  <img src="https://img.shields.io/github/last-commit/fixploit03/Belajar-Metasploit-Framework?label=Komit%20Terakhir" alt="Komit Terakhir">
+  <img src="https://img.shields.io/github/stars/fixploit03/Belajar-Metasploit-Framework?style=social&label=Jumlah%20Bintang" alt="Jumlah Bintang">
+  <img src="https://img.shields.io/github/license/fixploit03/Belajar-Metasploit-Framework?label=Lisensi" alt="Lisensi">
+  <img src="https://img.shields.io/badge/Level-Pemula%20%E2%86%92%20Mahir-blueviolet" alt="Level">
+  <img src="https://img.shields.io/badge/Bahasa-Indonesia-green" alt="Bahasa">
+</p>
+
 > **Disclaimer**:
 > Materi ini disediakan hanya untuk tujuan edukasi dan pembelajaran. Dilarang keras menggunakan informasi di dalamnya untuk aktivitas yang melanggar hukum. Segala penyalahgunaan materi sepenuhnya menjadi tanggung jawab individu masing-masing. Penulis tidak bertanggung jawab atas konsekuensi yang timbul, baik di dunia maupun di akhirat.
 
