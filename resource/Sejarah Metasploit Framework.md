@@ -1,7 +1,6 @@
 # Sejarah Metasploit Framework
 
 ## A. Awal Mula Metasploit
-
 - Tahun `2003`, Metasploit pertama kali dikembangkan oleh [H.D. Moore](https://en.wikipedia.org/wiki/H._D._Moore).
 - Awalnya dibuat dalam bahasa [Perl](https://en.wikipedia.org/wiki/Perl), kemudian ditulis ulang dalam bahasa [Ruby](https://en.wikipedia.org/wiki/Ruby_(programming_language)) karena kebutuhan struktur dan pengelolaan modul yang lebih baik.
 - Tujuan awalnya adalah untuk membuat kerangka kerja eksploitasi yang `modular`, `fleksibel`, dan `open-source`.
@@ -17,7 +16,6 @@
 | 2011 | Dirilis `Metasploit Pro`, versi komersial dengan `GUI` dan fitur tambahan. |
 
 ## C. Akuisisi oleh Rapid7
-
 - Rapid7 adalah perusahaan yang berfokus pada keamanan jaringan dan pengujian penetrasi.
 - Akuisisi ini membantu mempercepat pengembangan, menyediakan sumber daya tambahan, dan memperluas jangkauan Metasploit.
 - Walaupun ada versi berbayar (Metasploit Pro), Metasploit Framework tetap open-source dan bebas digunakan.
@@ -33,13 +31,11 @@ Digunakan dalam:
 - Demonstrasi keamanan di dunia akademik
 
 ## E. Kontribusi Komunitas
-
 - Komunitas open-source Metasploit terus berkembang.
 - Ribuan modul exploit dan payload dibuat oleh komunitas.
 - Modul-modul baru terus ditambahkan oleh tim Rapid7 dan komunitas dunia melalui [GitHub](https://github.com/rapid7/metasploit-framework).
 
 ## F. Perkembangan Terkini
-
 - Sekarang mendukung ribuan modul: `exploit`, `auxiliary`, `post-exploitation`, dan `payload`.
 - Mendukung sistem operasi populer: `Windows`, `Linux`, `macOS`, `Android`.
 - Terintegrasi dengan tools seperti:
