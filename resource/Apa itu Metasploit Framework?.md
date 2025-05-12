@@ -6,14 +6,11 @@
 
 ## A. Pengertian Metasploit Framework
 
-[Metasploit Framework](https://www.metasploit.com/) adalah platform open-source yang digunakan untuk pengujian penetrasi (penetration testing) dan eksploitasi kerentanan keamanan (vulnerability exploitation) dalam sistem komputer.
+[Metasploit Framework](https://www.metasploit.com/) adalah sebuah platform open-source yang dirancang untuk membantu para profesional keamanan dalam melakukan pengujian penetrasi (penetration testing), eksploitasi kerentanan (vulnerability exploitation), dan pengembangan exploit. Alat ini sangat populer di kalangan ethical hacker karena kemampuannya yang luas dan fleksibel. Dengan Metasploit, pengguna dapat memanfaatkan berbagai modul yang sudah disediakan seperti `exploit`, `payload`, `auxiliary`, dan `post-exploitation` untuk menyerang sistem target secara terstruktur dan terkendali. Metasploit menyediakan antarmuka berbasis command-line (`msfconsole`) sebagai pusat kontrol utama untuk menjalankan serangan, serta tool lain seperti `msfvenom` untuk membuat payload kustom.
 
-Metasploit memungkinkan kita untuk:
-- Mencari celah keamanan
-- Mengembangkan dan menjalankan eksploit
-- Menyisipkan payload
-- Mengakses sistem target
-- Melakukan pasca-eksploitasi (post-exploitation)
+Selain untuk eksploitasi, Metasploit juga dapat digunakan untuk `scanning`, `pengumpulan informasi`, `brute force`, dan berbagai aktivitas keamanan lainnya. Salah satu fitur andalannya adalah Meterpreter, yaitu sebuah shell canggih yang memungkinkan pengguna untuk mengontrol sistem target secara interaktif setelah berhasil dieksploitasi. Framework ini juga mendukung integrasi dengan database seperti `PostgreSQL` untuk menyimpan hasil eksploitasi dan mempermudah analisis data.
+
+Secara keseluruhan, Metasploit merupakan tool penting dalam dunia keamanan siber, terutama untuk pembelajaran ethical hacking, pengujian sistem pertahanan, dan simulasi serangan yang realistis. Namun, perlu diingat bahwa penggunaan Metasploit harus dilakukan secara etis dan legal—hanya pada sistem yang dimiliki sendiri atau telah mendapat izin eksplisit, karena penyalahgunaannya dapat berujung pada pelanggaran hukum.
 
 ## B. Fungsi Utama Metasploit
 - Membantu pengujian keamanan sistem dan aplikasi
