@@ -79,7 +79,6 @@ Ketiganya bekerja sama untuk membentuk payload yang:
 - Stabil saat dieksekusi di memori target
 
 ## Tips Tambahan
-
 - Gunakan encoder `x86/shikata_ga_nai` dengan iterasi `3–5x` untuk menghindari AV.
 - Tambahkan NOP jika payload crash saat buffer overflow.
 - Uji payload dengan antivirus scanner sebelum digunakan ke target real.
