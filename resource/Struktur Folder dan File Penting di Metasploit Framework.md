@@ -71,7 +71,6 @@ Isi folder konfigurasi user:
 |Folder | `store` | Tempat penyimpanan `setting/pengaturan` sementara. |
 
 ## Tips Tambahan
-
 - Fokus utama ada di folder `modules/`, karena berisi semua `exploit`, `payload`, dan `auxiliary`.
 - Cek folder `loot/` di `~/.msf4/` untuk melihat hasil exploitasi seperti `file dump` dan `credentials`.
 - Semua konfigurasi dan riwayat user tersimpan di `~/.msf4/`, jadi penting untuk backup saat perlu.
