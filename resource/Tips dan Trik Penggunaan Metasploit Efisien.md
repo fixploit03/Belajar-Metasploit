@@ -136,7 +136,7 @@ creds
 - Gunakan `Python` untuk otomatisasi via `msfrpc` (Metasploit RPC).
 - Integrasi dengan `CrackMapExec`, `Empire`, atau `BloodHound`.
 
-## Bonus Tips:
+## Tips Tambahan:
 - Gunakan module `auxiliary/scanner/*` untuk scanning cepat.
 - Gunakan module `gather` untuk pencurian informasi secara otomatis.
 - Dokumentasikan semua sesi dan hasil eksploitasi untuk laporan.
