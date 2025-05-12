@@ -69,5 +69,5 @@ Jika exploit berhasil, biasanya akan membuka session:
 
 
 <p align="right">
-  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework/blob/main/resource/Perintah%20Dasar%20MSFconsole.md">Perintah Dasar MSFconsole</a>
+  <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Jenis-Jenis%20Modul%20di%20Metasploit%20Framework.md">Jenis-Jenis Modul di Metasploit Framework</a>
 </p>
