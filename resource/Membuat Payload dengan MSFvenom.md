@@ -1,3 +1,7 @@
+<p align="left">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Memahami%20Payload%2C%20Encoder%2C%20dan%20NOPs.md">Memahami Payload, Encoder, dan NOPs</a>
+</p>
+
 # Membuat Payload dengan MSFvenom
 
 ## A. Apa Itu MSFvenom?
@@ -123,3 +127,7 @@ run
 - Selalu uji payload di lab virtual.
 - Gunakan encoding bila antivirus mendeteksi payload.
 - Tambahkan `NOP sled` jika payload tidak stabil.
+
+<p align="right">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Membuat%20Listener.md">Membuat Listener</a>
+</p>
