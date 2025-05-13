@@ -1,3 +1,7 @@
+<p align="left">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Memahami%20Payload%2C%20Encoder%2C%20dan%20NOPs.md">Memahami Payload, Encoder, dan NOPs</a>
+</p>
+
 # Membuat Listener
 
 ## A. Apa itu Listener
@@ -134,3 +138,7 @@ sessions -i <ID>
 | Tidak ada koneksi masuk | `IP/Port` salah | Pastikan `LHOST/LPORT` sesuai|
 | Payload terdeteksi AV | Payload tidak diencode | Gunakan `-e` encoder di `msfvenom` |
 | Listener tidak merespons | Port diblokir | Ganti port atau periksa firewall |
+
+<p align="right">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Bypass%20Antivirus%20(AV)%20dengan%20Metasploit%20Framework.md">Bypass Antivirus (AV) dengan Metasploit Framework</a>
+</p>
