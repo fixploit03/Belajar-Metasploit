@@ -36,7 +36,7 @@
 - [Integrasi Metasploit dengan Nmap dan Nikto](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Integrasi%20Metasploit%20dengan%20Nmap%20dan%20Nikto.md)
 - [Modul Bruteforce Login di Metasploit](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Modul%20Bruteforce%20Login%20di%20Metasploit.md)
 - [Menggunakan Auxiliary Scanner di Metasploit](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Menggunakan%20Auxiliary%20Scanner%20di%20Metasploit.md)
-- [Metasploit + Social Engineering Toolkit (SET)](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Eksploitasi%20dengan%20Metasploit%20%2B%20Social%20Engineering%20Toolkit%20(SET).md)
+- [Eksploitasi dengan Metasploit + Social Engineering Toolkit (SET)](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Eksploitasi%20dengan%20Metasploit%20%2B%20Social%20Engineering%20Toolkit%20(SET).md)
 - [Teknik Persistence pada Target](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Teknik%20Persistence%20pada%20Target.md)
 - [Eksploitasi Otomatis dengan AutoPwn](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Eksploitasi%20Otomatis%20dengan%20AutoPwn.md)
 - [Tips dan Trik Penggunaan Metasploit Efisien](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Tips%20dan%20Trik%20Penggunaan%20Metasploit%20Efisien.md)
