@@ -91,7 +91,7 @@ Langkah-Langkah:
 3. Gunakan Modul `auxiliary` atau `exploit` yang Cocok:
 
    ```
-   use exploit/multi/http/phpmyadmin_unauth_rce
+   msf6 > use exploit/multi/http/phpmyadmin_unauth_rce
    ```
 
 ## C. Alur Integrasi Workflow
