@@ -1,3 +1,7 @@
+<p align="left">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework/blob/main/resource/Integrasi%20Metasploit%20dengan%20Nmap%20dan%20Nikto.md">Integrasi Metasploit dengan Nmap dan Nikto</a>
+</p>
+
 # Modul Bruteforce Login di Metasploit
 
 Metasploit Framework memiliki banyak modul auxiliary yang mendukung bruteforce login terhadap berbagai layanan seperti `SSH`, `FTP`, `HTTP`, `SMB`, `dll`. Modul ini berguna untuk menguji kekuatan kredensial yang digunakan oleh target dan sering dipakai dalam fase credential access saat penetration testing.
@@ -101,3 +105,8 @@ Metasploit Framework memiliki banyak modul auxiliary yang mendukung bruteforce l
 - Bisa digabung dengan hasil `Nmap` yang sudah diimpor ke Metasploit.
 
 > Jangan gunakan teknik  Brute Force ke sistem yang bukan milikmu atau tanpa izin.
+
+
+<p align="right">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Menggunakan%20Auxiliary%20Scanner%20di%20Metasploit.md">Menggunakan Auxiliary Scanner di Metasploit</a>
+</p>
