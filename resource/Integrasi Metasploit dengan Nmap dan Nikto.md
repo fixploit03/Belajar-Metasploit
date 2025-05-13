@@ -1,3 +1,7 @@
+<p align="left">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework/blob/main/resource/Pivoting%20dan%20Route%20Command%20di%20Metasploit.md">Pivoting dan Route Command di Metasploit</a>
+</p>
+
 # Integrasi Metasploit dengan Nmap dan Nikto
 
 Metasploit Framework bukan hanya alat eksploitasi, ia juga mendukung integrasi dengan berbagai tool eksternal untuk memperkuat proses enumerasi dan analisis target. Dua tool penting yang sering digunakan bersama Metasploit adalah:
@@ -109,3 +113,7 @@ Mengintegrasikan `Nmap` dan `Nikto` dengan Metasploit memungkinkan proses yang j
 - **Nikto**: Fokus pada enumerasi dan celah `aplikasi web`.
 - **Metasploit**: Gunakan hasil kedua tool tersebut untuk melakukan eksploitasi yang tepat sasaran.
 Dengan integrasi ini, kamu bekerja lebih cepat, lebih tepat, dan lebih profesional sebagai penetration tester.
+
+<p align="right">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Modul%20Bruteforce%20Login%20di%20Metasploit.md">Modul Bruteforce Login di Metasploit</a>
+</p>
