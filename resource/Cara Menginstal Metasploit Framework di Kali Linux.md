@@ -4,6 +4,8 @@
 
 # Cara Menginstal Metasploit Framework di Kali Linux
 
+Secara default Metasploit Framework sudah terinstal di Kali Linux, jika belum terinstal bisa menginstalnya dengan mengikuti lagkah-lanngkah berikut ini:
+
 1. Masuk ke Mode root:
 
    ```
