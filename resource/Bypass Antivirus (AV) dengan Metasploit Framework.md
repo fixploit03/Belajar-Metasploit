@@ -1,3 +1,7 @@
+<p align="left">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework/blob/main/resource/Membuat%20Listener.md">Membuat Listener</a>
+</p>
+
 # Bypass Antivirus (AV) dengan Metasploit Framework
 
 ## A. Kenapa Perlu Bypass AV?
@@ -90,3 +94,7 @@ msfvenom --list encoders
 | Test | Gunakan VirusTotal untuk uji deteksi |
 | Ganti payload | Hindari payload yang umum seperti `meterpreter/reverse_tcp` |
 | Social Engineering | Gabungkan dengan file asli atau teknik persuasi |
+
+<p align="right">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Exploit%20Real%20Target%3A%20Windows%207%20SP1%20dengan%20EternalBlue%20(MS17-010).md">Exploit Real Target: Windows 7 SP1 dengan EternalBlue (MS17-010)</a>
+</p>
