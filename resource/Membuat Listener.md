@@ -4,9 +4,13 @@
 
 # Membuat Listener
 
-## A. Apa itu Listener
+## A. Apa itu Listener?
 
-`Listener` adalah komponen di Metasploit yang berfungsi untuk menerima koneksi balik (reverse connection) dari payload yang sudah ditanamkan ke target. Di Metasploit terdapat modul listener yaitu:
+[Listener](https://docs.rapid7.com/metasploit/listeners/) adalah komponen yang menunggu koneksi masuk dari sistem yang berhasil dieksploitasi. Kamu harus menyiapkan listener jika ingin membangun koneksi antara server Metasploit milikmu dan mesin target yang telah dieksploitasi.
+
+Misalnya, jika kamu telah mengirimkan file executable ke host target, maka kamu perlu menyiapkan listener untuk menunggu koneksi dari host tersebut.
+
+Ketika host terhubung ke listener, sebuah sesi akan terbuka di mesin mereka, yang memungkinkan kamu berinteraksi dengan sistem tersebut. Di Metasploit terdapat modul listener yaitu:
 
 ```
 exploit/multi/handler
@@ -22,7 +26,7 @@ Modul ini tidak mengeksploitasi, tapi hanya mendengarkan dan menangani koneksi m
    msfconsole
    ```
 
-2. Pilih Modul multi/handler:
+2. Pilih Modul `exploit/multi/handler`:
 
    ```
    use exploit/multi/handler
@@ -45,8 +49,8 @@ Modul ini tidak mengeksploitasi, tapi hanya mendengarkan dan menangani koneksi m
    ```
 
    Keterangan:
-   - **LHOST**: IP Attacker (listener)
-   - **LPORT**: Port tempat menerima koneksi
+   - **LHOST**: IP Attacker
+   - **LPORT**: Port listener (tempat menerima koneksi)
 
 5. Jalankan Listener:
 
