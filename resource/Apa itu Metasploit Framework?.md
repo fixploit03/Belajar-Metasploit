@@ -1,5 +1,5 @@
 <p align="left">
-  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework">Halaman Utama</a>
+  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework/blob/main/resource/Pendahuluan.md">Pendahuluan</a>
 </p>
 
 # Apa itu Metasploit Framework?
