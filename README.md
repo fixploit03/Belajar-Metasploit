@@ -40,7 +40,8 @@
 - [Teknik Persistence pada Target](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Teknik%20Persistence%20pada%20Target.md)
 - [Eksploitasi Otomatis dengan AutoPwn](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Eksploitasi%20Otomatis%20dengan%20AutoPwn.md)
 - [Tips dan Trik Penggunaan Metasploit Efisien](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Tips%20dan%20Trik%20Penggunaan%20Metasploit%20Efisien.md)
-
+- [Penutup]()
+  
 > Jika repositori ini merasa bermanfaat, tolong beri repositori ini star (⭐) agar semua orang bisa menemukan repositori ini juga terimakasih.
 
 Rofi (Fixploit03)
