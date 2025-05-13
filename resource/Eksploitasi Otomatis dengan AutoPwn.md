@@ -1,3 +1,7 @@
+<p align="left">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework/blob/main/resource/Teknik%20Persistence%20pada%20Target.md">Teknik Persistence pada Target</a>
+</p>
+
 # Eksploitasi Otomatis dengan AutoPwn 
 
 ## A. Apa itu AutoPwn?
@@ -104,3 +108,7 @@ run
 - Jangan digunakan terhadap sistem publik atau tanpa persetujuan.
 - Risiko legal dan etika sangat tinggi jika digunakan sembarangan.
 
+
+<p align="right">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework/blob/main/resource/Tips%20dan%20Trik%20Penggunaan%20Metasploit%20Efisien.md">Tips dan Trik Penggunaan Metasploit Efisien</a>
+</p>
