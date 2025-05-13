@@ -1,4 +1,8 @@
- # Memahami Payload, Encoder, dan NOPs
+<p align="left">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Menjalankan%20Eksploitasi%20dengan%20Metasploit%20Framework.md">Menjalankan Eksploitasi dengan Metasploit Framework</a>
+</p>
+
+# Memahami Payload, Encoder, dan NOPs
 
 ## A. Apa Itu Payload?
 
@@ -82,3 +86,7 @@ Ketiganya bekerja sama untuk membentuk payload yang:
 - Gunakan encoder `x86/shikata_ga_nai` dengan iterasi `3–5x` untuk menghindari AV.
 - Tambahkan NOP jika payload crash saat buffer overflow.
 - Uji payload dengan antivirus scanner sebelum digunakan ke target real.
+
+<p align="right">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Membuat%20Payload%20dengan%20MSFvenom.md">Membuat Payload dengan MSFvenom</a>
+</p>
