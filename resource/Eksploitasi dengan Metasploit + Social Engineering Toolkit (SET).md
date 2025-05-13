@@ -1,3 +1,7 @@
+<p align="left">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework/blob/main/resource/Menggunakan%20Auxiliary%20Scanner%20di%20Metasploit.md">Menggunakan Auxiliary Scanner di Metasploit</a>
+</p>
+
 # Eksploitasi dengan Metasploit + Social Engineering Toolkit (SET)
 
 ## A. Apa itu Social Engineering?
@@ -363,3 +367,8 @@ Contoh skenario:
 - Dilarang menjalankan serangan ini di dunia nyata tanpa izin tertulis.
 - Praktik hanya di lab/lab simulasi.
 - Tujuan pembelajaran dan pengujian keamanan.
+
+
+<p align="right">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Teknik%20Persistence%20pada%20Target.md">Teknik Persistence pada Target</a>
+</p>
