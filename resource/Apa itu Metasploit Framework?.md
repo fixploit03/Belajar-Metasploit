@@ -42,16 +42,7 @@ Secara keseluruhan, Metasploit merupakan tool penting dalam dunia keamanan siber
 - Mendukung otomatisasi uji penetrasi
 - Bisa diintegrasikan dengan tools lain seperti `nmap`, `Burp Suite`, `Nessus`
 
-## E. Metasploit dalam Dunia Profesional
-
-Digunakan oleh:
-- Ethical hacker
-- Penetration tester
-- Bug bounty hunter
-- Cybersecurity analyst
-- Red team operator
-
-## F. Kesimpulan
+## E. Kesimpulan
 
 Metasploit adalah alat wajib dalam dunia ethical hacking dan penetrasi sistem karena kekuatan, fleksibilitas, dan dukungan komunitasnya.
 
