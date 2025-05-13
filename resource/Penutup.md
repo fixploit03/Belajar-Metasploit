@@ -1,3 +1,7 @@
+<p align="left">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework/blob/main/resource/Eksploitasi%20Otomatis%20dengan%20AutoPwn.md">Eksploitasi Otomatis dengan AutoPwn</a>
+</p>
+
 # Penutup
 
 Metasploit Framework bukan hanya sekadar tool eksploitasi, melainkan sebuah platform lengkap yang mempermudah pengujian keamanan sistem secara menyeluruh. Melalui materi ini, kita telah membahas berbagai aspek penting mulai dari pengenalan, instalasi, struktur folder, penggunaan modul, hingga teknik lanjutan seperti bypass antivirus, eksploitasi otomatis, dan integrasi dengan tool lain.
@@ -9,3 +13,7 @@ Semoga materi ini bisa menjadi bekal yang solid dalam perjalanan Anda mendalami 
 Sampai jumpa di materi berikutnya, dan tetap semangat menjadi cybersecurity expert yang profesional!
 
 **Rofi (Fixploit03)**
+
+<p align="right">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework">Halaman Utama</a>
+</p>
