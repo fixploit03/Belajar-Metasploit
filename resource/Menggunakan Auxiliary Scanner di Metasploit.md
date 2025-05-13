@@ -152,7 +152,7 @@ Gunakan `set THREADS` untuk mempercepat pemindaian (default = 1).
 set THREADS 10
 ```
 
-- Gunakan CIDR notation untuk subnet (misal: `192.168.1.0/24`).
+- Gunakan `CIDR` notation untuk subnet (misal: `192.168.1.0/24`).
 - Simpan hasil dengan cara `copy-paste`, atau gunakan `loot` module untuk penyimpanan otomatis.
 
 <p align="right">
