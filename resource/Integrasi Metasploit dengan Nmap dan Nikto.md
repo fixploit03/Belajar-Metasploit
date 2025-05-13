@@ -12,12 +12,16 @@ Mengintegrasikan `Nmap` dan `Nikto` ke dalam workflow Metasploit akan mempercepa
 
 ## A. Integrasi Metasploit dengan Nmap
 
-Tujuan:
+### Apa Itu NMAP?
+
+Nmap (Network Mapper) adalah tools open-source untuk pemindaian jaringan yang digunakan untuk mendeteksi host, layanan, sistem operasi, dan potensi kerentanan dalam suatu jaringan.
+
+### Tujuan:
 - Mendapatkan port terbuka dan service target.
 - Memasukkan hasil Nmap ke dalam database Metasploit.
 - Langsung menggunakan hasil untuk eksploitasi.
 
-Langkah-Langkah:
+### Langkah-Langkah:
 
 1. Menjalankan Nmap dari Luar Metasploit (dengan output XML):
 
@@ -63,12 +67,16 @@ Langkah-Langkah:
 
 ## B. Integrasi Metasploit dengan Nikto
 
-Tujuan:
+### Apa Itu Nikto
+
+Nikto adalah tools open-source untuk memindai kerentanan pada web server. Nikto digunakan untuk mendeteksi konfigurasi yang salah, file berbahaya, script berbahaya, dan celah keamanan umum pada aplikasi web.
+
+### Tujuan:
 - Scan celah keamanan umum di aplikasi web (misalnya `XSS`, `LFI`, `directory listing`)
 - Mengetahui struktur direktori web
 - Menemukan file dan path sensitif sebelum eksploitasi
 
-Langkah-Langkah:
+### Langkah-Langkah:
 
 1. Jalankan Nikto dan Sinpan Output:
 
