@@ -1,3 +1,7 @@
+<p align="left">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework/blob/main/resource/Post-Exploitation%20di%20Metasploit.md">Post-Exploitation di Metasploit</a>
+</p>
+
 # Pivoting dan Route Command di Metasploit
 
 ## A. Apa Itu Pivoting?
@@ -398,3 +402,7 @@ Ada dua jenis pivoting:
   ```
   meterpreter > netstat
   ```
+
+<p align="right">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Integrasi%20Metasploit%20dengan%20Nmap%20dan%20Nikto.md">Integrasi Metasploit dengan Nmap dan Nikto</a>
+</p>
