@@ -1,3 +1,7 @@
+<p align="left">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework/blob/main/resource/Jenis-Jenis%20Modul%20di%20Metasploit%20Framework.md">Jenis-Jenis Modul di Metasploit Framework</a>
+</p>
+
 # Menjalankan Eksploitasi dengan Metasploit Framework
 
 ## A. Apa Itu Eksploitasi?
@@ -158,3 +162,7 @@ Eksploitasi di Metasploit Framework memerlukan:
 3. Kesabaran dan analisa ketika exploit gagal
 
 > Dengan latihan dan memahami pola kerja eksploitasi, kamu bisa mengeksekusi serangan yang lebih kompleks dan efisien.
+
+<p align="right">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework/blob/main/resource/Memahami%20Payload%2C%20Encoder%2C%20dan%20NOPs.md">Memahami Payload, Encoder, dan NOPs</a>
+</p>
