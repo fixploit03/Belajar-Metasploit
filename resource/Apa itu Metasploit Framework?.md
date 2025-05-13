@@ -10,7 +10,7 @@
 
 Selain untuk eksploitasi, Metasploit juga dapat digunakan untuk `scanning`, `pengumpulan informasi`, `brute force`, dan berbagai aktivitas keamanan lainnya. Salah satu fitur andalannya adalah Meterpreter, yaitu sebuah shell canggih yang memungkinkan pengguna untuk mengontrol sistem target secara interaktif setelah berhasil dieksploitasi. Framework ini juga mendukung integrasi dengan database seperti `PostgreSQL` untuk menyimpan hasil eksploitasi dan mempermudah analisis data.
 
-Secara keseluruhan, Metasploit merupakan tool penting dalam dunia keamanan siber, terutama untuk pembelajaran ethical hacking, pengujian sistem pertahanan, dan simulasi serangan yang realistis. Namun, perlu diingat bahwa penggunaan Metasploit harus dilakukan secara etis dan legal—hanya pada sistem yang dimiliki sendiri atau telah mendapat izin eksplisit, karena penyalahgunaannya dapat berujung pada pelanggaran hukum.
+Secara keseluruhan, Metasploit merupakan tool penting dalam dunia keamanan siber, terutama untuk pembelajaran ethical hacking, pengujian sistem pertahanan, dan simulasi serangan yang realistis. Namun, perlu diingat bahwa penggunaan Metasploit harus dilakukan secara etis dan legal, hanya pada sistem yang dimiliki sendiri atau telah mendapat izin eksplisit, karena penyalahgunaannya dapat berujung pada pelanggaran hukum.
 
 ## B. Fungsi Utama Metasploit
 - Membantu pengujian keamanan sistem dan aplikasi
@@ -42,30 +42,7 @@ Secara keseluruhan, Metasploit merupakan tool penting dalam dunia keamanan siber
 - Mendukung otomatisasi uji penetrasi
 - Bisa diintegrasikan dengan tools lain seperti `nmap`, `Burp Suite`, `Nessus`
 
-## E. Versi Metasploit
-
-| Versi |	Penjelasan |
-|:--:|:--:|
-| `Metasploit Framework (MSF)` | Versi CLI open-source |
-| `Metasploit Pro` | Versi berbayar dengan GUI dan fitur komersial | 
-| `Armitage` | GUI gratis berbasis Java untuk Metasploit |
-| `Cobalt Strike` | Versi komersial dari Armitage dengan fitur C2 | 
-
-## F. Struktur Direktori Metasploit
-
-Biasanya terletak di:
-
-```
-/usr/share/metasploit-framework
-```
-
-Struktur utama:
-- `modules/`: berisi `exploit`, `auxiliary`, `payload`, `dll`
-- `lib/`: library internal
-- `tools/`: tools bantu
-- `data/`: data pendukung
-
-## G. Metasploit dalam Dunia Profesional
+## E. Metasploit dalam Dunia Profesional
 
 Digunakan oleh:
 - Ethical hacker
@@ -74,15 +51,7 @@ Digunakan oleh:
 - Cybersecurity analyst
 - Red team operator
 
-
-## H. Contoh Kasus Penggunaan
-
-- Menemukan kerentanan `ms17_010` pada server Windows
-- Menghasilkan backdoor trojan Android
-- Membangun reverse shell dan dump password target
-- Bypass AV untuk payload tertentu
-
-## I. Kesimpulan
+## F. Kesimpulan
 
 Metasploit adalah alat wajib dalam dunia ethical hacking dan penetrasi sistem karena kekuatan, fleksibilitas, dan dukungan komunitasnya.
 
