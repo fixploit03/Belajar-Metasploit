@@ -1,3 +1,7 @@
+<p align="left">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Eksploitasi%20dengan%20Metasploit%20%2B%20Social%20Engineering%20Toolkit%20(SET).md">Eksploitasi dengan Metasploit + Social Engineering Toolkit (SET)</a>
+</p>
+
 # Teknik Persistence pada Target
 
 ## A. Apa Itu Persistence?
@@ -74,3 +78,9 @@ nc -lvp 4444
 ```
 
 Saat sistem target dinyalakan atau direstart, akses CMD dari sistem target akan diperoleh secara otomatis.
+
+
+
+<p align="right">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Eksploitasi%20Otomatis%20dengan%20AutoPwn.md">Eksploitasi Otomatis dengan AutoPwn</a>
+</p>
