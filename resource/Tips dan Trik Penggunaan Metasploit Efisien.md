@@ -1,3 +1,7 @@
+<p align="left">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework/blob/main/resource/Eksploitasi%20Otomatis%20dengan%20AutoPwn.md">Eksploitasi Otomatis dengan AutoPwn</a>
+</p>
+
 # Tips dan Trik Penggunaan Metasploit Efisien
 
 ## 1. Setup Awal yang Benar
@@ -140,3 +144,8 @@ creds
 - Gunakan module `auxiliary/scanner/*` untuk scanning cepat.
 - Gunakan module `gather` untuk pencurian informasi secara otomatis.
 - Dokumentasikan semua sesi dan hasil eksploitasi untuk laporan.
+
+
+<p align="right">
+  <a href="penutup">Penutup</a>
+</p>
