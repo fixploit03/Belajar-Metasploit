@@ -1,3 +1,7 @@
+<p align="left">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Modul%20Bruteforce%20Login%20di%20Metasploit.md">Modul Bruteforce Login di Metasploit</a>
+</p>
+
 # Menggunakan Auxiliary Scanner di Metasploit
 
 ## A. Apa Itu Auxiliary Scanner?
@@ -150,3 +154,7 @@ set THREADS 10
 
 - Gunakan CIDR notation untuk subnet (misal: `192.168.1.0/24`).
 - Simpan hasil dengan cara `copy-paste`, atau gunakan `loot` module untuk penyimpanan otomatis.
+
+<p align="right">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Eksploitasi%20dengan%20Metasploit%20%2B%20Social%20Engineering%20Toolkit%20(SET).md">Eksploitasi dengan Metasploit + Social Engineering Toolkit (SET)</a>
+</p>
