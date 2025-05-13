@@ -1,3 +1,7 @@
+<p align="left">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework">Halaman Utama</a>
+</p>
+
 # Pendahuluan
 
 Dalam era digital saat ini, keamanan informasi menjadi salah satu aspek paling krusial dalam menjaga stabilitas dan kepercayaan terhadap sistem teknologi. Semakin kompleks infrastruktur jaringan dan aplikasi yang kita gunakan, semakin tinggi pula potensi celah keamanan yang bisa dimanfaatkan oleh pihak yang tidak bertanggung jawab. Oleh karena itu, pemahaman terhadap tools penetration testing seperti Metasploit Framework sangatlah penting, khususnya bagi para praktisi keamanan, sysadmin, maupun ethical hacker.
@@ -11,3 +15,7 @@ Dalam penyusunan materi ini, penulis berusaha menyederhanakan konsep-konsep komp
 Selamat belajar dan semoga Anda mendapatkan pemahaman yang mendalam serta pengalaman belajar yang menyenangkan. Jadikan setiap proses belajar ini sebagai bekal berharga untuk berkontribusi dalam menciptakan dunia digital yang lebih aman dan terpercaya.
 
 Salam hormat, **Rofi (Fixploit03)**
+
+<p align="right">
+  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework/blob/main/resource/Apa%20itu%20Metasploit%20Framework%3F.md">Apa itu Metasploit Framework?</a>
+</p>
