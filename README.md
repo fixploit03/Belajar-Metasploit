@@ -17,6 +17,7 @@
 
 ## Daftar Isi
 
+- [Pendahuluan](https://github.com/fixploit03/Belajar-Metasploit-Framework/blob/main/resource/Pendahuluan.md)
 - [Apa Itu Metasploit Framework?](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Apa%20itu%20Metasploit%20Framework%3F.md)
 - [Sejarah Metasploit Framework](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Sejarah%20Metasploit%20Framework.md)
 - [Cara Menginstal Metasploit Framework di Kali Linux](https://github.com/fixploit03/Belajar-Metasploit/blob/main/resource/Cara%20Menginstal%20Metasploit%20Framework%20di%20Kali%20Linux.md)
