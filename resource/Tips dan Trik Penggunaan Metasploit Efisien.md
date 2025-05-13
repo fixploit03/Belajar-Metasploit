@@ -147,5 +147,5 @@ creds
 
 
 <p align="right">
-  <a href="penutup">Penutup</a>
+  <a href="https://github.com/fixploit03/Belajar-Metasploit-Framework/blob/main/resource/Penutup.md">Penutup</a>
 </p>
