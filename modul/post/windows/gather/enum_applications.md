@@ -1,6 +1,6 @@
 # enum_applications
 
-Module `enum_applications` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk mengumpulkan daftar aplikasi yang terinstal di komputer target. Modul ini bekerja setelah akses ke sistem berhasil diperoleh (misalnya via meterpreter) dan memanfaatkan registry Windows serta perintah internal untuk mengekstrak informasi `nama`, `versi`, dan `lokasi instalasi aplikasi`, sehingga berguna untuk mengidentifikasi software yang terpasang dan potensi celah keamanan lebih lanjut pada sistem target.
+Modul `enum_applications` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk mengumpulkan daftar aplikasi yang terinstal di komputer target. Modul ini bekerja setelah akses ke sistem berhasil diperoleh (misalnya via meterpreter) dan memanfaatkan registry Windows serta perintah internal untuk mengekstrak informasi `nama`, `versi`, dan `lokasi instalasi aplikasi`, sehingga berguna untuk mengidentifikasi software yang terpasang dan potensi celah keamanan lebih lanjut pada sistem target.
 
 ## Cara Penggunaan di Metasploit
 
