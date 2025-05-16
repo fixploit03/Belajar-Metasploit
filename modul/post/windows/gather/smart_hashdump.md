@@ -1,6 +1,6 @@
 # smart_hashdump
 
-Module `smart_hashdump` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk mengekstrak `hash password` dari `SAM` (Security Account Manager) database pada komputer target. Modul ini bekerja setelah akses ke sistem berhasil diperoleh (misalnya via meterpreter dengan privilege SYSTEM) dan secara cerdas menyesuaikan teknik pengambilan hash berdasarkan versi Windows, lalu mengekstrak `hash NTLM` dari akun-akun lokal yang tersimpan, sehingga sangat berguna dalam tahap eskalasi hak akses atau serangan `pass-the-hash`.
+Modul `smart_hashdump` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk mengekstrak `hash password` dari `SAM` (Security Account Manager) database pada komputer target. Modul ini bekerja setelah akses ke sistem berhasil diperoleh (misalnya via meterpreter dengan privilege SYSTEM) dan secara cerdas menyesuaikan teknik pengambilan hash berdasarkan versi Windows, lalu mengekstrak `hash NTLM` dari akun-akun lokal yang tersimpan, sehingga sangat berguna dalam tahap eskalasi hak akses atau serangan `pass-the-hash`.
 
 ## Cara Penggunaan di Metasploit
 
