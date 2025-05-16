@@ -1,6 +1,6 @@
 # wlan_bss_list
 
-Module `wlan_bss_list` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk mengambil daftar jaringan WiFi (BSS - Basic Service Set) yang terdeteksi oleh antarmuka nirkabel target, termasuk `SSID`, `BSSID` (MAC address), `kekuatan sinyal`, dan `informasi lainnya`. Modul ini memungkinkan penyerang yang sudah memiliki akses ke sistem target untuk melihat jaringan WiFi di sekitar perangkat tersebut, yang berguna untuk pemetaan jaringan nirkabel dalam fase pasca-eksploitasi.
+Module `wlan_bss_list` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk mengambil daftar jaringan WiFi (BSS - Basic Service Set) yang terdeteksi oleh antarmuka nirkabel target, termasuk `SSID`, `BSSID` (MAC address), `kekuatan sinyal`, dan `informasi lainnya`.
 
 ## Cara Penggunaan di Metasploit
 
