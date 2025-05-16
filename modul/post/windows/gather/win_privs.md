@@ -1,6 +1,6 @@
 # win_privs
 
-Modul `win_privs` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk mengidentifikasi `hak istimewa` (privileges) yang dimiliki oleh session `meterpreter` saat ini pada komputer target. Modul ini bekerja setelah akses ke sistem berhasil diperoleh (misalnya via meterpreter) dan akan mengecek serta menampilkan daftar hak akses seperti `SeDebugPrivilege`, `SeShutdownPrivilege`, dan `lainnya`, sehingga membantu penyerang menentukan potensi untuk melakukan eskalasi hak akses atau tindakan lanjutan yang memerlukan izin khusus.
+Modul `win_privs` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk mengidentifikasi `hak istimewa` (privileges) yang dimiliki oleh session `meterpreter` saat ini pada komputer target.
 
 ## Cara Penggunaan di Metasploit
 
