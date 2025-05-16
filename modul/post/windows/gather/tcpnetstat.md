@@ -2,7 +2,7 @@
 
 Modul `tcpnetstat` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk mengumpulkan informasi koneksi jaringan aktif, termasuk daftar port `TCP` yang sedang digunakan beserta `alamat IP sumber` dan `tujuan`, mirip dengan output perintah `netstat`.
 
-Cara Penggunaan di Metasploit
+## Cara Penggunaan di Metasploit
 
 ```
 use post/windows/gather/tcpnetstat
