@@ -1,6 +1,6 @@
 # enum_devices
 
-Modul `enum_devices` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk mengumpulkan informasi tentang `perangkat keras` (hardware) yang terhubung atau terpasang di komputer target, seperti `printer`, `USB`, dan `perangkat lainnya`. Modul ini bekerja setelah akses ke sistem berhasil diperoleh (misalnya via meterpreter) dan memanfaatkan perintah bawaan Windows untuk mendeteksi serta mencatat detail perangkat yang pernah atau sedang digunakan, sehingga membantu dalam pemetaan aset perangkat keras target selama fase `post-exploitation`.
+Modul `enum_devices` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk mengumpulkan informasi tentang `perangkat keras` (hardware) yang terhubung atau terpasang di komputer target, seperti `printer`, `USB`, dan `perangkat lainnya`.
 
 ## Cara Penggunaan di Metasploit
 
