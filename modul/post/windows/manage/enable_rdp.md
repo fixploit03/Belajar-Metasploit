@@ -1,6 +1,6 @@
 # enable_rdp
 
-Module `enable_rdp` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk mengaktifkan fitur Remote Desktop Protocol (RDP) pada komputer target. Modul ini bekerja setelah akses ke sistem berhasil diperoleh (misalnya via meterpreter) dan akan melakukan perubahan pada registry serta konfigurasi sistem untuk mengizinkan koneksi `RDP`, sehingga memungkinkan penyerang untuk mengakses desktop target secara langsung melalui Remote Desktop setelah mendapatkan kredensial yang sesuai.
+Modul `enable_rdp` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk mengaktifkan fitur Remote Desktop Protocol (RDP) pada komputer target. Modul ini bekerja setelah akses ke sistem berhasil diperoleh (misalnya via meterpreter) dan akan melakukan perubahan pada registry serta konfigurasi sistem untuk mengizinkan koneksi `RDP`, sehingga memungkinkan penyerang untuk mengakses desktop target secara langsung melalui Remote Desktop setelah mendapatkan kredensial yang sesuai.
 
 ## Cara Penggunaan di Metasploit
 
