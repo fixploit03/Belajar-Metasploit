@@ -1,6 +1,6 @@
 # hashdump
 
-Module `hashdump` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk mengekstrak `hash password` dari file `SAM` (Security Account Manager) pada komputer target. Modul ini bekerja setelah akses ke sistem berhasil diperoleh (biasanya via meterpreter dengan hak SYSTEM) dan akan membaca isi `SAM` serta `SYSTEM registry hive` untuk memperoleh `hash NTLM` dari akun-akun lokal, sehingga berguna untuk serangan lanjutan seperti pass-the-hash, cracking password, atau akses tidak sah ke akun lain di jaringan.
+Modul `hashdump` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk mengekstrak `hash password` dari file `SAM` (Security Account Manager) pada komputer target. Modul ini bekerja setelah akses ke sistem berhasil diperoleh (biasanya via meterpreter dengan hak SYSTEM) dan akan membaca isi `SAM` serta `SYSTEM registry hive` untuk memperoleh `hash NTLM` dari akun-akun lokal, sehingga berguna untuk serangan lanjutan seperti pass-the-hash, cracking password, atau akses tidak sah ke akun lain di jaringan.
 
 ## Cara Penggunaan di Metasploit
 
