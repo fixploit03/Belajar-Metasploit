@@ -1,6 +1,6 @@
 # wlan_profile 
 
-Module `wlan_profile` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk mengambil informasi profil jaringan WiFi yang tersimpan di komputer target, termasuk `SSID`, `jenis autentikasi`, dan `password` jika tersedia. Modul ini bekerja setelah akses ke sistem berhasil diperoleh (misalnya via meterpreter) dan memanfaatkan perintah internal Windows seperti netsh wlan show profile untuk mengekstrak data jaringan secara otomatis.
+Module `wlan_profile` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk mengambil informasi profil jaringan WiFi yang tersimpan di komputer target, termasuk `SSID`, `jenis autentikasi`, dan `password` jika tersedia.
 
 ## Cara Penggunaan di Metasploit
 
