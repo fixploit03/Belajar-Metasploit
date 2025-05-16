@@ -1,6 +1,6 @@
 # credential_collector
 
-Modul `credential_collector` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk mengumpulkan berbagai jenis kredensial dari komputer target, termasuk `username`, `password`, `token`, dan `informasi login lainnya` yang tersimpan di sistem. Modul ini bekerja setelah akses ke sistem berhasil diperoleh (misalnya via meterpreter) dan akan menjalankan beberapa teknik pengumpulan secara otomatis, termasuk pencarian di `memori`, `registry`, dan `file sistem`, sehingga sangat berguna dalam tahap eksploitasi lanjutan untuk mendapatkan akses lebih dalam atau lateral movement ke sistem lain.
+Modul `credential_collector` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk mengumpulkan berbagai jenis kredensial dari komputer target, termasuk `username`, `password`, `token`, dan `informasi login lainnya` yang tersimpan di sistem.
 
 ## Cara Penggunaan di Metasploit
 
