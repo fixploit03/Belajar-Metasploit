@@ -1,6 +1,6 @@
 # enum_browsers
 
-Module `enum_browsers` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk mengumpulkan informasi terkait aktivitas `web browser` di komputer target, seperti `daftar situs yang pernah dikunjungi`, `kredensial yang disimpan`, serta `data autofill`. Modul ini bekerja setelah akses ke sistem berhasil diperoleh (misalnya via meterpreter) dan memanfaatkan berbagai teknik untuk mengekstrak data dari browser populer seperti `Chrome`, `Firefox`, dan `Internet Explorer`, sehingga sangat berguna dalam tahap pengumpulan informasi sensitif pasca eksploitasi.
+Modul `enum_browsers` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk mengumpulkan informasi terkait aktivitas `web browser` di komputer target, seperti `daftar situs yang pernah dikunjungi`, `kredensial yang disimpan`, serta `data autofill`. Modul ini bekerja setelah akses ke sistem berhasil diperoleh (misalnya via meterpreter) dan memanfaatkan berbagai teknik untuk mengekstrak data dari browser populer seperti `Chrome`, `Firefox`, dan `Internet Explorer`, sehingga sangat berguna dalam tahap pengumpulan informasi sensitif pasca eksploitasi.
 
 ## Cara Penggunaan di Metasploit
 
