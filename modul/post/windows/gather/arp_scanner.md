@@ -1,6 +1,6 @@
 # arp_scanner
 
-Module `arp_scanner` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk memindai jaringan lokal (LAN) guna mengidentifikasi perangkat lain yang terhubung, menggunakan protokol `ARP` (Address Resolution Protocol). Modul ini bekerja setelah akses ke sistem berhasil diperoleh (misalnya via meterpreter) dan memanfaatkan kemampuan ARP untuk mengumpulkan informasi seperti `alamat IP` dan `MAC address` dari perangkat-perangkat dalam satu segmen jaringan, sehingga berguna untuk melakukan pemetaan jaringan internal dari perspektif target.
+Modul `arp_scanner` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk memindai jaringan lokal (LAN) guna mengidentifikasi perangkat lain yang terhubung, menggunakan protokol `ARP` (Address Resolution Protocol). Modul ini bekerja setelah akses ke sistem berhasil diperoleh (misalnya via meterpreter) dan memanfaatkan kemampuan ARP untuk mengumpulkan informasi seperti `alamat IP` dan `MAC address` dari perangkat-perangkat dalam satu segmen jaringan, sehingga berguna untuk melakukan pemetaan jaringan internal dari perspektif target.
 
 ## Cara Penggunaan di Metasploit
 
