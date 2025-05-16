@@ -1,6 +1,6 @@
 # enum_logged_on_users
 
-Module `enum_logged_on_users` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk mengumpulkan informasi tentang pengguna yang sedang atau pernah login ke sistem target. Modul ini bekerja setelah akses ke sistem berhasil diperoleh (misalnya via meterpreter) dan memanfaatkan perintah serta registry Windows untuk mengekstrak daftar user yang aktif, termasuk sesi `RDP`, `lokal`, maupun `domain`, sehingga berguna dalam tahap pengintaian untuk mengetahui target potensial dan jejak aktivitas pengguna pada sistem.
+Modul `enum_logged_on_users` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk mengumpulkan informasi tentang pengguna yang sedang atau pernah login ke sistem target. Modul ini bekerja setelah akses ke sistem berhasil diperoleh (misalnya via meterpreter) dan memanfaatkan perintah serta registry Windows untuk mengekstrak daftar user yang aktif, termasuk sesi `RDP`, `lokal`, maupun `domain`, sehingga berguna dalam tahap pengintaian untuk mengetahui target potensial dan jejak aktivitas pengguna pada sistem.
 
 ## Cara Penggunaan di Metasploit
 
