@@ -1,6 +1,6 @@
 # checkvm
 
-Module `checkvm` di Metasploit adalah `modul post-exploitation` untuk sistem Windows yang digunakan untuk mendeteksi apakah komputer target berjalan di dalam lingkungan virtualisasi, seperti `VMware`, `VirtualBox`, `Hyper-V`, atau `lainnya`. Modul ini bekerja setelah akses ke sistem berhasil diperoleh (misalnya via meterpreter) dan memanfaatkan pemeriksaan terhadap `driver`, `proses`, `registry`, dan `artefak sistem lainnya` yang umum ditemukan di mesin virtual, sehingga berguna untuk mengetahui apakah target merupakan mesin asli atau hanya lingkungan sandbox atau analisis.
+Modul `checkvm` di Metasploit adalah `modul post-exploitation` untuk sistem Windows yang digunakan untuk mendeteksi apakah komputer target berjalan di dalam lingkungan virtualisasi, seperti `VMware`, `VirtualBox`, `Hyper-V`, atau `lainnya`. Modul ini bekerja setelah akses ke sistem berhasil diperoleh (misalnya via meterpreter) dan memanfaatkan pemeriksaan terhadap `driver`, `proses`, `registry`, dan `artefak sistem lainnya` yang umum ditemukan di mesin virtual, sehingga berguna untuk mengetahui apakah target merupakan mesin asli atau hanya lingkungan sandbox atau analisis.
 
 ## Cara Penggunaan di Metasploit
 
