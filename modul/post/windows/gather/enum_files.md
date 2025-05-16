@@ -1,7 +1,6 @@
 # enum_files
 
-Modul `enum_files` di Metasploit adalah modul `post-exploitation `untuk sistem Windows yang digunakan untuk mencari dan mengumpulkan daftar file berdasarkan ekstensi tertentu seperti `.pdf`, `.docx`, `.txt`, dan `lainnya` dari komputer target. Modul ini bekerja setelah akses ke sistem berhasil diperoleh (misalnya via meterpreter) dan memindai direktori yang ditentukan secara rekursif untuk menemukan file-file penting yang berpotensi sensitif, sehingga berguna dalam proses pengumpulan informasi lebih lanjut setelah eksploitasi berhasil dilakukan.
-
+Modul `enum_files` di Metasploit adalah modul `post-exploitation `untuk sistem Windows yang digunakan untuk mencari dan mengumpulkan daftar file berdasarkan ekstensi tertentu seperti `.pdf`, `.docx`, `.txt`, dan `lainnya` dari komputer target.
 ## Cara Penggunaan di Metasploit
 
 ```
