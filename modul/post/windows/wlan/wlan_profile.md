@@ -2,7 +2,7 @@
 
 Modul ini mengekstrak profil `LAN` nirkabel yang tersimpan. Modul ini juga akan mencoba mendekripsi materi kunci jaringan. Perilaku sedikit berbeda antar versi sistem operasi untuk `WPA`. Pada `Windows Vista/7`, kita akan mendapatkan frasa sandi (`passphrase`). Pada `Windows XP`, kita akan mendapatkan kunci turunan `PBKDF2`.
 
-## PenulisAuthor
+## Penulis
 - theLightCosine theLightCosine@metasploit.com
 
 ## Platform
