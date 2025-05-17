@@ -9,9 +9,7 @@ use post/windows/manage/enable_rdp
 set ENABLE true
 set FORWARD false
 set LPORT 3389
-set PASSWORD <PASSWORD>
 set SESSION <ID>
-set USERNAME <USERNAME>
 set VERBOSE true
 run
 ```
