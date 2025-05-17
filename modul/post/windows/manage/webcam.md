@@ -1,7 +1,13 @@
 # webcam
 
-Modul `webcam` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk mengakses dan mengambil gambar dari webcam komputer target secara diam-diam.
+Modul ini memungkinkan pengguna untuk mendeteksi webcam yang terpasang (dengan aksi `LIST`) atau mengambil `snapshot` (dengan aksi `SNAPSHOT`).
 
+## Penulis
+- sinn3r sinn3r@metasploit.com
+
+## Platform
+- `Windows`
+  
 ## Cara Penggunaan di Metasploit
 
 ```
@@ -22,3 +28,6 @@ Hasil output-nya seperti ini:
 [*] 192.168.1.52 - Stopped
 [*] Post module execution completed
 ```
+
+## Referensi
+- [Rapid7](https://www.rapid7.com/db/modules/post/windows/manage/webcam/)
