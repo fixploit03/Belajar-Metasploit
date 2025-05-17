@@ -1,6 +1,12 @@
 # peinjector
 
-Modul `peinjector` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk menyuntikkan payload Metasploit ke dalam file PE (Portable Executable) seperti `.exe` pada komputer target.
+Modul ini akan menyuntikkan payload Windows yang ditentukan ke dalam eksekutabel target.
+
+## Penulis
+- Maximiliano Tedesco maxitedesco1@gmail.com
+
+## Platform
+- `Windows`
 
 ## Cara Penggunaan di Metasploit
 
@@ -24,3 +30,6 @@ Hasil output-nya seperti ini:
 [+] Successfully injected payload into the executable: C:\\Users\\Public\\Downloads\\notepad.exe
 [*] Post module execution completed
 ```
+
+## Referensi
+- [Rapid7](https://www.rapid7.com/db/modules/post/windows/manage/peinjector/)
