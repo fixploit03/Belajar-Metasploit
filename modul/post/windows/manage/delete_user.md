@@ -1,7 +1,13 @@
 # delete_user
 
-Modul `delete_user` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk menghapus akun pengguna lokal dari komputer target. 
+Modul ini menghapus akun pengguna lokal dari server yang ditentukan, atau dari mesin lokal jika tidak ada server yang diberikan.
 
+## Penulis
+- chao-mu
+
+## Platform
+- `Windows`
+  
 ## Cara Penggunaan di Metasploit
 
 ```
@@ -18,3 +24,6 @@ Hasil output-nya seperti ini:
 [*] User was deleted!
 [*] Post module execution completed
 ```
+
+## Referensi
+- [Rapid7(https://www.rapid7.com/db/modules/post/windows/manage/delete_user/)
