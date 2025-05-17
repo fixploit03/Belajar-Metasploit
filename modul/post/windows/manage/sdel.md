@@ -1,7 +1,13 @@
 # sdel
 
-Modul `sdel` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk menghapus file secara aman (secure delete) dari komputer target.
+Tujuan modul ini adalah untuk menghambat pemulihan file yang telah dihapus dengan menimpa isinya. Ini berguna ketika Anda perlu mengunduh file di mesin target dan kemudian menghapusnya tanpa meninggalkan petunjuk tentang isinya. Perhatikan bahwa skrip ini tidak menghapus ruang disk kosong, sehingga file `sementara/jarang/terenkripsi/terkompresi` mungkin tidak dapat ditimpa. Perhatikan juga bahwa entri `MFT` tidak ditimpa, sehingga file yang sangat kecil mungkin tetap berada dalam deskriptor aliran.
 
+## Penulis
+- Borja Merino bmerinofe@gmail.com
+
+## Platform
+- `Windows`
+  
 ## Cara Penggunaan di Metasploit
 
 ```
@@ -28,3 +34,6 @@ Hasil output-nya seperti ini:
 [+] File erased!
 [*] Post module execution completed
 ```
+
+## Platform
+- [Rapid7](https://www.rapid7.com/db/modules/post/windows/manage/sdel/)
