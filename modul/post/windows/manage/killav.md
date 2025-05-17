@@ -1,7 +1,16 @@
 # killav
 
-Modul `killav` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk mendeteksi dan mematikan (disable) proses antivirus dan solusi keamanan lainnya yang berjalan di komputer target.
+Modul ini mencoba menemukan dan menghentikan proses-proses yang diidentifikasi sebagai terkait dengan `Antivirus` atau `Host-based IPS`.
 
+## Penulis
+- Marc-Andre Meloche (MadmanTM)
+- Nikhil Mittal (Samratashok)
+- Jerome Athias
+- OJ Reeves
+
+##  Platform
+- `Windows`
+  
 ## Cara Penggunaan di Metasploit
 
 ```
@@ -19,3 +28,6 @@ Hasil output-nya seperti ini:
 [*] Post module execution completed
 msf6 post(windows/manage/killav) > opt
 ```
+
+## Referensi
+- [Rapid7](https://www.rapid7.com/db/modules/post/windows/manage/killav/)
