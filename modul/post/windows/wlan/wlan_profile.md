@@ -1,6 +1,12 @@
 # wlan_profile 
 
-Module `wlan_profile` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk mengambil informasi profil jaringan WiFi yang tersimpan di komputer target, termasuk `SSID`, `jenis autentikasi`, dan `password` jika tersedia.
+Modul ini mengekstrak profil `LAN` nirkabel yang tersimpan. Modul ini juga akan mencoba mendekripsi materi kunci jaringan. Perilaku sedikit berbeda antar versi sistem operasi untuk `WPA`. Pada `Windows Vista/7`, kita akan mendapatkan frasa sandi (`passphrase`). Pada `Windows XP`, kita akan mendapatkan kunci turunan `PBKDF2`.
+
+## PenulisAuthor
+- theLightCosine theLightCosine@metasploit.com
+
+## Platform
+- `Windows`
 
 ## Cara Penggunaan di Metasploit
 
@@ -50,3 +56,6 @@ GUID: {28b9c93f-a298-45f8-b88c-8f898895ee2b} Description: Realtek 8814AU Wireles
 [*] WlanAPI Handle Closed Successfully
 [*] Post module execution completed
 ```
+
+## Referensi
+- [Rapid7](https://www.rapid7.com/db/modules/post/windows/wlan/wlan_profile/)
