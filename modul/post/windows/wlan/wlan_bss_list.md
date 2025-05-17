@@ -1,7 +1,13 @@
 # wlan_bss_list
 
-Module `wlan_bss_list` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk mengambil daftar jaringan WiFi (BSS - Basic Service Set) yang terdeteksi oleh antarmuka nirkabel target, termasuk `SSID`, `BSSID` (MAC address), `kekuatan sinyal`, dan `informasi lainnya`.
+Modul ini mengumpulkan informasi tentang `Basic Service Sets` (`BSS`) nirkabel yang tersedia untuk mesin target.
 
+## Penulis
+- theLightCosine theLightCosine@metasploit.com
+
+## Platform
+- `Windows`
+  
 ## Cara Penggunaan di Metasploit
 
 ```
@@ -74,3 +80,6 @@ Hasil output-nya seperti ini:
 [*] WlanAPI Handle Closed Successfully
 [*] Post module execution completed
 ```
+
+## Referensi
+- [Rapid7](https://www.rapid7.com/db/modules/post/windows/wlan/wlan_bss_list/)
