@@ -26,4 +26,4 @@ Hasil output-nya seperti ini:
 ```
 
 ## Referensi
-- [Rapid7(https://www.rapid7.com/db/modules/post/windows/manage/delete_user/)
+- [Rapid7](https://www.rapid7.com/db/modules/post/windows/manage/delete_user/)
