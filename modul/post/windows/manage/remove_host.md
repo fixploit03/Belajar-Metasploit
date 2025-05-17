@@ -1,6 +1,12 @@
 # remove_host
 
-Modul `remove_host` di Metasploit adalah modul `post-exploitation` untuk sistem Windows yang digunakan untuk menghapus entri tertentu dari file hosts pada komputer target.
+Modul ini memungkinkan penyerang untuk menghapus entri dari file `hosts` Windows.
+
+## Penulis
+- vt nick.freeman@security-assessment.com
+
+## Platform
+- `Windows`
 
 ## Cara Penggunaan di Metasploit
 
@@ -19,3 +25,6 @@ Hasil output-nya seperti ini:
 [+] Done!
 [*] Post module execution completed
 ```
+
+## Referensi
+- [Rapid7](https://www.rapid7.com/db/modules/post/windows/manage/remove_host/)
